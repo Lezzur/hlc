@@ -8,7 +8,7 @@ setup(
     description="Hierarchical Lexical Compression for LLM context optimization",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_USERNAME/hlc",
+    url="https://github.com/Lezzur/hlc",
     packages=find_packages(),
     package_data={
         "hlc": ["codebooks/*.json"],

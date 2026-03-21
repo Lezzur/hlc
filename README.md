@@ -55,7 +55,7 @@ Tested across 8 text categories:
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hlc.git
+git clone https://github.com/Lezzur/hlc.git
 cd hlc
 pip install -r requirements.txt
 ```
