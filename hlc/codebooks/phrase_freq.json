@@ -1,0 +1,770 @@
+[
+  {
+    "phrase": "it is important to note that",
+    "word_count": 6,
+    "char_count": 28,
+    "avg_word_freq": 0.0096825,
+    "compression_score": 6.965531860537698,
+    "rank": 1
+  },
+  {
+    "phrase": "in the context of",
+    "word_count": 4,
+    "char_count": 17,
+    "avg_word_freq": 0.024360675,
+    "compression_score": 5.577707255843119,
+    "rank": 2
+  },
+  {
+    "phrase": "for the most part",
+    "word_count": 4,
+    "char_count": 17,
+    "avg_word_freq": 0.016375749999999998,
+    "compression_score": 4.951186451150409,
+    "rank": 3
+  },
+  {
+    "phrase": "on the other hand",
+    "word_count": 4,
+    "char_count": 17,
+    "avg_word_freq": 0.01588425,
+    "compression_score": 4.906128687055719,
+    "rank": 4
+  },
+  {
+    "phrase": "on the other hand",
+    "word_count": 4,
+    "char_count": 17,
+    "avg_word_freq": 0.01588425,
+    "compression_score": 4.906128687055719,
+    "rank": 5
+  },
+  {
+    "phrase": "it should be noted that",
+    "word_count": 5,
+    "char_count": 23,
+    "avg_word_freq": 0.0052612,
+    "compression_score": 4.764894391673939,
+    "rank": 6
+  },
+  {
+    "phrase": "at the same time",
+    "word_count": 4,
+    "char_count": 16,
+    "avg_word_freq": 0.01532275,
+    "compression_score": 4.567946380342396,
+    "rank": 7
+  },
+  {
+    "phrase": "the fact that",
+    "word_count": 3,
+    "char_count": 13,
+    "avg_word_freq": 0.021385666666666664,
+    "compression_score": 4.10185392555853,
+    "rank": 8
+  },
+  {
+    "phrase": "in addition to",
+    "word_count": 3,
+    "char_count": 14,
+    "avg_word_freq": 0.015200666666666666,
+    "compression_score": 3.98737265632238,
+    "rank": 9
+  },
+  {
+    "phrase": "nice to meet you",
+    "word_count": 4,
+    "char_count": 16,
+    "avg_word_freq": 0.0092175,
+    "compression_score": 3.921966922418335,
+    "rank": 10
+  },
+  {
+    "phrase": "with respect to",
+    "word_count": 3,
+    "char_count": 15,
+    "avg_word_freq": 0.011362333333333334,
+    "compression_score": 3.9149977502207007,
+    "rank": 11
+  },
+  {
+    "phrase": "it is worth noting",
+    "word_count": 4,
+    "char_count": 18,
+    "avg_word_freq": 0.00519125,
+    "compression_score": 3.71410423880909,
+    "rank": 12
+  },
+  {
+    "phrase": "with regard to",
+    "word_count": 3,
+    "char_count": 14,
+    "avg_word_freq": 0.0113343,
+    "compression_score": 3.6512910005886026,
+    "rank": 13
+  },
+  {
+    "phrase": "i don't understand",
+    "word_count": 3,
+    "char_count": 18,
+    "avg_word_freq": 0.004704666666666667,
+    "compression_score": 3.606045171179286,
+    "rank": 14
+  },
+  {
+    "phrase": "for what it's worth",
+    "word_count": 4,
+    "char_count": 19,
+    "avg_word_freq": 0.00372125,
+    "compression_score": 3.5478091973408885,
+    "rank": 15
+  },
+  {
+    "phrase": "as soon as possible",
+    "word_count": 4,
+    "char_count": 19,
+    "avg_word_freq": 0.0030545,
+    "compression_score": 3.3437641699795866,
+    "rank": 16
+  },
+  {
+    "phrase": "according to",
+    "word_count": 2,
+    "char_count": 12,
+    "avg_word_freq": 0.0135455,
+    "compression_score": 3.301564287746615,
+    "rank": 17
+  },
+  {
+    "phrase": "in particular",
+    "word_count": 2,
+    "char_count": 13,
+    "avg_word_freq": 0.009349999999999999,
+    "compression_score": 3.200271585768624,
+    "rank": 18
+  },
+  {
+    "phrase": "in order to",
+    "word_count": 3,
+    "char_count": 11,
+    "avg_word_freq": 0.015269666666666666,
+    "compression_score": 3.1371952743029334,
+    "rank": 19
+  },
+  {
+    "phrase": "in other words",
+    "word_count": 3,
+    "char_count": 14,
+    "avg_word_freq": 0.006742666666666667,
+    "compression_score": 3.124478515694747,
+    "rank": 20
+  },
+  {
+    "phrase": "to be honest",
+    "word_count": 3,
+    "char_count": 12,
+    "avg_word_freq": 0.011041233333333332,
+    "compression_score": 3.1051781562975034,
+    "rank": 21
+  },
+  {
+    "phrase": "in terms of",
+    "word_count": 3,
+    "char_count": 11,
+    "avg_word_freq": 0.014608666666666666,
+    "compression_score": 3.0958211224604266,
+    "rank": 22
+  },
+  {
+    "phrase": "by the way",
+    "word_count": 3,
+    "char_count": 10,
+    "avg_word_freq": 0.01976333333333333,
+    "compression_score": 3.081470814002457,
+    "rank": 23
+  },
+  {
+    "phrase": "having said that",
+    "word_count": 3,
+    "char_count": 16,
+    "avg_word_freq": 0.003869666666666667,
+    "compression_score": 3.0228879514200253,
+    "rank": 24
+  },
+  {
+    "phrase": "in my opinion",
+    "word_count": 3,
+    "char_count": 13,
+    "avg_word_freq": 0.007469033333333333,
+    "compression_score": 2.9917318956957075,
+    "rank": 25
+  },
+  {
+    "phrase": "in this case",
+    "word_count": 3,
+    "char_count": 12,
+    "avg_word_freq": 0.008521666666666665,
+    "compression_score": 2.8730197319908166,
+    "rank": 26
+  },
+  {
+    "phrase": "that being said",
+    "word_count": 3,
+    "char_count": 15,
+    "avg_word_freq": 0.004037,
+    "compression_score": 2.8701783479074243,
+    "rank": 27
+  },
+  {
+    "phrase": "a little bit",
+    "word_count": 3,
+    "char_count": 12,
+    "avg_word_freq": 0.007898666666666667,
+    "compression_score": 2.8083251026265783,
+    "rank": 28
+  },
+  {
+    "phrase": "as mentioned above",
+    "word_count": 3,
+    "char_count": 18,
+    "avg_word_freq": 0.0020385333333333335,
+    "compression_score": 2.805871968037129,
+    "rank": 29
+  },
+  {
+    "phrase": "as a result",
+    "word_count": 3,
+    "char_count": 11,
+    "avg_word_freq": 0.009647000000000001,
+    "compression_score": 2.7334451818673315,
+    "rank": 30
+  },
+  {
+    "phrase": "in addition",
+    "word_count": 2,
+    "char_count": 11,
+    "avg_word_freq": 0.009351,
+    "compression_score": 2.7080089929842233,
+    "rank": 31
+  },
+  {
+    "phrase": "i don't think",
+    "word_count": 3,
+    "char_count": 13,
+    "avg_word_freq": 0.005026666666666666,
+    "compression_score": 2.656607401893362,
+    "rank": 32
+  },
+  {
+    "phrase": "keep in mind",
+    "word_count": 3,
+    "char_count": 12,
+    "avg_word_freq": 0.006437999999999999,
+    "compression_score": 2.6412319233685553,
+    "rank": 33
+  },
+  {
+    "phrase": "as a whole",
+    "word_count": 3,
+    "char_count": 10,
+    "avg_word_freq": 0.009692666666666667,
+    "compression_score": 2.488473287925587,
+    "rank": 34
+  },
+  {
+    "phrase": "at this point",
+    "word_count": 3,
+    "char_count": 13,
+    "avg_word_freq": 0.003989,
+    "compression_score": 2.478577843881828,
+    "rank": 35
+  },
+  {
+    "phrase": "in general",
+    "word_count": 2,
+    "char_count": 10,
+    "avg_word_freq": 0.0094475,
+    "compression_score": 2.4694206196263404,
+    "rank": 36
+  },
+  {
+    "phrase": "for instance",
+    "word_count": 2,
+    "char_count": 12,
+    "avg_word_freq": 0.00511945,
+    "compression_score": 2.465745435070697,
+    "rank": 37
+  },
+  {
+    "phrase": "i don't know",
+    "word_count": 3,
+    "char_count": 12,
+    "avg_word_freq": 0.005046666666666667,
+    "compression_score": 2.455176011763167,
+    "rank": 38
+  },
+  {
+    "phrase": "of course",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.0126875,
+    "compression_score": 2.4280371425774994,
+    "rank": 39
+  },
+  {
+    "phrase": "how are you",
+    "word_count": 3,
+    "char_count": 11,
+    "avg_word_freq": 0.0055966666666666665,
+    "compression_score": 2.32151512543962,
+    "rank": 40
+  },
+  {
+    "phrase": "a lot of",
+    "word_count": 3,
+    "char_count": 8,
+    "avg_word_freq": 0.016135666666666666,
+    "compression_score": 2.319669226650811,
+    "rank": 41
+  },
+  {
+    "phrase": "for example",
+    "word_count": 2,
+    "char_count": 11,
+    "avg_word_freq": 0.005193000000000001,
+    "compression_score": 2.269959882801291,
+    "rank": 42
+  },
+  {
+    "phrase": "going to",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.0138855,
+    "compression_score": 2.217473527291697,
+    "rank": 43
+  },
+  {
+    "phrase": "as discussed",
+    "word_count": 2,
+    "char_count": 12,
+    "avg_word_freq": 0.0029591,
+    "compression_score": 2.0918432529508793,
+    "rank": 44
+  },
+  {
+    "phrase": "have to",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.016015,
+    "compression_score": 2.0251449946247506,
+    "rank": 45
+  },
+  {
+    "phrase": "take into account",
+    "word_count": 3,
+    "char_count": 17,
+    "avg_word_freq": 0.0007613333333333334,
+    "compression_score": 1.972065678788042,
+    "rank": 46
+  },
+  {
+    "phrase": "as well as",
+    "word_count": 3,
+    "char_count": 10,
+    "avg_word_freq": 0.0042833333333333334,
+    "compression_score": 1.9477560494725756,
+    "rank": 47
+  },
+  {
+    "phrase": "want to",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.014,
+    "compression_score": 1.945075442518156,
+    "rank": 48
+  },
+  {
+    "phrase": "need to",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.0139165,
+    "compression_score": 1.9415878570447132,
+    "rank": 49
+  },
+  {
+    "phrase": "used to",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.0137655,
+    "compression_score": 1.9352435882206318,
+    "rank": 50
+  },
+  {
+    "phrase": "able to",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.0135845,
+    "compression_score": 1.9275743450617604,
+    "rank": 51
+  },
+  {
+    "phrase": "seem to",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.01351,
+    "compression_score": 1.9243968826845592,
+    "rank": 52
+  },
+  {
+    "phrase": "kind of",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.012691000000000001,
+    "compression_score": 1.8886296054766265,
+    "rank": 53
+  },
+  {
+    "phrase": "sort of",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.0126,
+    "compression_score": 1.8845566787404844,
+    "rank": 54
+  },
+  {
+    "phrase": "more or less",
+    "word_count": 3,
+    "char_count": 12,
+    "avg_word_freq": 0.002023,
+    "compression_score": 1.866293789602385,
+    "rank": 55
+  },
+  {
+    "phrase": "thank you",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.004926,
+    "compression_score": 1.8280616238676388,
+    "rank": 56
+  },
+  {
+    "phrase": "there is",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.00687,
+    "compression_score": 1.7954652666963336,
+    "rank": 57
+  },
+  {
+    "phrase": "in fact",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.0094285,
+    "compression_score": 1.7275507786332802,
+    "rank": 58
+  },
+  {
+    "phrase": "there are",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.00377,
+    "compression_score": 1.687115884880075,
+    "rank": 59
+  },
+  {
+    "phrase": "natural language processing",
+    "word_count": 3,
+    "char_count": 27,
+    "avg_word_freq": 9.460000000000001e-05,
+    "compression_score": 1.6754485851177583,
+    "rank": 60
+  },
+  {
+    "phrase": "should be",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.0035735000000000003,
+    "compression_score": 1.6602391295591075,
+    "rank": 61
+  },
+  {
+    "phrase": "out of",
+    "word_count": 2,
+    "char_count": 6,
+    "avg_word_freq": 0.01375,
+    "compression_score": 1.6582196598471861,
+    "rank": 62
+  },
+  {
+    "phrase": "try to",
+    "word_count": 2,
+    "char_count": 6,
+    "avg_word_freq": 0.013608,
+    "compression_score": 1.6530635148071635,
+    "rank": 63
+  },
+  {
+    "phrase": "due to",
+    "word_count": 2,
+    "char_count": 6,
+    "avg_word_freq": 0.013562,
+    "compression_score": 1.6513851404570743,
+    "rank": 64
+  },
+  {
+    "phrase": "have been",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.003495,
+    "compression_score": 1.6492126733206558,
+    "rank": 65
+  },
+  {
+    "phrase": "let me know",
+    "word_count": 3,
+    "char_count": 11,
+    "avg_word_freq": 0.0015593333333333334,
+    "compression_score": 1.582247339098576,
+    "rank": 66
+  },
+  {
+    "phrase": "good afternoon",
+    "word_count": 2,
+    "char_count": 14,
+    "avg_word_freq": 0.00068625,
+    "compression_score": 1.5742465235661278,
+    "rank": 67
+  },
+  {
+    "phrase": "based on",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.004227,
+    "compression_score": 1.552028390529392,
+    "rank": 68
+  },
+  {
+    "phrase": "would be",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.004015,
+    "compression_score": 1.5282543895653327,
+    "rank": 69
+  },
+  {
+    "phrase": "could be",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.00366,
+    "compression_score": 1.4863952630465669,
+    "rank": 70
+  },
+  {
+    "phrase": "large language model",
+    "word_count": 3,
+    "char_count": 20,
+    "avg_word_freq": 0.00016866666666666666,
+    "compression_score": 1.4761781553491584,
+    "rank": 71
+  },
+  {
+    "phrase": "might be",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.0033135,
+    "compression_score": 1.4427001583788193,
+    "rank": 72
+  },
+  {
+    "phrase": "up to",
+    "word_count": 2,
+    "char_count": 5,
+    "avg_word_freq": 0.014675,
+    "compression_score": 1.4091052640337185,
+    "rank": 73
+  },
+  {
+    "phrase": "it was",
+    "word_count": 2,
+    "char_count": 6,
+    "avg_word_freq": 0.0077599999999999995,
+    "compression_score": 1.3967213340045155,
+    "rank": 74
+  },
+  {
+    "phrase": "good morning",
+    "word_count": 2,
+    "char_count": 12,
+    "avg_word_freq": 0.000767,
+    "compression_score": 1.3951466327180815,
+    "rank": 75
+  },
+  {
+    "phrase": "will be",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.004495,
+    "compression_score": 1.3833018215847468,
+    "rank": 76
+  },
+  {
+    "phrase": "you're welcome",
+    "word_count": 2,
+    "char_count": 14,
+    "avg_word_freq": 0.00041935000000000003,
+    "compression_score": 1.3580039397247712,
+    "rank": 77
+  },
+  {
+    "phrase": "good evening",
+    "word_count": 2,
+    "char_count": 12,
+    "avg_word_freq": 0.0006962,
+    "compression_score": 1.3551939423999992,
+    "rank": 78
+  },
+  {
+    "phrase": "at least",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.0026425,
+    "compression_score": 1.348014258038228,
+    "rank": 79
+  },
+  {
+    "phrase": "as well",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.00348,
+    "compression_score": 1.2810669091228652,
+    "rank": 80
+  },
+  {
+    "phrase": "it is",
+    "word_count": 2,
+    "char_count": 5,
+    "avg_word_freq": 0.010305,
+    "compression_score": 1.2673144979142061,
+    "rank": 81
+  },
+  {
+    "phrase": "such as",
+    "word_count": 2,
+    "char_count": 7,
+    "avg_word_freq": 0.003291,
+    "compression_score": 1.2597849179452618,
+    "rank": 82
+  },
+  {
+    "phrase": "has been",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.0021000000000000003,
+    "compression_score": 1.2582176567593122,
+    "rank": 83
+  },
+  {
+    "phrase": "had been",
+    "word_count": 2,
+    "char_count": 8,
+    "avg_word_freq": 0.002,
+    "compression_score": 1.2399351900386697,
+    "rank": 84
+  },
+  {
+    "phrase": "good night",
+    "word_count": 2,
+    "char_count": 10,
+    "avg_word_freq": 0.0008635,
+    "compression_score": 1.2046994236597477,
+    "rank": 85
+  },
+  {
+    "phrase": "right now",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.001211,
+    "compression_score": 1.2000124515272923,
+    "rank": 86
+  },
+  {
+    "phrase": "natural language",
+    "word_count": 2,
+    "char_count": 16,
+    "avg_word_freq": 0.0001275,
+    "compression_score": 1.0858580068755932,
+    "rank": 87
+  },
+  {
+    "phrase": "make sure",
+    "word_count": 2,
+    "char_count": 9,
+    "avg_word_freq": 0.0008339999999999999,
+    "compression_score": 1.0729817237530879,
+    "rank": 88
+  },
+  {
+    "phrase": "artificial intelligence",
+    "word_count": 2,
+    "char_count": 23,
+    "avg_word_freq": 3.375e-05,
+    "compression_score": 1.0476349276542505,
+    "rank": 89
+  },
+  {
+    "phrase": "language model",
+    "word_count": 2,
+    "char_count": 14,
+    "avg_word_freq": 0.0001305,
+    "compression_score": 0.956778018768117,
+    "rank": 90
+  },
+  {
+    "phrase": "machine learning",
+    "word_count": 2,
+    "char_count": 16,
+    "avg_word_freq": 8.13e-05,
+    "compression_score": 0.9487398580010771,
+    "rank": 91
+  },
+  {
+    "phrase": "so far",
+    "word_count": 2,
+    "char_count": 6,
+    "avg_word_freq": 0.001813,
+    "compression_score": 0.9029643237440107,
+    "rank": 92
+  },
+  {
+    "phrase": "deep learning",
+    "word_count": 2,
+    "char_count": 13,
+    "avg_word_freq": 9.76e-05,
+    "compression_score": 0.8142884928880024,
+    "rank": 93
+  },
+  {
+    "phrase": "neural network",
+    "word_count": 2,
+    "char_count": 14,
+    "avg_word_freq": 5.5375000000000004e-05,
+    "compression_score": 0.7398133389505075,
+    "rank": 94
+  },
+  {
+    "phrase": "context window",
+    "word_count": 2,
+    "char_count": 14,
+    "avg_word_freq": 5.29e-05,
+    "compression_score": 0.7297342617486405,
+    "rank": 95
+  },
+  {
+    "phrase": "token cost",
+    "word_count": 2,
+    "char_count": 10,
+    "avg_word_freq": 9.0305e-05,
+    "compression_score": 0.611946618203058,
+    "rank": 96
+  }
+]

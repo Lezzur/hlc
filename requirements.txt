@@ -1,0 +1,2 @@
+wordfreq>=3.0
+nltk>=3.8
