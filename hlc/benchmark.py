@@ -6,10 +6,15 @@ across diverse text types.
 """
 
 import json
+import sys
 from pathlib import Path
+
+# Handle Unicode output on Windows
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 from .compress import HLCCompressor, HLCDecompressor, compress_with_report
 
-# ── Test Corpus ──
+# -- Test Corpus --
 # Diverse English text samples representing different use cases
 
 TEST_SAMPLES = {
@@ -160,7 +165,7 @@ def run_benchmarks():
         }
         results.append(result)
         
-        print(f"\n── {category} ({name}) ──")
+        print(f"\n-- {category} ({name}) --")
         print(f"  Original:   {report['original_chars']} chars")
         print(f"  Compressed: {report['compressed_chars']} chars")
         print(f"  Saved:      {report['chars_saved']} chars ({report['compression_ratio']}%)")
@@ -188,7 +193,7 @@ def run_benchmarks():
               f"{r['compression_ratio']:>7.1f}%")
     
     # Estimated token savings (rough: 1 token ≈ 4 chars for English)
-    print(f"\n── Estimated Token Impact ──")
+    print(f"\n-- Estimated Token Impact --")
     est_orig_tokens = total_original / 4
     est_comp_tokens = total_compressed / 4
     print(f"  Est. original tokens:   ~{int(est_orig_tokens)}")
@@ -196,7 +201,7 @@ def run_benchmarks():
     print(f"  Est. token savings:     ~{int(est_orig_tokens - est_comp_tokens)} tokens")
     
     # Cost projection
-    print(f"\n── Cost Projection (per 1M original tokens) ──")
+    print(f"\n-- Cost Projection (per 1M original tokens) --")
     # Anthropic Claude pricing approximate: $3/M input, $15/M output
     orig_cost = 3.0  # per 1M input tokens
     comp_ratio = overall_ratio / 100
@@ -220,7 +225,7 @@ def show_layer_by_layer(text=None):
     
     compressor = HLCCompressor()
     
-    print(f"\n── Original ({len(text)} chars) ──")
+    print(f"\n-- Original ({len(text)} chars) --")
     print(text)
     
     layer_names = {
@@ -234,8 +239,8 @@ def show_layer_by_layer(text=None):
         layers = tuple(range(1, n + 1))
         compressed = compressor.compress(text, layers=layers)
         report = compressor.get_compression_report()
-        print(f"\n── +Layer {n}: {layer_names[n]} ({report['compressed_chars']} chars, "
-              f"-{report['compression_ratio']}%) ──")
+        print(f"\n-- +Layer {n}: {layer_names[n]} ({report['compressed_chars']} chars, "
+              f"-{report['compression_ratio']}%) --")
         print(compressed)
     
     # Show deterministic decompression
@@ -243,11 +248,11 @@ def show_layer_by_layer(text=None):
     full_compressed = compressor.compress(text, layers=(1, 2, 3, 4))
     decompressed = decompressor.decompress(full_compressed)
     
-    print(f"\n── Deterministic Decompression ──")
+    print(f"\n-- Deterministic Decompression --")
     print(decompressed)
     
     # Diff: what was perfectly recovered vs what needs LLM
-    print(f"\n── Recovery Analysis ──")
+    print(f"\n-- Recovery Analysis --")
     orig_words = set(text.lower().split())
     decomp_words = set(decompressed.lower().split())
     recovered = orig_words & decomp_words

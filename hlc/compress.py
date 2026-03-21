@@ -40,7 +40,7 @@ class HLCCompressor:
         if codebook_path is None:
             codebook_path = CODEBOOK_DIR / "codebook_full.json"
         
-        with open(codebook_path) as f:
+        with open(codebook_path, encoding='utf-8') as f:
             data = json.load(f)
         
         self.phrase_codebook = data.get("phrase_codebook", {})
@@ -343,7 +343,7 @@ class HLCDecompressor:
         if codebook_path is None:
             codebook_path = CODEBOOK_DIR / "codebook_full.json"
         
-        with open(codebook_path) as f:
+        with open(codebook_path, encoding='utf-8') as f:
             data = json.load(f)
         
         self.phrase_reverse = data.get("phrase_reverse", {})
