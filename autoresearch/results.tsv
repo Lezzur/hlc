@@ -6,3 +6,4 @@ experiment	description	score	train	val	gap	status
 5	final 29 symbol swaps (67.01->67.04)	67.0432	67.08	67.00	0.08	improvement
 6	add 387 corpus-mined phrases to fill 600 cap (67.04->68.36)	68.3557	68.49	68.23	0.26	improvement
 7	optimize phrase codebook: swap 77 low-value phrases (68.36->68.44)	68.4446	68.56	68.33	0.23	improvement
+8	symbol swap attempt - no beneficial swaps remaining	68.4446	68.56	68.33	0.23	no_change
