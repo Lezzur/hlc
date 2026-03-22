@@ -249,6 +249,15 @@ SYMBOL_MAP = {
     "analysis": "か",
     "available": "き",
     "improvement": "く",
+    # Hiragana — exp 8: more high-value words
+    "environment": "け",
+    "implementation": "こ",
+    "meeting": "さ",
+    "techniques": "し",
+    "processing": "す",
+    "experience": "せ",
+    "deployment": "そ",
+    "additional": "た",
 }
 
 # ═══════════════════════════════════════════════════════════
