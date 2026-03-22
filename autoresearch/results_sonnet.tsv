@@ -1,0 +1,52 @@
+experiment	description	score	ratio	recon	phrases	status
+baseline	Haiku session best (sonnet starting point)	60.5134	35.2	98.4	418	baseline
+1	fix 29 symbol+phrase collisions, RECON 98.4→99.9	61.0800	35.2	99.9	418	improved
+2	add 8 corpus-derived phrases	61.2500	35.5	99.9	418	improved
+3	add 6 word symbols (will,before,through,they,because,were)	61.5600	36.0	99.9	418	improved
+4	add 8 word symbols (attention,different,something,approach,should,please,team,three)	62.0600	36.9	99.9	418	improved
+5	add 8 word symbols (rate,current,already,while,think,still,once,file)	62.3700	37.4	99.9	418	improved
+6	add 8 long word symbols (significant,performance,information,authentication,etc)	62.8000	38.1	99.9	418	improved
+7	add 8 more long word symbols (configuration,appreciate,architecture,analysis,etc)	63.1300	38.6	99.9	418	improved
+8	add 8 words (environment,implementation,techniques,processing,experience,etc)	63.4500	39.2	99.9	418	improved
+9	add 8 words (provides,historical,relationships,computational,during,training,etc)	63.7400	39.7	99.9	418	improved
+10	add 8 words (requirements,augmentation,mechanism,framework,dashboard,problem,etc)	64.0300	40.1	99.9	418	improved
+11	add 8 words (credentials,constraints,application,thinking,strategy,research,etc)	64.2800	40.5	99.9	418	improved
+12	add 8 words (every,results,message,changes,using,schedule,customer,continue)	64.5300	41.0	99.9	418	improved
+13	add 8 words (most,each,wanted,across,reports,believe,could,allow)	64.7600	41.4	99.9	418	improved
+14	add 8 words (services,properly,possible,language,expenses,detailed,consider,last)	64.9900	41.7	99.9	418	improved
+15	add 8 words (thresholds,sufficient,strategies,production,window,rather,module,market)	65.2000	42.1	99.9	418	improved
+16	add 8 words (sure,five,token,tasks,based,after,updated,present)	65.3900	42.4	99.9	418	improved
+17	add 8 words (percent,metrics,however,discuss,scheduled,reduction,recommend,potential)	65.5600	42.7	99.9	418	improved
+18	add 8 words (gradually,generates,financial,currently,modifications,compatibility,subscription,presentation)	65.7500	43.0	99.9	418	improved
+19	add contractions+high-freq (it's,you're,i've,don't,then,cost,upcoming,timeline)	66.0473	43.5	99.9	441	improved
+20	add high-freq words (when,than,over,long,table,stack,error,within)	66.2172	43.8	99.9	441	improved
+21	add words (second,really,models,having,engine,budget,supports,resource)	66.3905	44.1	99.9	441	improved
+22	add 8-letter words (practice,password,original,indexing,identity,followed,feedback,features)	66.5724	44.4	99.9	441	improved
+23	add words (everyone,needed,working,usually,systems,suggest,started,running)	66.7388	44.7	99.9	441	improved
+24	add words (resolve,renewal,quality,propose,primary,prepare,objects,looking)	66.8947	44.9	99.9	441	improved
+25	add words (hundred,formats,finally,expense,browser,address,where,weeks)	67.0576	45.2	99.9	441	improved
+26	add contractions+long words (i'm,let,how,i'd,had,particularly,implementing,dependencies)	67.2621	45.5	99.9	441	improved
+27	add 11-letter words (recommended,projections,predictions,outperforms,observation,discussions,development,compression)	67.4320	45.8	99.9	441	improved
+28	add 10-letter words (unexpected,understand,underlying,separately,resolution,regulatory,parameters,onboarding)	67.5879	46.1	99.9	441	improved
+29	add 10-letter words (mechanisms,management,individual,indicators,increasing,frequently,expiration,everything)	67.7474	46.3	99.9	441	improved
+30	add words (diagnostic,describing,dependency,components,associated,assessment,approaches,comfortable)	67.9137	46.6	99.9	441	improved
+31	add 9-letter words (yesterday,warehouse,validated,supported,statement,reviewing,resources,reporting)	68.0385	46.8	99.9	441	improved
+32	add 9-letter words (reference,questions,quarterly,published,processed,necessary,magnitude,instances)	68.1771	47.0	99.9	441	improved
+33	add 9-letter words (ingestion,indicates,including,following,encourage,effective,discussed,direction)	68.3192	47.3	99.9	441	improved
+34	add words (configure,conducted,challenge,carefully,until,those,thank,items)	68.4544	47.5	99.9	441	improved
+35	add words (compressions,two,input,hours,green,going,cache,being)	68.5757	47.7	99.9	441	improved
+36	add words (only,many,help,even,she,update,output,issues)	68.7265	48.0	99.9	441	improved
+37	add 6-letter words (twenty,things,stores,report,recent,minute,making,better)	68.8616	48.2	99.9	441	improved
+38	add 8 corpus phrases (the processing engine, thinking about, i've been, etc)	68.9570	48.3	99.9	468	improved
+39	add 8 long phrases (the ingestion pipeline, computational cost, new onboarding, etc)	69.0731	48.5	99.9	507	improved
+40	add words (behind,around,answer,allows,algorithm,breathing,security,requests)	69.2117	48.8	99.9	507	improved
+41	add 8-letter words (wireless,verified,tradeoff,thousand,starting,slightly,shipment,sequence)	69.3330	49.0	99.9	507	improved
+42	add 8-letter words (rollback,reviewed,relevant,received,question,prepared,positive,navigate)	69.4318	49.1	99.9	507	improved
+43	add 8-letter words (multiple,modeling,metadata,location,findings,document,decision,deadline)	69.5427	49.3	99.9	507	improved
+44	add 8-letter words (datasets,contains,consists,coherent,choosing,capacity,business,behavior)	69.6536	49.5	99.9	507	improved
+45	add words (applying,allowing,adjusted,achieves,accessed,set,oil,now)	69.7818	49.7	99.9	507	improved
+46	add 8 bigram phrases (would like, your attention, appreciate you, is that, within the, etc)	69.8321	49.8	99.9	537	improved
+47	add 4-letter words (used,task,take,i'll,here,four,date,blue)	69.9447	50.0	99.9	537	improved
+48	add words (away,also) + phrases (however there, the approach, five minutes, we should, i have)	70.0279	50.1	99.9	554	improved
+49	add 8 trigram phrases (we need to, the new onboarding, the model to, resolve the issue, etc)	70.1146	50.3	99.9	569	improved
+50	add words (years,users,track,times,these,check,batch,layer) + phrases (i wanted, the processing, etc)	70.2220	50.5	99.9	582	improved
