@@ -136,8 +136,20 @@ SYMBOL_MAP = {
     "support": "ㅽ",
     "handle": "ㅾ",
     "manage": "ㅿ",
-    "monitor": "㄀ ",
+    "monitor": "㄀",
     "control": "㄁",
+    "benefit": "㄂",
+    "improve": "㄃",
+    "increase": "㄄",
+    "achieve": "ㄅ",
+    "process": "ㄆ",
+    "service": "ㄇ",
+    "company": "ㄈ",
+    "project": "ㄉ",
+    "involve": "ㄊ",
+    "generate": "ㄋ",
+    "position": "ㄌ",
+    "purpose": "ㄍ",
 }
 
 # ═══════════════════════════════════════════════════════════
