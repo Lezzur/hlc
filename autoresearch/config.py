@@ -438,6 +438,15 @@ SYMBOL_MAP = {
     "regulatory": "甲",
     "parameters": "兜",
     "onboarding": "鎧",
+    # CJK — exp 29: more 10-letter words
+    "mechanisms": "盃",
+    "management": "杯",
+    "individual": "皿",
+    "indicators": "瓶",
+    "increasing": "壺",
+    "frequently": "桶",
+    "expiration": "釜",
+    "everything": "鍋",
 }
 
 # ═══════════════════════════════════════════════════════════
