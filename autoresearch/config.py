@@ -420,6 +420,15 @@ SYMBOL_MAP = {
     "particularly": "白",
     "implementing": "灰",
     "dependencies": "朱",
+    # CJK — exp 27: 11-letter high-value words
+    "recommended": "銅",
+    "projections": "鉄",
+    "predictions": "鉛",
+    "outperforms": "錆",
+    "observation": "鑑",
+    "discussions": "鏡",
+    "development": "鐘",
+    "compression": "刀",
 }
 
 # ═══════════════════════════════════════════════════════════
