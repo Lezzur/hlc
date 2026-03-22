@@ -501,6 +501,15 @@ SYMBOL_MAP = {
     "going": "辺",
     "cache": "角",
     "being": "頭",
+    # CJK — exp 36: short high-count + 6-letter words
+    "only": "顔",
+    "many": "骨",
+    "help": "皮",
+    "even": "血",
+    "she": "息",
+    "update": "涙",
+    "output": "汗",
+    "issues": "夢",
 }
 
 # ═══════════════════════════════════════════════════════════
