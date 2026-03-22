@@ -326,6 +326,11 @@ PHRASE_CODEBOOK = {
     "me know": "ћ",
     "we need": "Ќ",
     "lot of": "ќ",
+    # Additional 3-word phrases (exp 28)
+    "of the input": "Ў",
+    "you through the": "ў",
+    "want to make": "Џ",
+    "schedule a call": "џ",
 }
 
 # ═══════════════════════════════════════════════════════════
