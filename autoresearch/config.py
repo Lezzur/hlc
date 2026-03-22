@@ -213,6 +213,15 @@ SYMBOL_MAP = {
     "they": "チ",
     "because": "ツ",
     "were": "ト",
+    # Katakana — more high-frequency words (exp 4)
+    "attention": "ナ",
+    "different": "ニ",
+    "something": "ヌ",
+    "approach": "ネ",
+    "should": "ノ",
+    "please": "ハ",
+    "team": "ヒ",
+    "three": "フ",
 }
 
 # ═══════════════════════════════════════════════════════════
