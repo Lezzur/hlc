@@ -231,6 +231,15 @@ SYMBOL_MAP = {
     "still": "メ",
     "once": "モ",
     "file": "ヤ",
+    # Katakana — exp 6: long high-value words
+    "significant": "ユ",
+    "performance": "ヨ",
+    "information": "ラ",
+    "authentication": "リ",
+    "minutes": "ル",
+    "between": "レ",
+    "include": "ロ",
+    "without": "ワ",
 }
 
 # ═══════════════════════════════════════════════════════════
