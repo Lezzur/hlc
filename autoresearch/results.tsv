@@ -4,3 +4,4 @@ experiment	description	score	train	val	gap	penalty	status
 2	add 200 high-value word symbols (61.74->64.63)	64.6258	63.77	65.48	1.71	0.00	improvement
 3	add 206 more word symbols savings>=10 (64.63->66.09)	66.0891	64.53	67.65	3.12	0.00	improvement
 4	add 128 high-value phrases to codebook (66.09->66.82)	66.8217	65.09	68.56	3.47	0.00	improvement
+5	remove 8 duplicate phrase entries, fix 6 cross-map collisions	66.8217	65.09	68.56	3.47	0.00	cleanup
