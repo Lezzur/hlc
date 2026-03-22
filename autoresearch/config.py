@@ -222,6 +222,15 @@ SYMBOL_MAP = {
     "please": "ハ",
     "team": "ヒ",
     "three": "フ",
+    # Katakana — exp 5 batch
+    "rate": "ヘ",
+    "current": "ホ",
+    "already": "マ",
+    "while": "ミ",
+    "think": "ム",
+    "still": "メ",
+    "once": "モ",
+    "file": "ヤ",
 }
 
 # ═══════════════════════════════════════════════════════════
