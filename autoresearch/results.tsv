@@ -12,3 +12,4 @@ experiment	description	score	train	val	gap	status
 11	replace 165 3-byte symbols with 2-byte codes (68.61->68.97)	68.9749	69.07	68.88	0.19	improvement
 12	2 more 1-byte swaps (68.97->68.98)	68.9766	69.06	68.89	0.17	improvement
 13	1 more symbol swap after byte opt (68.98->68.98)	68.9792	69.07	68.89	0.17	improvement
+14	analyzed poor categories - no beneficial swaps	68.9792	69.07	68.89	0.17	no_change
