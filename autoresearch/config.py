@@ -715,6 +715,15 @@ PHRASE_CODEBOOK = {
     "the problem": "Ĥ",
     "your account": "Ħ",
     "the application": "Ĩ",
+    # More corpus phrases (exp 39) — Latin Extended A
+    "the ingestion pipeline": "Ī",
+    "the computational cost": "Ĭ",
+    "new onboarding process": "Į",
+    "i've been thinking": "İ",
+    "your account history": "Ĳ",
+    "to make sure": "Ĵ",
+    "i can": "Ķ",
+    "and i": "Ĺ",
 }
 
 # ═══════════════════════════════════════════════════════════
