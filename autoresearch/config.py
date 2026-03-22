@@ -258,6 +258,15 @@ SYMBOL_MAP = {
     "experience": "せ",
     "deployment": "そ",
     "additional": "た",
+    # Hiragana — exp 9: more high-value words
+    "provides": "ち",
+    "historical": "つ",
+    "relationships": "て",
+    "computational": "と",
+    "during": "な",
+    "training": "に",
+    "settings": "ぬ",
+    "pipeline": "ね",
 }
 
 # ═══════════════════════════════════════════════════════════
