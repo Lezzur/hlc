@@ -294,6 +294,15 @@ SYMBOL_MAP = {
     "schedule": "ん",
     "customer": "ヴ",
     "continue": "ヵ",
+    # CJK — exp 13
+    "most": "一",
+    "each": "二",
+    "wanted": "三",
+    "across": "四",
+    "reports": "五",
+    "believe": "六",
+    "could": "七",
+    "allow": "八",
 }
 
 # ═══════════════════════════════════════════════════════════
