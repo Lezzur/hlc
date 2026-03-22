@@ -180,6 +180,17 @@ PHRASE_CODEBOOK = {
     "there are a few": "Ҹ",
     "and would like to": "ҹ",
     "by the end of": "Һ",
+    # More unused high-value phrases (exp 5)
+    "would like to": "ҽ",
+    "the next": "Ҿ",
+    "has been": "ҿ",
+    "thank you for": "Ѐ",
+    "there are": "ѐ",
+    "the first": "Ѓ",
+    "need to": "ѓ",
+    "wanted to": "Ѕ",
+    "you for your": "ѕ",
+    "let me": "Ї",
 }
 
 # ═══════════════════════════════════════════════════════════
