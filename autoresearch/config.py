@@ -582,6 +582,9 @@ SYMBOL_MAP = {
     "four": "糖",
     "date": "醤",
     "blue": "味",
+    # CJK — exp 48: remaining short words
+    "away": "湯",
+    "also": "茶",
 }
 
 # ═══════════════════════════════════════════════════════════
@@ -796,6 +799,13 @@ PHRASE_CODEBOOK = {
     "to discuss": "Ņ",
     "your identity": "Ň",
     "the upcoming": "Ŋ",
+    # More phrases (exp 48) — Latin Extended A
+    "however there": "Ō",
+    "the approach": "Ŏ",
+    "five minutes": "Ő",
+    "we should": "Œ",
+    "i have": "Ŕ",
+    "the approach you're": "Ŗ",
 }
 
 # ═══════════════════════════════════════════════════════════
