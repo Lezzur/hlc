@@ -206,6 +206,13 @@ SYMBOL_MAP = {
     "level": "エ",
     "stage": "オ",
     "total": "カ",
+    # Katakana — high-frequency words missing from map (exp 3)
+    "will": "ソ",
+    "before": "テ",
+    "through": "タ",
+    "they": "チ",
+    "because": "ツ",
+    "were": "ト",
 }
 
 # ═══════════════════════════════════════════════════════════
