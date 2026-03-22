@@ -1,2 +1,3 @@
 experiment	description	score	train	val	gap	penalty	status
 0	baseline from config_sonnet_best.py (528 syms, 196 phrases)	60.0397	60.05	60.03	0.02	0.00	baseline
+1	replace 481 3-byte symbols with 2-byte (60.04->61.74)	61.7396	61.74	61.74	0.01	0.00	improvement
