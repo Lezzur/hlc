@@ -393,6 +393,15 @@ SYMBOL_MAP = {
     "suggest": "砂",
     "started": "煙",
     "running": "霧",
+    # CJK — exp 24: more high-value words
+    "resolve": "霜",
+    "renewal": "氷",
+    "quality": "炎",
+    "propose": "雷",
+    "primary": "靄",
+    "prepare": "沢",
+    "objects": "滝",
+    "looking": "崖",
 }
 
 # ═══════════════════════════════════════════════════════════
