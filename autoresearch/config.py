@@ -402,6 +402,15 @@ SYMBOL_MAP = {
     "prepare": "沢",
     "objects": "滝",
     "looking": "崖",
+    # CJK — exp 25: more high-value words
+    "hundred": "峰",
+    "formats": "湖",
+    "finally": "渓",
+    "expense": "浜",
+    "browser": "浦",
+    "address": "津",
+    "where": "港",
+    "weeks": "湾",
 }
 
 # ═══════════════════════════════════════════════════════════
