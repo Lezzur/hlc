@@ -276,6 +276,15 @@ SYMBOL_MAP = {
     "dashboard": "ほ",
     "correctly": "ま",
     "problem": "み",
+    # Hiragana — exp 11
+    "credentials": "む",
+    "constraints": "め",
+    "application": "も",
+    "thinking": "や",
+    "strategy": "ゆ",
+    "research": "よ",
+    "patterns": "ら",
+    "learning": "り",
 }
 
 # ═══════════════════════════════════════════════════════════
