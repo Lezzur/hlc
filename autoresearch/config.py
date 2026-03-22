@@ -150,6 +150,17 @@ PHRASE_CODEBOOK = {
     "talk about": "Ҡ",
     "think about": "Ң",
     "it can": "Ҥ",
+    # High-frequency article phrases (exp 1)
+    "and the": "Ҧ",
+    "to the": "ҧ",
+    "in the": "Ҩ",
+    "of the": "ҩ",
+    "with the": "Ҫ",
+    "that the": "ҫ",
+    "for the": "Ҭ",
+    "on the": "ҭ",
+    "through the": "Ү",
+    "i wanted to": "ү",
 }
 
 # ═══════════════════════════════════════════════════════════
