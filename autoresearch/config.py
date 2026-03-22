@@ -474,6 +474,15 @@ SYMBOL_MAP = {
     "necessary": "恥",
     "magnitude": "正",
     "instances": "清",
+    # CJK — exp 33: more 9-letter words
+    "ingestion": "勤",
+    "indicates": "謙",
+    "including": "節",
+    "following": "倹",
+    "encourage": "温",
+    "effective": "雅",
+    "discussed": "淡",
+    "direction": "泰",
 }
 
 # ═══════════════════════════════════════════════════════════
