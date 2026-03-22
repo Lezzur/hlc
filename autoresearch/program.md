@@ -13,7 +13,9 @@ You are an autonomous research agent optimizing the HLC (Hierarchical Lexical Co
 
 ## The metric
 
-Run `python evaluate.py` after every change. It prints:
+Run `python evaluate.py` after every change. It scores against **80 train samples** across 10 categories (technical, casual, business, documentation, creative, academic, support, instructional, email, AI conversation). A separate **20-sample holdout set** exists in `corpus/holdout.json` that you NEVER optimize against — the human uses `validate.py` to check for overfitting.
+
+It prints:
 
 ```
 SCORE:XX.XXXX RATIO:XX.X RECON:XX.X PHRASES:XX CODEBOOK:XXX
@@ -99,10 +101,11 @@ LOOP FOREVER:
 
 ## Rules
 
-1. NEVER modify evaluate.py
-2. NEVER modify the test corpus
-3. NEVER stop to ask permission — keep looping
-4. Commit only improvements. Revert everything else.
-5. Log EVERY experiment to results.tsv, including failures.
-6. Keep descriptions concise but specific in commit messages.
-7. If config.py has a syntax error, fix it immediately and don't count it as an experiment.
+1. NEVER modify evaluate.py, validate.py, or build_corpus.py
+2. NEVER modify files in the corpus/ directory
+3. You ONLY edit config.py
+4. NEVER stop to ask permission — keep looping
+5. Commit only improvements. Revert everything else.
+6. Log EVERY experiment to results.tsv, including failures.
+7. Keep descriptions concise but specific in commit messages.
+8. If config.py has a syntax error, fix it immediately and don't count it as an experiment.

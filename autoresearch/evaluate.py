@@ -19,89 +19,20 @@ import importlib
 from pathlib import Path
 from difflib import SequenceMatcher
 
-# ── Test Corpus (FIXED — do not modify) ──
+# ── Test Corpus (loaded from corpus/train.json — DO NOT modify the corpus files) ──
 
-TEST_SAMPLES = {
-    "technical_discussion": (
-        "Absolutely, and this is the part that deserves more attention. "
-        "The compaction quality is bounded by the compacting model's ability "
-        "to understand what matters. A more capable model will produce better "
-        "summaries because it can reason about relevance, identify dependencies "
-        "between statements, and recognize which details are structural versus "
-        "decorative. But even the best model is guessing about future relevance "
-        "— it doesn't know what you'll ask next."
-    ),
-    "casual_conversation": (
-        "Hey, how are you doing today? I was thinking about what you said "
-        "yesterday about the project. I don't think we should rush it because "
-        "there are still a lot of things we need to figure out. Let me know "
-        "what you think and we can talk about it more later. By the way, did "
-        "you see the new update? It's pretty cool but I'm not sure if it "
-        "fixes the problem we were having."
-    ),
-    "business_email": (
-        "Thank you for your prompt response regarding the quarterly report. "
-        "I have reviewed the financial projections and would like to schedule "
-        "a meeting to discuss the budget allocation for the upcoming fiscal year. "
-        "In addition to the revenue forecasts, we should also consider the "
-        "operational expenses and potential cost reduction strategies. Please "
-        "let me know your availability for next week. I would appreciate it "
-        "if you could also prepare a brief summary of the key performance "
-        "indicators for the board presentation."
-    ),
-    "technical_documentation": (
-        "The system architecture consists of three primary components: the "
-        "ingestion pipeline, the processing engine, and the storage layer. "
-        "The ingestion pipeline handles incoming data from multiple sources "
-        "including REST APIs, message queues, and batch file uploads. Data "
-        "is validated, transformed, and normalized before being passed to "
-        "the processing engine. The processing engine applies business logic, "
-        "performs aggregations, and generates derived metrics. Results are "
-        "persisted to the storage layer which supports both real-time queries "
-        "and historical analysis through a combination of time-series databases "
-        "and columnar data warehouses."
-    ),
-    "creative_writing": (
-        "The old lighthouse keeper stood at the edge of the cliff, watching "
-        "the storm clouds gather on the horizon. He had seen countless storms "
-        "in his forty years at this post, but something about this one felt "
-        "different. The air was heavy with electricity, and the seabirds had "
-        "fallen silent hours ago. He checked the lamp one more time, making "
-        "sure the mechanism was properly oiled and the lens was spotless. "
-        "Tonight would be a long night, and the ships out there would need "
-        "every bit of light he could give them."
-    ),
-    "ai_research": (
-        "We present a novel approach to context window optimization in large "
-        "language models through hierarchical lexical compression. Our method "
-        "achieves significant token reduction without information loss by "
-        "applying deterministic rule-based transformations at multiple levels "
-        "of linguistic granularity. Unlike semantic compression approaches "
-        "which require model inference and produce irreversible information "
-        "loss, our system operates through precomputed codebook substitutions "
-        "that preserve all original content."
-    ),
-    "customer_support": (
-        "I understand your frustration with the billing issue. Let me look "
-        "into this for you right away. It appears that the charge was applied "
-        "twice due to a processing error on our end. I have initiated a refund "
-        "for the duplicate charge, which should appear in your account within "
-        "three to five business days. Is there anything else I can help you "
-        "with today? If you experience any further issues, please don't "
-        "hesitate to contact us again. We value your business and want to "
-        "make sure this is resolved to your satisfaction."
-    ),
-    "instructional": (
-        "To set up the development environment, first install the required "
-        "dependencies using the package manager. Make sure you have the latest "
-        "version of the runtime installed on your system. Next, clone the "
-        "repository and navigate to the project directory. Create a virtual "
-        "environment to isolate your project dependencies from the system "
-        "packages. Activate the virtual environment and run the installation "
-        "script. The configuration file should be updated with your specific "
-        "settings before running the application for the first time."
-    ),
-}
+def load_corpus(split="train"):
+    """Load corpus from JSON. Agent optimizes against train. Human validates on holdout."""
+    corpus_path = Path(__file__).parent / "corpus" / f"{split}.json"
+    if not corpus_path.exists():
+        print(f"ERROR: {corpus_path} not found. Run build_corpus.py first.")
+        sys.exit(1)
+    with open(corpus_path) as f:
+        samples = json.load(f)
+    return {f"{s['category']}_{i}": s["text"] for i, s in enumerate(samples)}
+
+
+TEST_SAMPLES = load_corpus("train")
 
 # ── Compression Engine (uses config.py settings) ──
 
