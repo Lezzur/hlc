@@ -1123,6 +1123,30 @@ SYMBOL_MAP = {
     "say": "ߘ",    # savings=3, train=2, val=1
     "web": "ߙ",    # savings=3, train=2, val=1
     "bit": "ߚ",    # savings=3, train=2, val=1
+    # NKo — train-only words (not in val), close train/val gap
+    "million": "\u07dd",    # savings=65, train_only, count=13
+    "infrastructure": "\u07de",    # savings=60, train_only, count=5
+    "leadership": "\u07df",    # savings=56, train_only, count=7
+    "collaboration": "\u07e0",    # savings=55, train_only, count=5
+    "patients": "\u07e1",    # savings=54, train_only, count=9
+    "participants": "\u07e2",    # savings=50, train_only, count=5
+    "operations": "\u07e3",    # savings=48, train_only, count=6
+    "integration": "\u07e4",    # savings=45, train_only, count=5
+    "significantly": "\u07e5",    # savings=44, train_only, count=4
+    "employees": "\u07e6",    # savings=42, train_only, count=6
+    "switching": "\u07e7",    # savings=42, train_only, count=6
+    "configured": "\u07e8",    # savings=40, train_only, count=5
+    "average": "\u07e9",    # savings=40, train_only, count=8
+    "protection": "\u07ea",    # savings=40, train_only, count=5
+    "monitoring": "\u07f4",    # savings=40, train_only, count=5
+    "seventy": "\u07f5",    # savings=40, train_only, count=8
+    "maintenance": "\u07f6",    # savings=36, train_only, count=4
+    "evidence": "\u07f7",    # savings=36, train_only, count=6
+    "internal": "\u07f8",    # savings=36, train_only, count=6
+    "accounts": "\u07f9",    # savings=36, train_only, count=6
+    "acquisition": "\u07fa",    # savings=36, train_only, count=4
+    "testing": "\u07fe",    # savings=35, train_only, count=7
+    "customers": "\u07ff",    # savings=35, train_only, count=5
 }
 
 # ═══════════════════════════════════════════════════════════

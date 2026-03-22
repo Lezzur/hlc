@@ -9,3 +9,5 @@ experiment	description	score	train	val	gap	penalty	status
 7	assign 23 control chars to high-freq 2-byte words (67.07->67.38)	67.3840	65.62	69.15	3.53	0.00	improvement
 8	add 293 corpus-mined phrases savings>=8 (67.38->68.26)	68.2606	65.95	70.57	4.62	0.00	improvement
 9	add 120 remaining words savings>=3 + fix part symbol (68.26->68.65)	68.6469	66.13	71.17	5.04	0.00	improvement
+10	tried adding 6 tiny words + 2 short phrases - reverted (harmful)	68.6469	66.13	71.17	5.04	0.00	no_change
+11	add 23 train-only words to close gap (68.65->68.85)	68.8463	66.53	71.17	4.64	0.00	improvement
