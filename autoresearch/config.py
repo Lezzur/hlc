@@ -510,6 +510,15 @@ SYMBOL_MAP = {
     "update": "涙",
     "output": "汗",
     "issues": "夢",
+    # CJK — exp 37: more 6-letter words
+    "twenty": "記",
+    "things": "話",
+    "stores": "語",
+    "report": "詞",
+    "recent": "字",
+    "minute": "読",
+    "making": "書",
+    "better": "歌",
 }
 
 # ═══════════════════════════════════════════════════════════
