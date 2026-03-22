@@ -339,6 +339,24 @@ SYMBOL_MAP = {
     "reduction": "松",
     "recommend": "桜",
     "potential": "空",
+    # CJK — exp 18
+    "gradually": "海",
+    "generates": "風",
+    "financial": "雨",
+    "currently": "雪",
+    "modifications": "春",
+    "compatibility": "夏",
+    "subscription": "秋",
+    "presentation": "冬",
+    # CJK — exp 19: contractions + high-freq words
+    "it's": "虹",
+    "you're": "星",
+    "i've": "雲",
+    "don't": "光",
+    "then": "電",
+    "cost": "音",
+    "upcoming": "心",
+    "timeline": "手",
 }
 
 # ═══════════════════════════════════════════════════════════
