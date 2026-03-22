@@ -303,6 +303,15 @@ SYMBOL_MAP = {
     "believe": "六",
     "could": "七",
     "allow": "八",
+    # CJK — exp 14
+    "services": "九",
+    "properly": "十",
+    "possible": "百",
+    "language": "千",
+    "expenses": "万",
+    "detailed": "大",
+    "consider": "小",
+    "last": "中",
 }
 
 # ═══════════════════════════════════════════════════════════
