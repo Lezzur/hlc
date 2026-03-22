@@ -312,6 +312,15 @@ SYMBOL_MAP = {
     "detailed": "大",
     "consider": "小",
     "last": "中",
+    # CJK — exp 15
+    "thresholds": "日",
+    "sufficient": "月",
+    "strategies": "年",
+    "production": "人",
+    "window": "木",
+    "rather": "水",
+    "module": "火",
+    "market": "土",
 }
 
 # ═══════════════════════════════════════════════════════════
