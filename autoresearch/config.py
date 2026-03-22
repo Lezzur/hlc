@@ -384,6 +384,15 @@ SYMBOL_MAP = {
     "followed": "野",
     "feedback": "原",
     "features": "谷",
+    # CJK — exp 23: more high-value words
+    "everyone": "島",
+    "needed": "池",
+    "working": "林",
+    "usually": "森",
+    "systems": "岩",
+    "suggest": "砂",
+    "started": "煙",
+    "running": "霧",
 }
 
 # ═══════════════════════════════════════════════════════════
