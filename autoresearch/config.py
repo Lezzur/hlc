@@ -262,6 +262,16 @@ PHRASE_CODEBOOK = {
     # Long phrases (exp 7)
     "by the end of this": "ї",
     "within the next two weeks": "Ј",
+    # More unused phrases (exp 21)
+    "at the": "ј",
+    "like to": "Љ",
+    "with a": "љ",
+    "all the": "Њ",
+    "going to": "њ",
+    "the system": "Ћ",
+    "me know": "ћ",
+    "we need": "Ќ",
+    "lot of": "ќ",
 }
 
 # ═══════════════════════════════════════════════════════════
