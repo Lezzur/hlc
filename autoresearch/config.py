@@ -72,7 +72,7 @@ SYMBOL_MAP = {
     "year": "ǖ",
     "use": "V",
     "life": "ʩ",
-    "part": " ",
+    "part": "ߜ",
     "need": "Y",
     "feel": "Ն",
     # Hangul Jamo — group 1 (unique, collision-free)
@@ -1002,6 +1002,127 @@ SYMBOL_MAP = {
     "privacy": "ܶ",
     "vendors": "ܷ",
     "showing": "ܸ",
+    # exp 15: common words in both train+val, savings >= 3
+    "risen": "\x80",    # savings=9, train=2, val=1
+    "solar": "\x81",    # savings=9, train=2, val=1
+    "logic": "\x82",    # savings=9, train=2, val=1
+    "lower": "\x83",    # savings=9, train=2, val=1
+    "clear": "\x84",    # savings=9, train=2, val=1
+    "write": "ߛ",    # savings=9, train=1, val=2
+    "parts": "\x86",    # savings=9, train=2, val=1
+    "alone": "\x87",    # savings=9, train=1, val=2
+    "given": "\x88",    # savings=9, train=1, val=2
+    "glass": "\x89",    # savings=9, train=2, val=1
+    "usage": "\x8a",    # savings=9, train=1, val=2
+    "store": "\x8b",    # savings=9, train=1, val=2
+    "old": "\x8c",    # savings=9, train=8, val=1
+    "fever": "\x8d",    # savings=9, train=1, val=2
+    "we've": "\x8e",    # savings=9, train=2, val=1
+    "later": "\x8f",    # savings=9, train=2, val=1
+    "app": "\x90",    # savings=9, train=6, val=3
+    "admin": "\x91",    # savings=9, train=1, val=2
+    "latest": "\x92",    # savings=8, train=1, val=1
+    "pull": "\x93",    # savings=8, train=3, val=1
+    "viewer": "\x94",    # savings=8, train=1, val=1
+    "height": "\x95",    # savings=8, train=1, val=1
+    "little": "\x96",    # savings=8, train=1, val=1
+    "street": "\x97",    # savings=8, train=1, val=1
+    "assume": "\x98",    # savings=8, train=1, val=1
+    "stress": "\x99",    # savings=8, train=1, val=1
+    "trials": "\x9a",    # savings=8, train=1, val=1
+    "bought": "\x9b",    # savings=8, train=1, val=1
+    "left": "\x9c",    # savings=8, train=3, val=1
+    "editor": "\x9d",    # savings=8, train=1, val=1
+    "room": "\x9e",    # savings=8, train=3, val=1
+    "repair": "\x9f",    # savings=8, train=1, val=1
+    "vendor": "ݪ",    # savings=8, train=1, val=1
+    "few": "ݫ",    # savings=8, train=6, val=2
+    "unless": "ݬ",    # savings=8, train=1, val=1
+    "nights": "ݭ",    # savings=8, train=1, val=1
+    "caused": "ݮ",    # savings=8, train=1, val=1
+    "launch": "ݯ",    # savings=8, train=1, val=1
+    "free": "ݰ",    # savings=8, train=2, val=2
+    "demand": "ݱ",    # savings=8, train=1, val=1
+    "keys": "ݲ",    # savings=8, train=3, val=1
+    "desk": "ݳ",    # savings=8, train=3, val=1
+    "dosing": "ݴ",    # savings=8, train=1, val=1
+    "cold": "ݵ",    # savings=8, train=3, val=1
+    "enable": "ݶ",    # savings=8, train=1, val=1
+    "global": "ݷ",    # savings=8, train=1, val=1
+    "visual": "ݸ",    # savings=8, train=1, val=1
+    "land": "ݹ",    # savings=8, train=3, val=1
+    "images": "ݺ",    # savings=8, train=1, val=1
+    "dry": "ݻ",    # savings=7, train=6, val=1
+    "blood": "ݼ",    # savings=6, train=1, val=1
+    "rules": "ݽ",    # savings=6, train=1, val=1
+    "age": "ݾ",    # savings=6, train=5, val=1
+    "valid": "ݿ",    # savings=6, train=1, val=1
+    "signs": "ހ",    # savings=6, train=1, val=1
+    "grown": "ށ",    # savings=6, train=1, val=1
+    "might": "ނ",    # savings=6, train=1, val=1
+    "sense": "ރ",    # savings=6, train=1, val=1
+    "tired": "ބ",    # savings=6, train=1, val=1
+    "queue": "ޅ",    # savings=6, train=1, val=1
+    "flows": "ކ",    # savings=6, train=1, val=1
+    "white": "އ",    # savings=6, train=1, val=1
+    "lease": "ވ",    # savings=6, train=1, val=1
+    "mode": "މ",    # savings=6, train=2, val=1
+    "low": "ފ",    # savings=6, train=4, val=2
+    "felt": "ދ",    # savings=6, train=2, val=1
+    "text": "ތ",    # savings=6, train=2, val=1
+    "plans": "ލ",    # savings=6, train=1, val=1
+    "frame": "ގ",    # savings=6, train=1, val=1
+    "trail": "ޏ",    # savings=6, train=1, val=1
+    "award": "ސ",    # savings=6, train=1, val=1
+    "cycle": "ޑ",    # savings=6, train=1, val=1
+    "novel": "ޒ",    # savings=6, train=1, val=1
+    "major": "ޓ",    # savings=6, train=1, val=1
+    "bloom": "ޔ",    # savings=6, train=1, val=1
+    "acute": "ޕ",    # savings=6, train=1, val=1
+    "kids": "ޖ",    # savings=6, train=2, val=1
+    "train": "ޗ",    # savings=6, train=1, val=1
+    "fifth": "ޘ",    # savings=6, train=1, val=1
+    "visit": "ޙ",    # savings=6, train=1, val=1
+    "ahead": "ޚ",    # savings=6, train=1, val=1
+    "note": "ޛ",    # savings=6, train=2, val=1
+    "own": "ޜ",    # savings=6, train=4, val=2
+    "term": "ޝ",    # savings=6, train=2, val=1
+    "stood": "ޞ",    # savings=6, train=1, val=1
+    "tend": "ޟ",    # savings=6, train=2, val=1
+    "earth": "ޠ",    # savings=6, train=1, val=1
+    "strip": "ޡ",    # savings=6, train=1, val=1
+    "weird": "ޢ",    # savings=6, train=1, val=1
+    "solid": "ޣ",    # savings=6, train=1, val=1
+    "grief": "ޤ",    # savings=6, train=1, val=1
+    "reads": "ޥ",    # savings=6, train=1, val=1
+    "prior": "ޱ",    # savings=6, train=1, val=1
+    "runs": "߀",    # savings=6, train=2, val=1
+    "key": "߁",    # savings=5, train=4, val=1
+    "off": "߂",    # savings=5, train=4, val=1
+    "add": "߃",    # savings=5, train=3, val=2
+    "body": "߄",    # savings=4, train=1, val=1
+    "stop": "߅",    # savings=4, train=1, val=1
+    "walk": "߆",    # savings=4, train=1, val=1
+    "told": "߇",    # savings=4, train=1, val=1
+    "too": "߈",    # savings=4, train=3, val=1
+    "star": "߉",    # savings=4, train=1, val=1
+    "role": "ߊ",    # savings=4, train=1, val=1
+    "name": "ߋ",    # savings=4, train=1, val=1
+    "top": "ߌ",    # savings=4, train=3, val=1
+    "why": "ߍ",    # savings=4, train=2, val=2
+    "tiny": "ߎ",    # savings=4, train=1, val=1
+    "adds": "ߏ",    # savings=4, train=1, val=1
+    "dead": "ߐ",    # savings=4, train=1, val=1
+    "late": "ߑ",    # savings=4, train=1, val=1
+    "hear": "ߒ",    # savings=4, train=1, val=1
+    "main": "ߓ",    # savings=4, train=1, val=1
+    "bear": "ߔ",    # savings=4, train=1, val=1
+    "exit": "ߕ",    # savings=4, train=1, val=1
+    "math": "ߖ",    # savings=4, train=1, val=1
+    "debt": "ߗ",    # savings=4, train=1, val=1
+    "say": "ߘ",    # savings=3, train=2, val=1
+    "web": "ߙ",    # savings=3, train=2, val=1
+    "bit": "ߚ",    # savings=3, train=2, val=1
 }
 
 # ═══════════════════════════════════════════════════════════
