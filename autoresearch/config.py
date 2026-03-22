@@ -193,6 +193,9 @@ PHRASE_CODEBOOK = {
     "wanted to": "Ѕ",
     "you for your": "ѕ",
     "let me": "Ї",
+    # Long phrases (exp 7)
+    "by the end of this": "ї",
+    "within the next two weeks": "Ј",
 }
 
 # ═══════════════════════════════════════════════════════════
