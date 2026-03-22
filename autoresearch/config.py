@@ -158,6 +158,15 @@ SYMBOL_MAP = {
     "maintain": "ㄓ",
     "achieve": "ㄔ",
     "deliver": "ㄕ",
+    "response": "ㄖ",
+    "feature": "ㄗ",
+    "access": "ㄘ",
+    "content": "ㄙ",
+    "details": "ㄚ",
+    "updates": "ㄛ",
+    "issue": "ㄜ",
+    "account": "ㄝ",
+    "network": "ㄞ",
 }
 
 # ═══════════════════════════════════════════════════════════
