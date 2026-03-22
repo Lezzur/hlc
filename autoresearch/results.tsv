@@ -8,3 +8,4 @@ experiment	description	score	train	val	gap	status
 7	optimize phrase codebook: swap 77 low-value phrases (68.36->68.44)	68.4446	68.56	68.33	0.23	improvement
 8	symbol swap attempt - no beneficial swaps remaining	68.4446	68.56	68.33	0.23	no_change
 9	optimize 1-byte symbol assignment to highest-freq words (68.44->68.61)	68.6131	68.70	68.52	0.18	improvement
+10	no more optimizations possible on phrases/symbols	68.6131	68.70	68.52	0.18	no_change
