@@ -384,6 +384,11 @@ PHRASE_CODEBOOK = {
     "you through the": "ў",
     "want to make": "Џ",
     "schedule a call": "џ",
+    # More phrases (exp 36)
+    "to our team": "Ґ",
+    "about the project": "ґ",
+    "help you with": "Ғ",
+    "in the next": "ғ",
 }
 
 # ═══════════════════════════════════════════════════════════
