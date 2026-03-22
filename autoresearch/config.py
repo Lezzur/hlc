@@ -564,6 +564,15 @@ SYMBOL_MAP = {
     "capacity": "醜",
     "business": "賞",
     "behavior": "罰",
+    # CJK — exp 45: final 8-letter + short high-count words
+    "applying": "染",
+    "allowing": "掛",
+    "adjusted": "換",
+    "achieves": "折",
+    "accessed": "割",
+    "set": "拾",
+    "oil": "投",
+    "now": "引",
 }
 
 # ═══════════════════════════════════════════════════════════
