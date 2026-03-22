@@ -1,0 +1,2 @@
+experiment	description	score	train	val	gap	status
+0	baseline: trimmed to 900 syms, 311 phrases	59.2602	59.16	59.36	0.20	baseline
