@@ -130,6 +130,14 @@ SYMBOL_MAP = {
     "reduce": "ㅷ",
     "enhance": "ㅸ",
     "display": "ㅹ",
+    "require": "ㅺ",
+    "provide": "ㅻ",
+    "perform": "ㅼ",
+    "support": "ㅽ",
+    "handle": "ㅾ",
+    "manage": "ㅿ",
+    "monitor": "㄀ ",
+    "control": "㄁",
 }
 
 # ═══════════════════════════════════════════════════════════
