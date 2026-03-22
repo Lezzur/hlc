@@ -384,6 +384,15 @@ PHRASE_CODEBOOK = {
     "about the project": "ґ",
     "help you with": "Ę",  # fixed: was colliding with "to your satisfaction" on Ғ
     "in the next": "ғ",
+    # Corpus-derived phrases (exp 2) — Katakana codes (collision-free)
+    "thank you for your": "キ",
+    "i appreciate you": "ク",
+    "within the next": "ケ",
+    "the end of this": "コ",
+    "and would like": "サ",
+    "to discuss the": "シ",
+    "to inform you that": "ス",
+    "by the end of this week": "セ",
 }
 
 # ═══════════════════════════════════════════════════════════
