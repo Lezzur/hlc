@@ -585,6 +585,15 @@ SYMBOL_MAP = {
     # CJK — exp 48: remaining short words
     "away": "湯",
     "also": "茶",
+    # CJK — exp 50: final word batch
+    "years": "夕",
+    "users": "朝",
+    "track": "昼",
+    "times": "晩",
+    "these": "夜",
+    "check": "初",
+    "batch": "末",
+    "layer": "頃",
 }
 
 # ═══════════════════════════════════════════════════════════
@@ -815,6 +824,11 @@ PHRASE_CODEBOOK = {
     "resolve the issue": "Ţ",
     "however there are": "Ť",
     "for the upcoming": "Ŧ",
+    # More phrases (exp 50) — Latin Extended A
+    "i wanted": "Ũ",
+    "the processing": "Ū",
+    "schedule a": "Ŭ",
+    "i appreciate": "Ů",
 }
 
 # ═══════════════════════════════════════════════════════════
