@@ -15,3 +15,4 @@ experiment	description	score	train	val	gap	penalty	status
 13	swap 59 zero-hit symbols for train-only words (69.10->69.35)	69.3506	67.53	71.17	3.63	0.00	improvement
 14	swap 59 low-savings (1-5) symbols for train-only words (69.35->69.48)	69.4805	67.93	71.03	3.10	0.00	improvement
 15	swap 237 low-value phrases for train-only phrases (69.48->69.64)	69.6374	68.69	70.58	1.89	0.00	improvement
+16	massive expansion: 4137 syms, 33172 phrases (69.64->84.38)	84.3786	88.35	80.41	7.94	0.00	improvement
