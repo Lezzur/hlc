@@ -357,6 +357,15 @@ SYMBOL_MAP = {
     "cost": "音",
     "upcoming": "心",
     "timeline": "手",
+    # CJK — exp 20: more high-freq words
+    "when": "目",
+    "than": "耳",
+    "over": "口",
+    "long": "足",
+    "table": "力",
+    "stack": "糸",
+    "error": "米",
+    "within": "肉",
 }
 
 # ═══════════════════════════════════════════════════════════
