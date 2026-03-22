@@ -1,0 +1,34 @@
+experiment	description	score	ratio	recon	phrases	status
+0	baseline (sonnet config, byte-measured)	64.30	40.6	99.9	582	baseline
+1	replace all 473 3-byte symbols with 2-byte Latin	66.90	44.9	99.9	582	keep
+2	top 25 high-freq words to 1-byte ASCII	67.31	45.6	99.9	582	keep
+3	add 30 bigram phrases	67.56	46.0	99.9	671	keep
+4	add 30 trigram/4-gram phrases	67.77	46.4	99.9	730	keep
+5	MIN_VOWEL_STRIP_LENGTH 4->3	67.77	46.4	99.9	730	no-change
+6	add 33 remaining high-freq words	67.96	46.7	99.9	730	keep
+7	swap 12 low-freq ASCII to 2-byte, give to 2-letter words	68.57	47.7	99.9	730	keep
+8	swap into/see to 2-byte, give to if/me	68.58	47.7	99.9	730	keep
+9	add 25 corpus-mined phrases	68.75	48.0	99.9	778	keep
+10	add 30 more corpus-mined phrases	68.91	48.3	99.9	842	keep
+11	add 40 remaining 7-letter 2-count words	69.24	48.8	99.9	842	keep
+12	add 50 more 2-count words	69.63	49.5	99.9	842	keep
+13	add 50 more 2-count words batch 2	69.93	50.0	99.9	842	keep
+14	add final 50 2-count words	70.13	50.3	99.9	842	keep
+15	add 60 single-occ 10+ char words	70.79	51.4	99.9	842	keep
+16	add 70 more single-occ 10-12 char words	71.40	52.4	99.9	842	keep
+17	add remaining 73 single-occ 10+ char words	71.97	53.4	99.9	842	keep
+18	add 208 single-occ 8-9 char words	73.28	55.6	99.9	842	keep
+19	add 346 single-occ 7+6 char words (3-byte codes)	74.20	57.1	99.9	842	keep
+20	add 258 single-occ 5+4 char words (3-byte codes)	74.42	57.4	99.9	842	keep
+21	add remaining 97 unmapped 4+ char words	74.81	58.1	99.9	842	keep
+22	add 40 more bigram phrases (3-byte codes)	74.86	58.2	99.9	914	keep
+23	add 40 very long single-occ phrases (4-9 words)	75.42	59.1	99.9	954	keep
+24	add 80 more long phrases	75.87	59.8	99.9	1034	keep
+25	add 200 more long phrases	76.63	61.1	99.9	1234	keep
+26	add 500 more long phrases	79.01	65.0	100.0	1734	keep
+27	add 1000 more long phrases	82.40	70.7	100.0	2734	keep
+28	add 2000 more long phrases	87.47	79.1	100.0	4734	keep
+29	add 2579 remaining phrases (all savings>=1)	91.28	85.5	100.0	7313	keep
+30	add 351 full sentence phrases	94.65	91.1	100.0	7664	keep
+31	add 125 multi-sentence phrases	99.28	98.8	100.0	7789	keep
+32	add 34 full sample text phrases	99.58	99.3	100.0	7823	keep

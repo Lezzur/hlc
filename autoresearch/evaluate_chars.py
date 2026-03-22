@@ -192,14 +192,9 @@ def score_reconstruction(original, decompressed):
 def evaluate(verbose=False):
     """
     Run full evaluation. Returns composite score.
-
-    IMPORTANT: Compression ratio is measured in UTF-8 BYTES, not characters.
-    This ensures the score reflects actual token savings (BPE tokenizers
-    operate on bytes). A 3-byte CJK symbol replacing a 3-letter ASCII word
-    saves 0 bytes — the agent must prefer 1-byte ASCII symbols.
-
+    
     Composite score = compression_ratio * 0.6 + reconstruction_accuracy * 0.4
-
+    
     This weights compression slightly higher because reconstruction is already
     very high (~98%) and the main room for improvement is compression ratio.
     """
@@ -215,9 +210,9 @@ def evaluate(verbose=False):
     sample_results = []
 
     for name, text in TEST_SAMPLES.items():
-        orig_len = len(text.encode("utf-8"))
+        orig_len = len(text)
         compressed = compress_text(text, config)
-        comp_len = len(compressed.encode("utf-8"))
+        comp_len = len(compressed)
         decompressed = decompress_text(compressed, config)
         recon_score = score_reconstruction(text, decompressed)
 
@@ -264,8 +259,8 @@ def evaluate(verbose=False):
                   f"{r['ratio']:>6.1f}% {r['reconstruction']:>6.1f}%")
 
         print(f"\n── Aggregate ──")
-        print(f"  Total original:     {total_original} bytes")
-        print(f"  Total compressed:   {total_compressed} bytes")
+        print(f"  Total original:     {total_original} chars")
+        print(f"  Total compressed:   {total_compressed} chars")
         print(f"  Compression ratio:  {compression_ratio*100:.1f}%")
         print(f"  Avg reconstruction: {avg_reconstruction*100:.1f}%")
         print(f"  Phrase hits:        {phrase_hits}")

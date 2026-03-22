@@ -25,9 +25,9 @@ def validate(verbose=False):
     results = []
 
     for name, text in holdout.items():
-        orig_len = len(text.encode("utf-8"))
+        orig_len = len(text)
         compressed = compress_text(text, config)
-        comp_len = len(compressed.encode("utf-8"))
+        comp_len = len(compressed)
         decompressed = decompress_text(compressed, config)
         recon = score_reconstruction(text, decompressed)
 
@@ -59,8 +59,8 @@ def validate(verbose=False):
 
         print(f"\n── Holdout Aggregate ──")
         print(f"  Samples:            {n}")
-        print(f"  Total original:     {total_original} bytes")
-        print(f"  Total compressed:   {total_compressed} bytes")
+        print(f"  Total original:     {total_original} chars")
+        print(f"  Total compressed:   {total_compressed} chars")
         print(f"  Compression ratio:  {compression_ratio*100:.1f}%")
         print(f"  Avg reconstruction: {avg_recon*100:.1f}%")
         print(f"\n  ═══════════════════════════════")
