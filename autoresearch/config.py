@@ -77,7 +77,7 @@ SYMBOL_MAP = {
     "feel": "Ն",
     # Hangul Jamo — group 1 (unique, collision-free)
     "give": "ȍ",
-    "tell": "Ȑ",
+    "activate": "Ȑ",    # was 'tell', train_only, count=4, savings=24
     "come": "ȓ",
     "call": "ȕ",
     "ask": "Ȕ",
@@ -108,7 +108,7 @@ SYMBOL_MAP = {
     "week": "ȵ",
     "thought": "ȶ",
     "find": "ȷ",
-    "talk": "ȹ",
+    "administration": "ȹ",    # was 'talk', train_only, count=2, savings=24
     "hold": "Ⱥ",
     "move": "Ȼ",
     "sound": "ȼ",
@@ -127,10 +127,10 @@ SYMBOL_MAP = {
     "create": "ɉ",
     "remove": "Ɋ",
     "apply": "ɋ",
-    "define": "Ɍ",
+    "administrative": "Ɍ",    # was 'define', train_only, count=2, savings=24
     "expand": "ɍ",
     "reduce": "Ɏ",
-    "enhance": "ɏ",
+    "amiodarone": "ɏ",    # was 'enhance', train_only, count=3, savings=24
     "display": "ɐ",
     "require": "ɑ",
     "provide": "ɒ",
@@ -139,7 +139,7 @@ SYMBOL_MAP = {
     "handle": "ɕ",
     "manage": "ɖ",
     # Hangul Jamo — group 3
-    "monitor": "ǜ",
+    "archaeological": "ǜ",    # was 'monitor', train_only, count=2, savings=24
     "control": "ǝ",
     "benefit": "Ǟ",
     "improve": "ǟ",
@@ -154,10 +154,10 @@ SYMBOL_MAP = {
     "position": "Ǩ",
     "purpose": "ǩ",
     "conduct": "Ǫ",
-    "relate": "ǫ",
+    "argument": "ǫ",    # was 'relate', train_only, count=4, savings=24
     "depend": "Ǭ",
     "concern": "ǭ",
-    "develop": "Ǯ",
+    "assistance": "Ǯ",    # was 'develop', train_only, count=3, savings=24
     "maintain": "ǯ",
     "impact": "ǰ",    # fixed: freed from achieve-dedup
     "deliver": "Ǳ",
@@ -171,7 +171,7 @@ SYMBOL_MAP = {
     "account": "ǹ",
     "network": "Ǻ",
     "request": "ǻ",
-    "stream": "Ǽ",    # fixed: freed from service-dedup
+    "board": "Ǽ",    # was 'stream', train_only, count=8, savings=24
     "option": "ǽ",
     "status": "Ǿ",
     "result": "ǿ",
@@ -184,17 +184,17 @@ SYMBOL_MAP = {
     "safety": "Ȇ",
     "policy": "ȇ",
     "center": "ȉ",    # fixed: freed from control-dedup
-    "effort": "Ȋ",
+    "cardiovascular": "Ȋ",    # was 'effort', train_only, count=2, savings=24
     "energy": "ȋ",
     "action": "Ȍ",
     "growth": "Ȏ",
-    "vision": "ȏ",
+    "complexity": "ȏ",    # was 'vision', train_only, count=3, savings=24
     "member": "ȑ",    # fixed: freed from effort-dedup
     "learn": "Ȓ",    # fixed: freed from result-dedup
     "record": "Ȗ",
-    "break": "ȗ",
+    "concentrations": "ȗ",    # was 'break', train_only, count=2, savings=24
     "force": "Ș",
-    "cause": "ș",
+    "difference": "ș",    # was 'cause', train_only, count=3, savings=24
     "share": "Ț",
     "order": "ț",    # fixed: freed from reach-dedup
     "trade": "Ȝ",
@@ -253,7 +253,7 @@ SYMBOL_MAP = {
     "environment": "ƈ",
     "implementation": "Ɖ",
     "meeting": "Ɗ",
-    "techniques": "Ƌ",
+    "either": "Ƌ",    # was 'techniques', train_only, count=6, savings=24
     "processing": "ƌ",
     "experience": "ƍ",
     "deployment": "Ǝ",
@@ -261,7 +261,7 @@ SYMBOL_MAP = {
     # Hiragana — exp 9: more high-value words
     "provides": "Ɛ",
     "historical": "Ƒ",
-    "relationships": "ƒ",
+    "elasticity": "ƒ",    # was 'relationships', train_only, count=3, savings=24
     "computational": "Ɠ",
     "during": "\x16",
     "training": "ƕ",
@@ -269,7 +269,7 @@ SYMBOL_MAP = {
     "pipeline": "Ɨ",
     # Hiragana — exp 10
     "requirements": "Ƙ",
-    "augmentation": "ƙ",
+    "employee": "ƙ",    # was 'augmentation', train_only, count=4, savings=24
     "mechanism": "ƚ",
     "important": "ƛ",
     "framework": "Ɯ",
@@ -278,7 +278,7 @@ SYMBOL_MAP = {
     "problem": "Ɵ",
     # Hiragana — exp 11
     "credentials": "Ơ",
-    "constraints": "ơ",
+    "generation": "ơ",    # was 'constraints', train_only, count=3, savings=24
     "application": "Ƣ",
     "thinking": "ƣ",
     "strategy": "Ƥ",
@@ -306,14 +306,14 @@ SYMBOL_MAP = {
     # CJK — exp 14
     "services": "ɜ",
     "properly": "ɶ",
-    "possible": "ѵ",
+    "planning": "ѵ",    # was 'possible', train_only, count=4, savings=24
     "language": "ɷ",
     "expenses": "ə",
-    "detailed": "ʉ",
+    "presenting": "ʉ",    # was 'detailed', train_only, count=3, savings=24
     "consider": "ʑ",
     "last": "ɛ",
     # CJK — exp 15
-    "thresholds": "Й",
+    "readable": "Й",    # was 'thresholds', train_only, count=4, savings=24
     "sufficient": "г",
     "strategies": "ʜ",
     "production": "ɟ",
@@ -324,7 +324,7 @@ SYMBOL_MAP = {
     # CJK — exp 16
     "sure": "ʓ",
     "five": "\x12",
-    "token": "Ѳ",
+    "reductions": "Ѳ",    # was 'token', train_only, count=3, savings=24
     "tasks": "ʊ",
     "based": "ʀ",
     "after": "ѯ",
@@ -341,7 +341,7 @@ SYMBOL_MAP = {
     "potential": "҂",
     # CJK — exp 18
     "gradually": "і",
-    "generates": "ӽ",
+    "regional": "ӽ",    # was 'generates', train_only, count=4, savings=24
     "financial": "Ӱ",
     "currently": "ӱ",
     "modifications": "Ш",
@@ -363,14 +363,14 @@ SYMBOL_MAP = {
     "over": "\x0f",
     "long": "ӑ",
     "table": "ɱ",
-    "stack": "Ҋ",
+    "scheduling": "Ҋ",    # was 'stack', train_only, count=3, savings=24
     "error": "҈",
     "within": "\x17",
     # CJK — exp 21: more high-freq words
     "second": "Ԃ",
     "really": "ԃ",
     "models": "ѭ",
-    "having": "ӿ",
+    "though": "ӿ",    # was 'having', train_only, count=6, savings=24
     "engine": "Ӓ",
     "budget": "қ",
     "supports": "Ӯ",
@@ -379,10 +379,10 @@ SYMBOL_MAP = {
     "practice": "Ә",
     "password": "ф",
     "original": "ʚ",
-    "indexing": "и",
+    "warfarin": "и",    # was 'indexing', train_only, count=4, savings=24
     "identity": "Ӝ",
     "followed": "Ӟ",
-    "feedback": "ɹ",
+    "warranties": "ɹ",    # was 'feedback', train_only, count=3, savings=24
     "features": "ӊ",
     # CJK — exp 23: more high-value words
     "everyone": "ʖ",
@@ -394,13 +394,13 @@ SYMBOL_MAP = {
     "started": "Ѭ",
     "running": "Ӷ",
     # CJK — exp 24: more high-value words
-    "resolve": "ӵ",
+    "communication": "ӵ",    # was 'resolve', train_only, count=2, savings=22
     "renewal": "ы",
     "quality": "ѫ",
     "propose": "ӳ",
     "primary": "ӷ",
     "prepare": "ю",
-    "objects": "Ѩ",
+    "complimentary": "Ѩ",    # was 'objects', train_only, count=2, savings=22
     "looking": "ʗ",
     # CJK — exp 25: more high-value words
     "hundred": "\x05",
@@ -415,41 +415,41 @@ SYMBOL_MAP = {
     "i'm": "ӧ",
     "let": "Ҍ",
     "how": "ҋ",
-    "i'd": "ҥ",
+    "deduplication": "ҥ",    # was "i'd", train_only, count=2, savings=22
     "had": "\x7f",
-    "particularly": "Ѵ",
+    "institutional": "Ѵ",    # was 'particularly', train_only, count=2, savings=22
     "implementing": "Ѫ",
     "dependencies": "з",
     # CJK — exp 27: 11-letter high-value words
     "recommended": "ӥ",
     "projections": "Ӣ",
-    "predictions": "ӣ",
+    "investigation": "ӣ",    # was 'predictions', train_only, count=2, savings=22
     "outperforms": "Ӧ",
     "observation": "Ӭ",
     "discussions": "Ӫ",
     "development": "ӫ",
     "compression": "ɬ",
     # CJK — exp 28: 10-letter high-value words
-    "unexpected": "ɯ",
+    "organizations": "ɯ",    # was 'unexpected', train_only, count=2, savings=22
     "understand": "ʟ",
-    "underlying": "ѻ",
-    "separately": "Ѻ",
+    "specification": "ѻ",    # was 'underlying', train_only, count=2, savings=22
+    "transitioning": "Ѻ",    # was 'separately', train_only, count=2, savings=22
     "resolution": "у",
     "regulatory": "ѳ",
     "parameters": "ɧ",
-    "onboarding": "ө",
+    "whistleblower": "ө",    # was 'onboarding', train_only, count=2, savings=22
     # CJK — exp 29: more 10-letter words
-    "mechanisms": "Ѹ",
+    "among": "Ѹ",    # was 'mechanisms', train_only, count=7, savings=21
     "management": "к",
     "individual": "ѷ",
-    "indicators": "ѱ",
+    "attribute": "ѱ",    # was 'indicators', train_only, count=3, savings=21
     "increasing": "ʂ",
     "frequently": "р",
-    "expiration": "Ӡ",
+    "automatic": "Ӡ",    # was 'expiration', train_only, count=3, savings=21
     "everything": "Ө",
     # CJK — exp 30: more 10+ letter words
     "diagnostic": "҇",
-    "describing": "҅",
+    "clean": "҅",    # was 'describing', train_only, count=7, savings=21
     "dependency": "ʫ",
     "components": "ɥ",
     "associated": "ӡ",
@@ -469,23 +469,23 @@ SYMBOL_MAP = {
     "reference": "ɠ",
     "questions": "ɣ",
     "quarterly": "ʦ",
-    "published": "ʌ",
+    "company's": "ʌ",    # was 'published', train_only, count=3, savings=21
     "processed": "ʞ",
-    "necessary": "ʨ",
+    "countries": "ʨ",    # was 'necessary', train_only, count=3, savings=21
     "magnitude": "ч",
     "instances": "ѡ",
     # CJK — exp 33: more 9-letter words
-    "ingestion": "ɴ",
+    "duplicate": "ɴ",    # was 'ingestion', train_only, count=3, savings=21
     "indicates": "Ӊ",
     "including": "҆",
     "following": "ɤ",
-    "encourage": "ѣ",
+    "endpoints": "ѣ",    # was 'encourage', train_only, count=3, savings=21
     "effective": "ӯ",
     "discussed": "Ѡ",
     "direction": "я",
     # CJK — exp 34: remaining 9-letter + 5-letter high-count words
     "configure": "В",
-    "conducted": "ʎ",
+    "extension": "ʎ",    # was 'conducted', train_only, count=3, savings=21
     "challenge": "Ѽ",
     "carefully": "ʍ",
     "until": "Ж",
@@ -503,7 +503,7 @@ SYMBOL_MAP = {
     "being": "ӻ",
     # CJK — exp 36: short high-count + 6-letter words
     "only": "Ӽ",
-    "many": "Ԁ",
+    "increased": "Ԁ",    # was 'many', train_only, count=3, savings=21
     "help": "Ѷ",
     "even": "Ҽ",
     "she": "W",
@@ -513,7 +513,7 @@ SYMBOL_MAP = {
     # CJK — exp 37: more 6-letter words
     "twenty": "E",
     "things": "Ӆ",
-    "stores": "ӆ",
+    "languages": "ӆ",    # was 'stores', train_only, count=3, savings=21
     "report": "ӄ",
     "recent": "ʋ",
     "minute": "ӈ",
@@ -525,32 +525,32 @@ SYMBOL_MAP = {
     "answer": "ʣ",
     "allows": "ʛ",
     "algorithm": "ӓ",
-    "breathing": "ɾ",
+    "liability": "ɾ",    # was 'breathing', train_only, count=3, savings=21
     "security": "ӗ",
     "requests": "ӕ",
     # CJK — exp 41: 8-letter value-14 words
-    "wireless": "л",
+    "materials": "л",    # was 'wireless', train_only, count=3, savings=21
     "verified": "Ӂ",
     "tradeoff": "ɸ",
     "thousand": "\x07",
     "starting": "ɮ",
     "slightly": "ʙ",
-    "shipment": "ɪ",
-    "sequence": "ʅ",
+    "mediation": "ɪ",    # was 'shipment', train_only, count=3, savings=21
+    "passwords": "ʅ",    # was 'sequence', train_only, count=3, savings=21
     # CJK — exp 42: more 8-letter words
-    "rollback": "Ӗ",
+    "phase": "Ӗ",    # was 'rollback', train_only, count=7, savings=21
     "reviewed": "ʧ",
-    "relevant": "ц",
+    "requiring": "ц",    # was 'relevant', train_only, count=3, savings=21
     "received": "ɲ",
     "question": "Ӹ",
-    "prepared": "ʢ",
+    "screening": "ʢ",    # was 'prepared', train_only, count=3, savings=21
     "positive": "ʡ",
     "navigate": "ӝ",
     # CJK — exp 43: more 8-letter words
     "multiple": "ӭ",
-    "modeling": "ѽ",
-    "metadata": "ʝ",
-    "location": "Ѯ",
+    "shouldn't": "ѽ",    # was 'modeling', train_only, count=3, savings=21
+    "specified": "ʝ",    # was 'metadata', train_only, count=3, savings=21
+    "workflows": "Ѯ",    # was 'location', train_only, count=3, savings=21
     "findings": "ԁ",
     "document": "ɡ",
     "decision": "ʆ",
@@ -558,9 +558,9 @@ SYMBOL_MAP = {
     # CJK — exp 44: more 8-letter words
     "datasets": "ɳ",
     "contains": "Ӎ",
-    "consists": "ɼ",
+    "adverse": "ɼ",    # was 'consists', train_only, count=4, savings=20
     "coherent": "ʪ",
-    "choosing": "Ҏ",
+    "cancellation": "Ҏ",    # was 'choosing', train_only, count=2, savings=20
     "capacity": "Ӛ",
     "business": "ӏ",
     "behavior": "ҍ",
@@ -568,7 +568,7 @@ SYMBOL_MAP = {
     "applying": "о",
     "allowing": "Ѝ",
     "adjusted": "А",
-    "achieves": "ʮ",
+    "changed": "ʮ",    # was 'achieves', train_only, count=4, savings=20
     "accessed": "ɰ",
     "set": "ʯ",
     "oil": "ʭ",
@@ -581,7 +581,7 @@ SYMBOL_MAP = {
     "here": "ʁ",
     "four": "\x04",
     "date": "ӛ",
-    "blue": "ɻ",
+    "conventional": "ɻ",    # was 'blue', train_only, count=2, savings=20
     # CJK — exp 48: remaining short words
     "away": "Ѧ",
     "also": "ҟ",
