@@ -71,27 +71,27 @@ SYMBOL_MAP = {
     "want": "һ",
     "year": "ǖ",
     "use": "V",
-    "life": "ʩ",
+    "zero": "ʩ",    # was 'life', train_only, count=10, savings=20
     "part": "ߜ",
     "need": "Y",
     "feel": "Ն",
     # Hangul Jamo — group 1 (unique, collision-free)
     "give": "ȍ",
     "activate": "Ȑ",    # was 'tell', train_only, count=4, savings=24
-    "come": "ȓ",
+    "office": "ȓ",    # was 'come', train_only, count=5, savings=20
     "call": "ȕ",
-    "ask": "Ȕ",
+    "harder": "Ȕ",    # was 'ask', train_only, count=5, savings=20
     "try": "ȝ",
     "back": "Ȟ",
     "hand": "Ƞ",
-    "mind": "ȡ",
+    "filter": "ȡ",    # was 'mind', train_only, count=5, savings=20
     "place": "Ȣ",
-    "seem": "ȣ",
+    "faucet": "ȣ",    # was 'seem', train_only, count=5, savings=20
     "mean": "Ȥ",
     "open": "ȥ",
     "end": "Ȧ",
-    "form": "ȧ",
-    "look": "Ȩ",
+    "you'll": "ȧ",    # was 'form', train_only, count=5, savings=20
+    "search": "Ȩ",    # was 'look', train_only, count=5, savings=20
     "system": "ȩ",
     "model": "Ȫ",
     # Hangul Jamo — group 2
@@ -114,7 +114,7 @@ SYMBOL_MAP = {
     "sound": "ȼ",
     "send": "Ƚ",
     "show": "Ⱦ",
-    "wait": "ȿ",
+    "father": "ȿ",    # was 'wait', train_only, count=5, savings=20
     "follow": "ɀ",
     "keep": "Ɂ",
     "start": "ɂ",
@@ -131,17 +131,17 @@ SYMBOL_MAP = {
     "expand": "ɍ",
     "reduce": "Ɏ",
     "amiodarone": "ɏ",    # was 'enhance', train_only, count=3, savings=24
-    "display": "ɐ",
+    "therapy": "ɐ",    # was 'display', train_only, count=4, savings=20
     "require": "ɑ",
     "provide": "ɒ",
-    "perform": "ɓ",
+    "minimum": "ɓ",    # was 'perform', train_only, count=4, savings=20
     "support": "ɔ",
     "handle": "ɕ",
-    "manage": "ɖ",
+    "reduced": "ɖ",    # was 'manage', train_only, count=4, savings=20
     # Hangul Jamo — group 3
     "archaeological": "ǜ",    # was 'monitor', train_only, count=2, savings=24
     "control": "ǝ",
-    "benefit": "Ǟ",
+    "queries": "Ǟ",    # was 'benefit', train_only, count=4, savings=20
     "improve": "ǟ",
     "increase": "Ǡ",
     "achieve": "ǡ",
@@ -153,16 +153,16 @@ SYMBOL_MAP = {
     "generate": "ǧ",
     "position": "Ǩ",
     "purpose": "ǩ",
-    "conduct": "Ǫ",
+    "returns": "Ǫ",    # was 'conduct', train_only, count=4, savings=20
     "argument": "ǫ",    # was 'relate', train_only, count=4, savings=24
-    "depend": "Ǭ",
-    "concern": "ǭ",
+    "machine": "Ǭ",    # was 'depend', train_only, count=4, savings=20
+    "weekend": "ǭ",    # was 'concern', train_only, count=4, savings=20
     "assistance": "Ǯ",    # was 'develop', train_only, count=3, savings=24
     "maintain": "ǯ",
-    "impact": "ǰ",    # fixed: freed from achieve-dedup
+    "funding": "ǰ",    # was 'impact', train_only, count=4, savings=20
     "deliver": "Ǳ",
     "response": "ǲ",
-    "feature": "ǳ",
+    "monthly": "ǳ",    # was 'feature', train_only, count=4, savings=20
     "access": "Ǵ",
     "content": "ǵ",
     "details": "Ƕ",
@@ -175,7 +175,7 @@ SYMBOL_MAP = {
     "option": "ǽ",
     "status": "Ǿ",
     "result": "ǿ",
-    "method": "Ȁ",
+    "demonstrates": "Ȁ",    # was 'method', train_only, count=2, savings=20
     "period": "ȁ",
     "reason": "Ȃ",
     "notice": "ȃ",
@@ -189,18 +189,18 @@ SYMBOL_MAP = {
     "action": "Ȍ",
     "growth": "Ȏ",
     "complexity": "ȏ",    # was 'vision', train_only, count=3, savings=24
-    "member": "ȑ",    # fixed: freed from effort-dedup
+    "intermittent": "ȑ",    # was 'member', train_only, count=2, savings=20
     "learn": "Ȓ",    # fixed: freed from result-dedup
     "record": "Ȗ",
     "concentrations": "ȗ",    # was 'break', train_only, count=2, savings=24
     "force": "Ș",
     "difference": "ș",    # was 'cause', train_only, count=3, savings=24
-    "share": "Ț",
+    "experiencing": "Ț",    # was 'share', train_only, count=2, savings=20
     "order": "ț",    # fixed: freed from reach-dedup
-    "trade": "Ȝ",
-    "bring": "ȟ",
+    "improvements": "Ȝ",    # was 'trade', train_only, count=2, savings=20
+    "unsupervised": "ȟ",    # was 'bring', train_only, count=2, savings=20
     # Katakana — for remaining collision words (new unique symbols)
-    "color": "Ʈ",
+    "demonstrated": "Ʈ",    # was 'color', train_only, count=2, savings=20
     "cover": "Ư",
     "close": "ư",
     "level": "Ʊ",
@@ -334,7 +334,7 @@ SYMBOL_MAP = {
     "percent": "=",
     "metrics": "ҡ",
     "however": "҃",
-    "discuss": "Ѿ",
+    "hypertension": "Ѿ",    # was 'discuss', train_only, count=2, savings=20
     "scheduled": "с",
     "reduction": "м",
     "recommend": "п",
@@ -362,7 +362,7 @@ SYMBOL_MAP = {
     "than": "\x02",
     "over": "\x0f",
     "long": "ӑ",
-    "table": "ɱ",
+    "intermediate": "ɱ",    # was 'table', train_only, count=2, savings=20
     "scheduling": "Ҋ",    # was 'stack', train_only, count=3, savings=24
     "error": "҈",
     "within": "\x17",
@@ -386,7 +386,7 @@ SYMBOL_MAP = {
     "features": "ӊ",
     # CJK — exp 23: more high-value words
     "everyone": "ʖ",
-    "needed": "э",
+    "infringement": "э",    # was 'needed', train_only, count=2, savings=20
     "working": "н",
     "usually": "т",
     "systems": "ʔ",
@@ -399,14 +399,14 @@ SYMBOL_MAP = {
     "quality": "ѫ",
     "propose": "ӳ",
     "primary": "ӷ",
-    "prepare": "ю",
+    "satisfaction": "ю",    # was 'prepare', train_only, count=2, savings=20
     "complimentary": "Ѩ",    # was 'objects', train_only, count=2, savings=22
     "looking": "ʗ",
     # CJK — exp 25: more high-value words
     "hundred": "\x05",
-    "formats": "ѥ",
+    "technologies": "ѥ",    # was 'formats', train_only, count=2, savings=20
     "finally": "Ѣ",
-    "expense": "ђ",
+    "introduction": "ђ",    # was 'expense', train_only, count=2, savings=20
     "browser": "є",
     "address": "ё",
     "where": "K",
@@ -495,7 +495,7 @@ SYMBOL_MAP = {
     # CJK — exp 35: more high-value words
     "compressions": "ɢ",
     "two": "/",
-    "input": "ʐ",
+    "polarization": "ʐ",    # was 'input', train_only, count=2, savings=20
     "hours": "\x19",
     "green": "б",
     "going": "Ӕ",
@@ -571,16 +571,16 @@ SYMBOL_MAP = {
     "changed": "ʮ",    # was 'achieves', train_only, count=4, savings=20
     "accessed": "ɰ",
     "set": "ʯ",
-    "oil": "ʭ",
+    "screw": "ʭ",    # was 'oil', train_only, count=6, savings=18
     "now": "ʠ",
     # CJK — exp 47: 4-letter high-count words
     "used": "ң",
     "task": "щ",
     "take": "Ӿ",
-    "i'll": "ә",
+    "trial": "ә",    # was 'i'll', train_only, count=6, savings=18
     "here": "ʁ",
     "four": "\x04",
-    "date": "ӛ",
+    "terms": "ӛ",    # was 'date', train_only, count=6, savings=18
     "conventional": "ɻ",    # was 'blue', train_only, count=2, savings=20
     # CJK — exp 48: remaining short words
     "away": "Ѧ",
@@ -1097,32 +1097,32 @@ SYMBOL_MAP = {
     "reads": "ޥ",    # savings=6, train=1, val=1
     "prior": "ޱ",    # savings=6, train=1, val=1
     "runs": "߀",    # savings=6, train=2, val=1
-    "key": "߁",    # savings=5, train=4, val=1
-    "off": "߂",    # savings=5, train=4, val=1
-    "add": "߃",    # savings=5, train=3, val=2
-    "body": "߄",    # savings=4, train=1, val=1
-    "stop": "߅",    # savings=4, train=1, val=1
-    "walk": "߆",    # savings=4, train=1, val=1
-    "told": "߇",    # savings=4, train=1, val=1
-    "too": "߈",    # savings=4, train=3, val=1
-    "star": "߉",    # savings=4, train=1, val=1
-    "role": "ߊ",    # savings=4, train=1, val=1
-    "name": "ߋ",    # savings=4, train=1, val=1
-    "top": "ߌ",    # savings=4, train=3, val=1
-    "why": "ߍ",    # savings=4, train=2, val=2
-    "tiny": "ߎ",    # savings=4, train=1, val=1
-    "adds": "ߏ",    # savings=4, train=1, val=1
-    "dead": "ߐ",    # savings=4, train=1, val=1
-    "late": "ߑ",    # savings=4, train=1, val=1
-    "hear": "ߒ",    # savings=4, train=1, val=1
-    "main": "ߓ",    # savings=4, train=1, val=1
-    "bear": "ߔ",    # savings=4, train=1, val=1
-    "exit": "ߕ",    # savings=4, train=1, val=1
-    "math": "ߖ",    # savings=4, train=1, val=1
-    "debt": "ߗ",    # savings=4, train=1, val=1
-    "say": "ߘ",    # savings=3, train=2, val=1
-    "web": "ߙ",    # savings=3, train=2, val=1
-    "bit": "ߚ",    # savings=3, train=2, val=1
+    "exposure": "߁",    # was 'key', train_only, count=3, savings=18
+    "saturday": "߂",    # was 'off', train_only, count=3, savings=18
+    "reducing": "߃",    # was 'add', train_only, count=3, savings=18
+    "improves": "߄",    # was 'body', train_only, count=3, savings=18
+    "creating": "߅",    # was 'stop', train_only, count=3, savings=18
+    "payments": "߆",    # was 'walk', train_only, count=3, savings=18
+    "totaling": "߇",    # was 'told', train_only, count=3, savings=18
+    "purchase": "߈",    # was 'too', train_only, count=3, savings=18
+    "persists": "߉",    # was 'star', train_only, count=3, savings=18
+    "downtown": "ߊ",    # was 'role', train_only, count=3, savings=18
+    "building": "ߋ",    # was 'name', train_only, count=3, savings=18
+    "clinical": "ߌ",    # was 'top', train_only, count=3, savings=18
+    "database": "ߍ",    # was 'why', train_only, count=3, savings=18
+    "affected": "ߎ",    # was 'tiny', train_only, count=3, savings=18
+    "entirely": "ߏ",    # was 'adds', train_only, count=3, savings=18
+    "directly": "ߐ",    # was 'dead', train_only, count=3, savings=18
+    "charging": "ߑ",    # was 'late', train_only, count=3, savings=18
+    "calendar": "ߒ",    # was 'hear', train_only, count=3, savings=18
+    "interval": "ߓ",    # was 'main', train_only, count=3, savings=18
+    "accuracy": "ߔ",    # was 'bear', train_only, count=3, savings=18
+    "override": "ߕ",    # was 'exit', train_only, count=3, savings=18
+    "anything": "ߖ",    # was 'math', train_only, count=3, savings=18
+    "district": "ߗ",    # was 'debt', train_only, count=3, savings=18
+    "attached": "ߘ",    # was 'say', train_only, count=3, savings=18
+    "cooperative": "ߙ",    # was 'web', train_only, count=2, savings=18
+    "temperature": "ߚ",    # was 'bit', train_only, count=2, savings=18
     # NKo — train-only words (not in val), close train/val gap
     "million": "\u07dd",    # savings=65, train_only, count=13
     "infrastructure": "\u07de",    # savings=60, train_only, count=5
