@@ -285,6 +285,15 @@ SYMBOL_MAP = {
     "research": "よ",
     "patterns": "ら",
     "learning": "り",
+    # Hiragana — exp 12
+    "every": "る",
+    "results": "れ",
+    "message": "ろ",
+    "changes": "わ",
+    "using": "を",
+    "schedule": "ん",
+    "customer": "ヴ",
+    "continue": "ヵ",
 }
 
 # ═══════════════════════════════════════════════════════════
