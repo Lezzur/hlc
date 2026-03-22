@@ -267,6 +267,15 @@ SYMBOL_MAP = {
     "training": "に",
     "settings": "ぬ",
     "pipeline": "ね",
+    # Hiragana — exp 10
+    "requirements": "の",
+    "augmentation": "は",
+    "mechanism": "ひ",
+    "important": "ふ",
+    "framework": "へ",
+    "dashboard": "ほ",
+    "correctly": "ま",
+    "problem": "み",
 }
 
 # ═══════════════════════════════════════════════════════════
