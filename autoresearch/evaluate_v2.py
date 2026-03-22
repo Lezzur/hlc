@@ -27,10 +27,14 @@ from pathlib import Path
 from difflib import SequenceMatcher
 
 # ═══════════════════════════════════════════════════════════
-# CODEBOOK SIZE LIMITS — hard caps to prevent memorization
+# OVERFITTING PENALTY — gap-based, no hard caps
+# The train/val gap is the direct signal of overfitting.
+# Below GAP_THRESHOLD: no penalty (normal variance).
+# Above GAP_THRESHOLD: progressive penalty that makes
+# memorization self-defeating.
 # ═══════════════════════════════════════════════════════════
-MAX_SYMBOL_MAP = 900
-MAX_PHRASE_CODEBOOK = 600
+GAP_THRESHOLD = 8.0    # points — below this is normal variance
+GAP_PENALTY_RATE = 2.0 # points deducted per point of gap above threshold
 
 # ── Corpus Loading ──
 
@@ -225,48 +229,22 @@ def score_split(samples, config):
     return compression_ratio, avg_recon, results
 
 
-def check_codebook_caps(config):
-    """Check codebook sizes against caps. Returns (ok, message)."""
-    sym_count = len(config.SYMBOL_MAP)
-    phrase_count = len(config.PHRASE_CODEBOOK)
-
-    violations = []
-    if sym_count > MAX_SYMBOL_MAP:
-        violations.append(f"SYMBOL_MAP has {sym_count} entries (max {MAX_SYMBOL_MAP})")
-    if phrase_count > MAX_PHRASE_CODEBOOK:
-        violations.append(f"PHRASE_CODEBOOK has {phrase_count} entries (max {MAX_PHRASE_CODEBOOK})")
-
-    if violations:
-        return False, "; ".join(violations)
-    return True, f"SYMBOL_MAP: {sym_count}/{MAX_SYMBOL_MAP}, PHRASES: {phrase_count}/{MAX_PHRASE_CODEBOOK}"
-
-
 def evaluate(verbose=False):
     """
     Run full evaluation. Returns composite score.
 
     IMPORTANT: Compression ratio is measured in UTF-8 BYTES, not characters.
-    Score = 0.5 * train_subscore + 0.5 * val_subscore
+    Score = 0.5 * train_subscore + 0.5 * val_subscore - gap_penalty
     Each subscore = ratio * 0.6 + reconstruction * 0.4
-    Codebook caps enforced: SYMBOL_MAP ≤ 800, PHRASE_CODEBOOK ≤ 500.
+    
+    No hard codebook caps. Instead, overfitting is penalized through the
+    train/val gap: if the gap exceeds GAP_THRESHOLD (8 points), each
+    additional point of gap costs GAP_PENALTY_RATE (2) points from the
+    composite. This makes memorization self-defeating — the agent can
+    use as many symbols and phrases as it wants, but only generalizable
+    compression improves the score.
     """
     config = load_config()
-
-    # ── Check codebook caps ──
-    caps_ok, caps_msg = check_codebook_caps(config)
-    if not caps_ok:
-        if verbose:
-            print("=" * 60)
-            print("CODEBOOK CAP VIOLATION — SCORE ZEROED")
-            print("=" * 60)
-            print(f"\n  {caps_msg}")
-            print(f"\n  Reduce codebook size and try again.")
-            print(f"\n  ═══════════════════════════")
-            print(f"  COMPOSITE SCORE: 0.00")
-            print(f"  ═══════════════════════════")
-        else:
-            print(f"SCORE:0.0000 RATIO:0.0 RECON:0.0 CAP_VIOLATION:{caps_msg}")
-        return 0.0
 
     # ── Score train split ──
     train_ratio, train_recon, train_results = score_split(TRAIN_SAMPLES, config)
@@ -276,8 +254,16 @@ def evaluate(verbose=False):
     val_ratio, val_recon, val_results = score_split(VAL_SAMPLES, config)
     val_subscore = (val_ratio * 0.6 + val_recon * 0.4) * 100
 
-    # ── Composite: average of train and val ──
-    composite = 0.5 * train_subscore + 0.5 * val_subscore
+    # ── Gap penalty ──
+    gap = abs(train_subscore - val_subscore)
+    if gap > GAP_THRESHOLD:
+        penalty = (gap - GAP_THRESHOLD) * GAP_PENALTY_RATE
+    else:
+        penalty = 0.0
+
+    # ── Composite: average of train and val, minus penalty ──
+    raw_composite = 0.5 * train_subscore + 0.5 * val_subscore
+    composite = max(0.0, raw_composite - penalty)
 
     # ── Count hits ──
     phrase_hits = 0
@@ -291,9 +277,12 @@ def evaluate(verbose=False):
             if w in config.SYMBOL_MAP:
                 symbol_hits += 1
 
+    sym_count = len(config.SYMBOL_MAP)
+    phrase_count = len(config.PHRASE_CODEBOOK)
+
     if verbose:
         print("=" * 60)
-        print("HLC AUTORESEARCH EVALUATION (v2 — byte-based, train+val)")
+        print("HLC AUTORESEARCH EVALUATION (v2 — byte-based, gap-penalized)")
         print("=" * 60)
 
         print(f"\n── Train ({len(TRAIN_SAMPLES)} samples) ──")
@@ -317,11 +306,18 @@ def evaluate(verbose=False):
         print(f"  Val subscore:     {val_subscore:.2f}")
 
         print(f"\n── Aggregate ──")
-        print(f"  Train/val gap:    {abs(train_subscore - val_subscore):.2f} points")
+        print(f"  Train/val gap:    {gap:.2f} points", end="")
+        if penalty > 0:
+            print(f" ⚠️  PENALTY: -{penalty:.2f} (gap exceeds {GAP_THRESHOLD})")
+        else:
+            print(f" ✓ (under {GAP_THRESHOLD} threshold)")
         print(f"  Phrase hits:      {phrase_hits}")
         print(f"  Symbol hits:      {symbol_hits}")
-        print(f"  {caps_msg}")
-
+        print(f"  SYMBOL_MAP:       {sym_count} entries")
+        print(f"  PHRASE_CODEBOOK:  {phrase_count} entries")
+        if penalty > 0:
+            print(f"\n  Raw composite:    {raw_composite:.2f}")
+            print(f"  Gap penalty:      -{penalty:.2f}")
         print(f"\n  ═══════════════════════════")
         print(f"  COMPOSITE SCORE: {composite:.2f}")
         print(f"  ═══════════════════════════")
@@ -329,9 +325,8 @@ def evaluate(verbose=False):
         print(f"SCORE:{composite:.4f} TRAIN:{train_subscore:.2f} VAL:{val_subscore:.2f} "
               f"TRATIO:{train_ratio*100:.1f} VRATIO:{val_ratio*100:.1f} "
               f"TRECON:{train_recon*100:.1f} VRECON:{val_recon*100:.1f} "
-              f"GAP:{abs(train_subscore - val_subscore):.2f} "
-              f"PHRASES:{phrase_hits} SYMS:{len(config.SYMBOL_MAP)} "
-              f"PBOOK:{len(config.PHRASE_CODEBOOK)}")
+              f"GAP:{gap:.2f} PENALTY:{penalty:.2f} "
+              f"PHRASES:{phrase_hits} SYMS:{sym_count} PBOOK:{phrase_count}")
 
     return composite
 

@@ -11,16 +11,11 @@ Usage:
 
 import sys
 from pathlib import Path
-from evaluate_v2 import load_corpus, compress_text, decompress_text, score_reconstruction, load_config, score_split, check_codebook_caps
+from evaluate_v2 import load_corpus, compress_text, decompress_text, score_reconstruction, load_config, score_split
 
 
 def validate(verbose=False):
     config = load_config()
-
-    caps_ok, caps_msg = check_codebook_caps(config)
-    if not caps_ok:
-        print(f"CODEBOOK CAP VIOLATION: {caps_msg}")
-        return 0.0
 
     holdout = load_corpus("holdout")
     ratio, recon, results = score_split(holdout, config)
