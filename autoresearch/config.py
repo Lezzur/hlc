@@ -429,6 +429,15 @@ SYMBOL_MAP = {
     "discussions": "鏡",
     "development": "鐘",
     "compression": "刀",
+    # CJK — exp 28: 10-letter high-value words
+    "unexpected": "剣",
+    "understand": "弓",
+    "underlying": "矢",
+    "separately": "盾",
+    "resolution": "槍",
+    "regulatory": "甲",
+    "parameters": "兜",
+    "onboarding": "鎧",
 }
 
 # ═══════════════════════════════════════════════════════════
