@@ -806,6 +806,15 @@ PHRASE_CODEBOOK = {
     "we should": "Œ",
     "i have": "Ŕ",
     "the approach you're": "Ŗ",
+    # More phrases (exp 49) — Latin Extended A
+    "we need to": "Ř",
+    "the new onboarding": "Ś",
+    "the most important": "Ŝ",
+    "the model to": "Ş",
+    "the storage layer": "Š",
+    "resolve the issue": "Ţ",
+    "however there are": "Ť",
+    "for the upcoming": "Ŧ",
 }
 
 # ═══════════════════════════════════════════════════════════
