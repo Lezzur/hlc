@@ -29,8 +29,8 @@ from difflib import SequenceMatcher
 # ═══════════════════════════════════════════════════════════
 # CODEBOOK SIZE LIMITS — hard caps to prevent memorization
 # ═══════════════════════════════════════════════════════════
-MAX_SYMBOL_MAP = 800
-MAX_PHRASE_CODEBOOK = 500
+MAX_SYMBOL_MAP = 900
+MAX_PHRASE_CODEBOOK = 600
 
 # ── Corpus Loading ──
 

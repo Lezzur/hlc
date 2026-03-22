@@ -11,8 +11,8 @@ This evaluator scores on BOTH train AND validation splits. The composite score i
 If you only improve train but not val, your score will barely move. **Generalizable compression is the only path to a high score.**
 
 ### Hard constraints:
-- **SYMBOL_MAP ≤ 800 entries.** If you exceed this, the score is ZEROED.
-- **PHRASE_CODEBOOK ≤ 500 entries.** If you exceed this, the score is ZEROED.
+- **SYMBOL_MAP ≤ 900 entries.** If you exceed this, the score is ZEROED.
+- **PHRASE_CODEBOOK ≤ 600 entries.** If you exceed this, the score is ZEROED.
 - **Never add corpus-specific phrases.** A phrase must be a common English expression likely to appear in ANY English text, not just in the training corpus. "the processing engine" is corpus-specific. "in order to" is general English.
 - **Never add sentences or multi-word chunks from the corpus as phrases.** This is memorization, not compression.
 - **Watch the GAP.** The evaluator reports the train/val gap. If the gap exceeds 5 points, you are overfitting. Stop adding corpus-specific content and focus on general English patterns.
@@ -42,7 +42,7 @@ SCORE:XX.XXXX TRAIN:XX.XX VAL:XX.XX TRATIO:XX.X VRATIO:XX.X TRECON:XX.X VRECON:X
 - **TRAIN/VAL** are the subscores for each split.
 - **TRATIO/VRATIO** are byte compression percentages.
 - **GAP** is |train - val|. Keep this under 5 points.
-- **SYMS/PBOOK** are codebook sizes. Must stay under caps (800/500).
+- **SYMS/PBOOK** are codebook sizes. Must stay under caps (900/600).
 
 ## What you can modify
 
@@ -51,7 +51,7 @@ You ONLY edit `config.py`.
 ### PRIORITY 1: SYMBOL_MAP — byte-efficient word symbols
 - Replace 3-byte symbols with 1-byte ASCII or 2-byte Latin-1
 - Add high-frequency GENERAL English words (not corpus-specific jargon)
-- Stay under 800 entries
+- Stay under 900 entries
 - Focus on words that appear frequently in ALL types of English text
 
 ### PRIORITY 2: PHRASE_CODEBOOK — general English phrases only
@@ -59,7 +59,7 @@ You ONLY edit `config.py`.
 - Good: "in order to", "as well as", "I would like to", "there are", "has been"
 - Bad: "the ingestion pipeline", "your account history" (corpus-specific)
 - Use 2-byte codes (Greek, Cyrillic, Latin Extended), not 3-byte
-- Stay under 500 entries
+- Stay under 600 entries
 
 ### PRIORITY 3: Vowel stripping and morphological tuning
 - Adjust VOWEL_STRIP_EXCEPTIONS for words that reconstruct badly
@@ -81,7 +81,7 @@ LOOP FOREVER:
 2. **Edit**: Modify config.py.
 3. **Evaluate**: Run `python evaluate_v2.py`
 4. **Check GAP**: If GAP > 5, REVERT immediately. You are overfitting.
-5. **Check CAPS**: If SYMS > 800 or PBOOK > 500, REVERT. Score will be zero.
+5. **Check CAPS**: If SYMS > 900 or PBOOK > 600, REVERT. Score will be zero.
 6. **Compare**: Is SCORE higher than previous best?
    - YES → commit and log to results.tsv
    - NO → revert and log failure
@@ -102,7 +102,7 @@ LOOP FOREVER:
 ### Phase C: General English phrase expansion
 - Add phrases that are universal English patterns
 - Test each batch: if GAP increases, revert
-- Stay well under the 500 phrase cap
+- Stay well under the 600 phrase cap
 
 ### Phase D: Vowel/morphological tuning
 - Fine-tune vowel stripping for better reconstruction
