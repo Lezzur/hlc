@@ -528,6 +528,15 @@ SYMBOL_MAP = {
     "breathing": "回",
     "security": "進",
     "requests": "退",
+    # CJK — exp 41: 8-letter value-14 words
+    "wireless": "東",
+    "verified": "西",
+    "tradeoff": "南",
+    "thousand": "北",
+    "starting": "前",
+    "slightly": "左",
+    "shipment": "内",
+    "sequence": "外",
 }
 
 # ═══════════════════════════════════════════════════════════
