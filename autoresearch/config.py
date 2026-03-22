@@ -321,6 +321,15 @@ SYMBOL_MAP = {
     "rather": "水",
     "module": "火",
     "market": "土",
+    # CJK — exp 16
+    "sure": "山",
+    "five": "川",
+    "token": "田",
+    "tasks": "天",
+    "based": "地",
+    "after": "王",
+    "updated": "金",
+    "present": "銀",
 }
 
 # ═══════════════════════════════════════════════════════════
