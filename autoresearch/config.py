@@ -167,6 +167,16 @@ SYMBOL_MAP = {
     "issue": "ㄜ",
     "account": "ㄝ",
     "network": "ㄞ",
+    "request": "ㄟ",
+    "service": "ㄠ",
+    "option": "ㄡ",
+    "status": "ㄢ",
+    "result": "ㄣ",
+    "method": "ㄤ",
+    "period": "ㄥ",
+    "reason": "ㄦ",
+    "notice": "ㄧ",
+    "review": "ㄨ",
 }
 
 # ═══════════════════════════════════════════════════════════
