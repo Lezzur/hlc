@@ -456,6 +456,15 @@ SYMBOL_MAP = {
     "assessment": "笛",
     "approaches": "琴",
     "comfortable": "鼓",
+    # CJK — exp 31: 9-letter words
+    "yesterday": "貌",
+    "warehouse": "貴",
+    "validated": "賢",
+    "supported": "豊",
+    "statement": "聖",
+    "reviewing": "誠",
+    "resources": "義",
+    "reporting": "礼",
 }
 
 # ═══════════════════════════════════════════════════════════
