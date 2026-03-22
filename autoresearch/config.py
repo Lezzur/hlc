@@ -330,6 +330,15 @@ SYMBOL_MAP = {
     "after": "王",
     "updated": "金",
     "present": "銀",
+    # CJK — exp 17
+    "percent": "花",
+    "metrics": "草",
+    "however": "竹",
+    "discuss": "石",
+    "scheduled": "梅",
+    "reduction": "松",
+    "recommend": "桜",
+    "potential": "空",
 }
 
 # ═══════════════════════════════════════════════════════════
