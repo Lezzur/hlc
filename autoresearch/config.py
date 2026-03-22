@@ -161,6 +161,18 @@ PHRASE_CODEBOOK = {
     "on the": "ҭ",
     "through the": "Ү",
     "i wanted to": "ү",
+    # More high-impact phrases (exp 2)
+    "by the": "Ұ",
+    "the new": "ұ",
+    "from the": "Ҳ",
+    "about the": "ҳ",
+    "the model": "Ҵ",
+    "the current": "ҵ",
+    "for your": "Ҷ",
+    "on your": "ҷ",
+    "there are a few": "Ҹ",
+    "and would like to": "ҹ",
+    "by the end of": "Һ",
 }
 
 # ═══════════════════════════════════════════════════════════
