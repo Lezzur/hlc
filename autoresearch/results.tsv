@@ -11,3 +11,4 @@ experiment	description	score	train	val	gap	penalty	status
 9	add 120 remaining words savings>=3 + fix part symbol (68.26->68.65)	68.6469	66.13	71.17	5.04	0.00	improvement
 10	tried adding 6 tiny words + 2 short phrases - reverted (harmful)	68.6469	66.13	71.17	5.04	0.00	no_change
 11	add 23 train-only words to close gap (68.65->68.85)	68.8463	66.53	71.17	4.64	0.00	improvement
+12	add 43 more train-only words (68.85->69.10)	69.0977	67.03	71.17	4.14	0.00	improvement

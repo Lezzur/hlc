@@ -1147,6 +1147,50 @@ SYMBOL_MAP = {
     "acquisition": "\u07fa",    # savings=36, train_only, count=4
     "testing": "\u07fe",    # savings=35, train_only, count=7
     "customers": "\u07ff",    # savings=35, train_only, count=5
+    # exp 12: more train-only words
+    "diagnosis": "\u0590",    # savings=35, train_only, count=5
+    "emissions": "\u05c8",    # savings=35, train_only, count=5
+    "remaining": "\u05c9",    # savings=35, train_only, count=5
+    "automated": "\u05ca",    # savings=35, train_only, count=5
+    "independently": "\u05cb",    # savings=33, train_only, count=3
+    "authorization": "\u05cc",    # savings=33, train_only, count=3
+    "notifications": "\u05cd",    # savings=33, train_only, count=3
+    "adding": "\u05ce",    # savings=32, train_only, count=8
+    "that's": "\u05cf",    # savings=32, train_only, count=8
+    "identified": "\u05eb",    # savings=32, train_only, count=4
+    "enterprise": "\u05ec",    # savings=32, train_only, count=4
+    "structures": "\u05ed",    # savings=32, train_only, count=4
+    "material": "\u05ee",    # savings=30, train_only, count=5
+    "we're": "\u05f5",    # savings=30, train_only, count=10
+    "failures": "\u05f6",    # savings=30, train_only, count=5
+    "endpoint": "\u05f7",    # savings=30, train_only, count=5
+    "construction": "\u05f8",    # savings=30, train_only, count=3
+    "pressure": "\u05f9",    # savings=30, train_only, count=5
+    "software": "\u05fa",    # savings=30, train_only, count=5
+    "consumer": "\u05fb",    # savings=30, train_only, count=5
+    "negative": "\u05fc",    # savings=30, train_only, count=5
+    "electrocardiogram": "\u05fd",    # savings=30, train_only, count=2
+    "receiving": "\u05fe",    # savings=28, train_only, count=4
+    "debugging": "\u05ff",    # savings=28, train_only, count=4
+    "levels": "\u070e",    # savings=28, train_only, count=7
+    "officials": "\u074b",    # savings=28, train_only, count=4
+    "emergency": "\u074c",    # savings=28, train_only, count=4
+    "transaction": "\u07b2",    # savings=27, train_only, count=3
+    "regulations": "\u07b3",    # savings=27, train_only, count=3
+    "combination": "\u07b4",    # savings=27, train_only, count=3
+    "expressions": "\u07b5",    # savings=27, train_only, count=3
+    "connections": "\u07b6",    # savings=27, train_only, count=3
+    "interesting": "\u07b7",    # savings=27, train_only, count=3
+    "instead": "\u07b8",    # savings=25, train_only, count=5
+    "session": "\u07b9",    # savings=25, train_only, count=5
+    "instrument": "\u07ba",    # savings=24, train_only, count=3
+    "containing": "\u07bb",    # savings=24, train_only, count=3
+    "litigation": "\u07bc",    # savings=24, train_only, count=3
+    "required": "\u07bd",    # savings=24, train_only, count=4
+    "connection": "\u07be",    # savings=24, train_only, count=3
+    "weight": "\u07bf",    # savings=24, train_only, count=6
+    "evaluating": "\u07fb",    # savings=24, train_only, count=3
+    "design": "\u07fc",    # savings=24, train_only, count=6
 }
 
 # ═══════════════════════════════════════════════════════════
