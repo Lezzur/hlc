@@ -1358,6 +1358,301 @@ PHRASE_CODEBOOK = {
     "with his": "Ϭ",
     "what you": "ϭ",
     "have the": "Ϯ",
+    # ── n-gram expansion (exp 15): 293 new phrases, savings >= 8 ──
+    # Sorted by byte_savings descending
+    "analysis of": "£",  # savings=72, train=7, val=1
+    "two to three weeks": "©",  # savings=64, train=3, val=1
+    "engineering team": "Ɣ",  # savings=56, train=3, val=1
+    "three weeks": "ƨ",  # savings=54, train=5, val=1
+    "fifteen percent": "Ƽ",  # savings=52, train=3, val=1
+    "one hundred percent": "ƽ",  # savings=51, train=2, val=1
+    "real time": "ƿ",  # savings=49, train=6, val=1
+    "to three weeks": "ǀ",  # savings=48, train=3, val=1
+    "thousand years": "ǆ",  # savings=48, train=3, val=1
+    "one percent": "ǉ",  # savings=45, train=3, val=2
+    "approximately one": "Ǘ",  # savings=45, train=2, val=1
+    "at the cost of slightly": "Ȉ",  # savings=42, train=1, val=1
+    "approximately one point": "ȸ",  # savings=42, train=1, val=1
+    "the distinction between": "ɝ",  # savings=42, train=1, val=1
+    "thirty seven": "ɵ",  # savings=40, train=3, val=1
+    "eighteen months": "ɺ",  # savings=39, train=2, val=1
+    "hundred percent": "ɽ",  # savings=39, train=2, val=1
+    "the permissions model": "ʄ",  # savings=38, train=1, val=1
+    "every thirty seconds": "ʕ",  # savings=36, train=1, val=1
+    "at the cost of": "ʘ",  # savings=36, train=2, val=1
+    "than trying to": "ʥ",  # savings=36, train=2, val=1
+    "forty seven": "ρ",  # savings=36, train=2, val=2
+    "the cost of slightly": "σ",  # savings=36, train=1, val=1
+    "dietary restrictions": "ϯ",  # savings=36, train=1, val=1
+    "eight hours": "ϰ",  # savings=36, train=2, val=2
+    "the engineering team": "ϱ",  # savings=36, train=1, val=1
+    "thirty seconds": "ϲ",  # savings=36, train=1, val=2
+    "twenty four": "ϳ",  # savings=36, train=3, val=1
+    "to think about": "ϴ",  # savings=36, train=2, val=1
+    "to twenty": "ϵ",  # savings=35, train=4, val=1
+    "in the jurisdiction": "϶",  # savings=34, train=1, val=1
+    "binding arbitration": "Ϸ",  # savings=34, train=1, val=1
+    "thousand dollars in": "ϸ",  # savings=34, train=1, val=1
+    "starting conditions": "Ϲ",  # savings=34, train=1, val=1
+    "distinction between": "Ϻ",  # savings=34, train=1, val=1
+    "have to think about": "ϻ",  # savings=34, train=1, val=1
+    "seven percent": "ϼ",  # savings=33, train=2, val=1
+    "sixty percent": "Ͻ",  # savings=33, train=2, val=1
+    "five years": "Ͼ",  # savings=32, train=3, val=1
+    "ninety one percent": "Ͽ",  # savings=32, train=1, val=1
+    "has been requested": "Л",  # savings=32, train=1, val=1
+    "physical activity": "ѹ",  # savings=30, train=1, val=1
+    "forty eight hours": "ҕ",  # savings=30, train=1, val=1
+    "approved the": "ҙ",  # savings=30, train=2, val=1
+    "side effects": "ҝ",  # savings=30, train=2, val=1
+    "treating everyone": "ԅ",  # savings=30, train=1, val=1
+    "hundred and fifty": "Ԉ",  # savings=30, train=1, val=1
+    "permissions model": "ԉ",  # savings=30, train=1, val=1
+    "in read only mode": "Ԋ",  # savings=30, train=1, val=1
+    "opportunities and": "ԋ",  # savings=30, train=1, val=1
+    "before initiating": "Ԍ",  # savings=30, train=1, val=1
+    "industry analysts": "ԍ",  # savings=30, train=1, val=1
+    "the third quarter": "Ԏ",  # savings=30, train=1, val=1
+    "the jurisdiction": "ԏ",  # savings=28, train=1, val=1
+    "cost of slightly": "Ԑ",  # savings=28, train=1, val=1
+    "upcoming product": "ԑ",  # savings=28, train=1, val=1
+    "depending on the": "Ԓ",  # savings=28, train=1, val=1
+    "milligrams daily": "ԓ",  # savings=28, train=1, val=1
+    "level and": "Ԕ",  # savings=28, train=3, val=1
+    "has been updated": "ԕ",  # savings=28, train=1, val=1
+    "from a": "Ԗ",  # savings=28, train=4, val=3
+    "last year": "ԗ",  # savings=28, train=3, val=1
+    "fourteen percent": "Ԙ",  # savings=28, train=1, val=1
+    "permissions from": "ԙ",  # savings=28, train=1, val=1
+    "two percent": "Ԛ",  # savings=27, train=2, val=1
+    "to be": "ԛ",  # savings=27, train=6, val=3
+    "support the": "Ԝ",  # savings=27, train=1, val=2
+    "than trying": "ԝ",  # savings=27, train=2, val=1
+    "ninety days": "Ԟ",  # savings=27, train=2, val=1
+    "engineering and": "ԟ",  # savings=26, train=1, val=1
+    "will be used to": "Ԡ",  # savings=26, train=1, val=1
+    "doesn't produce": "ԡ",  # savings=26, train=1, val=1
+    "the distinction": "Ԣ",  # savings=26, train=1, val=1
+    "administered in": "ԣ",  # savings=26, train=1, val=1
+    "the permissions": "Ԥ",  # savings=26, train=1, val=1
+    "in the meantime": "ԥ",  # savings=26, train=1, val=1
+    "its own": "Ԧ",  # savings=25, train=3, val=2
+    "twelve percent": "ԧ",  # savings=24, train=1, val=1
+    "read only mode": "Ԩ",  # savings=24, train=1, val=1
+    "ninety one": "ԩ",  # savings=24, train=2, val=1
+    "one point four": "Ԫ",  # savings=24, train=1, val=1
+    "mobile app": "ԫ",  # savings=24, train=1, val=2
+    "been requested": "Ԭ",  # savings=24, train=1, val=1
+    "the real": "ԭ",  # savings=24, train=3, val=1
+    "last month": "Ԯ",  # savings=24, train=2, val=1
+    "is expected to": "ԯ",  # savings=24, train=1, val=1
+    "privacy policy": "־",  # savings=24, train=1, val=1
+    "a twelve": "׀",  # savings=24, train=3, val=1
+    "twenty minutes": "׃",  # savings=24, train=1, val=1
+    "implementing a": "׆",  # savings=24, train=1, val=1
+    "as the primary": "ׯ",  # savings=24, train=1, val=1
+    "percent of the": "װ",  # savings=24, train=1, val=1
+    "eighty percent": "ױ",  # savings=24, train=1, val=1
+    "attorney fees": "ײ",  # savings=22, train=1, val=1
+    "assessment of": "׳",  # savings=22, train=1, val=1
+    "justifies the": "״",  # savings=22, train=1, val=1
+    "three seconds": "؆",  # savings=22, train=1, val=1
+    "with the most": "؇",  # savings=22, train=1, val=1
+    "what you said": "؈",  # savings=22, train=1, val=1
+    "appears to be": "؉",  # savings=22, train=1, val=1
+    "have to think": "؊",  # savings=22, train=1, val=1
+    "or related to": "؋",  # savings=22, train=1, val=1
+    "the strongest": "،",  # savings=22, train=1, val=1
+    "your existing": "؍",  # savings=22, train=1, val=1
+    "available for": "؎",  # savings=22, train=1, val=1
+    "revealed that": "؏",  # savings=22, train=1, val=1
+    "a remediation": "؛",  # savings=22, train=1, val=1
+    "fourteen days": "؝",  # savings=22, train=1, val=1
+    "third quarter": "؞",  # savings=22, train=1, val=1
+    "point two": "؟",  # savings=21, train=2, val=1
+    "of ninety": "ؠ",  # savings=21, train=2, val=1
+    "adapts to": "٠",  # savings=21, train=2, val=1
+    "there's a": "١",  # savings=21, train=2, val=1
+    "every thirty": "٢",  # savings=20, train=1, val=1
+    "because they": "٣",  # savings=20, train=1, val=1
+    "through your": "٤",  # savings=20, train=1, val=1
+    "dollars over": "٥",  # savings=20, train=1, val=1
+    "been updated": "٦",  # savings=20, train=1, val=1
+    "and felt the": "٧",  # savings=20, train=1, val=1
+    "the meantime": "٨",  # savings=20, train=1, val=1
+    "duration and": "٩",  # savings=20, train=1, val=1
+    "will be used": "٪",  # savings=20, train=1, val=1
+    "to the total": "٫",  # savings=20, train=1, val=1
+    "about twenty": "٬",  # savings=20, train=1, val=1
+    "available on": "٭",  # savings=20, train=1, val=1
+    "right answer": "ٮ",  # savings=20, train=1, val=1
+    "reaching for": "ٯ",  # savings=20, train=1, val=1
+    "in read only": "ٱ",  # savings=20, train=1, val=1
+    "system with": "ٲ",  # savings=18, train=1, val=1
+    "time and": "ٳ",  # savings=18, train=2, val=1
+    "to minimize": "ٴ",  # savings=18, train=1, val=1
+    "outcomes it": "ٵ",  # savings=18, train=1, val=1
+    "updated the": "ٶ",  # savings=18, train=1, val=1
+    "year the": "ٷ",  # savings=18, train=2, val=1
+    "week and": "ٸ",  # savings=18, train=2, val=1
+    "admin panel": "ٹ",  # savings=18, train=1, val=1
+    "reports and": "ٺ",  # savings=18, train=1, val=1
+    "third party": "ٻ",  # savings=18, train=1, val=1
+    "the vaccine": "ټ",  # savings=18, train=1, val=1
+    "parking lot": "ٽ",  # savings=18, train=1, val=1
+    "thirty days": "پ",  # savings=18, train=1, val=1
+    "the patient": "ٿ",  # savings=18, train=1, val=1
+    "of slightly": "ڀ",  # savings=18, train=1, val=1
+    "built in": "ځ",  # savings=18, train=1, val=2
+    "caused by a": "ڂ",  # savings=18, train=1, val=1
+    "seconds and": "ڃ",  # savings=18, train=1, val=1
+    "but i think": "ڄ",  # savings=18, train=1, val=1
+    "four to six": "څ",  # savings=18, train=1, val=1
+    "and regular": "چ",  # savings=18, train=1, val=1
+    "the dataset": "ڇ",  # savings=18, train=1, val=1
+    "and version": "ڈ",  # savings=18, train=1, val=1
+    "updates the": "ډ",  # savings=18, train=1, val=1
+    "forty eight": "ڊ",  # savings=18, train=1, val=1
+    "of forty": "ڋ",  # savings=18, train=1, val=2
+    "the parking": "ڌ",  # savings=18, train=1, val=1
+    "thirty one": "ڍ",  # savings=16, train=1, val=1
+    "rates have": "ڎ",  # savings=16, train=1, val=1
+    "in our": "ڏ",  # savings=16, train=3, val=1
+    "may be": "ڐ",  # savings=16, train=3, val=1
+    "this month": "ڑ",  # savings=16, train=1, val=1
+    "found that": "ڒ",  # savings=16, train=1, val=1
+    "number and": "ړ",  # savings=16, train=1, val=1
+    "of our top": "ڔ",  # savings=16, train=1, val=1
+    "be used to": "ڕ",  # savings=16, train=1, val=1
+    "to fifteen": "ږ",  # savings=16, train=1, val=1
+    "next month": "ڗ",  # savings=16, train=1, val=1
+    "the reason": "ژ",  # savings=16, train=1, val=1
+    "common and": "ڙ",  # savings=16, train=1, val=1
+    "as the": "ښ",  # savings=16, train=2, val=2
+    "or related": "ڛ",  # savings=16, train=1, val=1
+    "point four": "ڜ",  # savings=16, train=1, val=1
+    "is fifteen": "ڝ",  # savings=16, train=1, val=1
+    "to address": "ڞ",  # savings=16, train=1, val=1
+    "updated to": "ڟ",  # savings=16, train=1, val=1
+    "up through": "ڠ",  # savings=16, train=1, val=1
+    "percent to": "ڡ",  # savings=16, train=1, val=1
+    "on its own": "ڢ",  # savings=16, train=1, val=1
+    "demand for": "ڣ",  # savings=16, train=1, val=1
+    "to request": "ڤ",  # savings=16, train=1, val=1
+    "with acute": "ڥ",  # savings=16, train=1, val=1
+    "four point": "ڦ",  # savings=16, train=1, val=1
+    "of fifteen": "ڧ",  # savings=16, train=1, val=1
+    "created by": "ڨ",  # savings=16, train=1, val=1
+    "watched it": "ک",  # savings=16, train=1, val=1
+    "most users": "ڪ",  # savings=16, train=1, val=1
+    "tier which": "ګ",  # savings=16, train=1, val=1
+    "of a": "ڬ",  # savings=16, train=6, val=2
+    "was not": "ڭ",  # savings=15, train=2, val=1
+    "and one": "ڮ",  # savings=15, train=2, val=1
+    "tend to": "گ",  # savings=15, train=2, val=1
+    "the two": "ڰ",  # savings=15, train=2, val=1
+    "in your": "ڱ",  # savings=15, train=2, val=1
+    "with no": "ڲ",  # savings=15, train=2, val=1
+    "no more": "ڳ",  # savings=15, train=1, val=2
+    "a small": "ڴ",  # savings=15, train=2, val=1
+    "for all": "ڵ",  # savings=15, train=2, val=1
+    "in this": "ڶ",  # savings=15, train=2, val=1
+    "because i": "ڷ",  # savings=14, train=1, val=1
+    "long term": "ڸ",  # savings=14, train=1, val=1
+    "read only": "ڹ",  # savings=14, train=1, val=1
+    "given the": "ں",  # savings=14, train=1, val=1
+    "i can see": "ڻ",  # savings=14, train=1, val=1
+    "at ninety": "ڼ",  # savings=14, train=1, val=1
+    "with less": "ڽ",  # savings=14, train=1, val=1
+    "i believe": "ھ",  # savings=14, train=1, val=1
+    "against a": "ڿ",  # savings=14, train=1, val=1
+    "only mode": "ۀ",  # savings=14, train=1, val=1
+    "i want to": "ہ",  # savings=14, train=1, val=1
+    "caused by": "ۂ",  # savings=14, train=1, val=1
+    "costs and": "ۃ",  # savings=14, train=1, val=1
+    "for three": "ۄ",  # savings=14, train=1, val=1
+    "a fifteen": "ۅ",  # savings=14, train=1, val=1
+    "two years": "ۆ",  # savings=14, train=1, val=1
+    "a passive": "ۇ",  # savings=14, train=1, val=1
+    "and fifty": "ۈ",  # savings=14, train=1, val=1
+    "months of": "ۉ",  # savings=14, train=1, val=1
+    "answer is": "ۊ",  # savings=14, train=1, val=1
+    "might not": "ۋ",  # savings=14, train=1, val=1
+    "driven by": "ی",  # savings=14, train=1, val=1
+    "it's been": "ۍ",  # savings=14, train=1, val=1
+    "a version": "ێ",  # savings=14, train=1, val=1
+    "that your": "ۏ",  # savings=14, train=1, val=1
+    "hours per": "ې",  # savings=14, train=1, val=1
+    "the space": "ۑ",  # savings=14, train=1, val=1
+    "that most": "ے",  # savings=14, train=1, val=1
+    "the glass": "ۓ",  # savings=14, train=1, val=1
+    "twelve to": "۔",  # savings=14, train=1, val=1
+    "even when": "ە",  # savings=14, train=1, val=1
+    "each week": "۞",  # savings=14, train=1, val=1
+    "you want": "ۥ",  # savings=12, train=1, val=1
+    "had been": "ۦ",  # savings=12, train=1, val=1
+    "you said": "۩",  # savings=12, train=1, val=1
+    "of those": "ۮ",  # savings=12, train=1, val=1
+    "and is": "ۯ",  # savings=12, train=2, val=1
+    "tired of": "۰",  # savings=12, train=1, val=1
+    "days the": "۱",  # savings=12, train=1, val=1
+    "just the": "۲",  # savings=12, train=1, val=1
+    "risen to": "۳",  # savings=12, train=1, val=1
+    "a full": "۴",  # savings=12, train=2, val=1
+    "felt the": "۵",  # savings=12, train=1, val=1
+    "so the": "۶",  # savings=12, train=2, val=1
+    "an email": "۷",  # savings=12, train=1, val=1
+    "plans to": "۸",  # savings=12, train=1, val=1
+    "but i": "۹",  # savings=12, train=3, val=1
+    "you when": "ۺ",  # savings=12, train=1, val=1
+    "sure the": "ۻ",  # savings=12, train=1, val=1
+    "and felt": "ۼ",  # savings=12, train=1, val=1
+    "signs of": "۽",  # savings=12, train=1, val=1
+    "of their": "۾",  # savings=12, train=1, val=1
+    "a set of": "ۿ",  # savings=12, train=1, val=1
+    "data the": "܀",  # savings=12, train=1, val=1
+    "to add": "܁",  # savings=12, train=2, val=1
+    "a few": "܂",  # savings=12, train=3, val=1
+    "at two": "܃",  # savings=12, train=2, val=1
+    "to reach": "܄",  # savings=12, train=1, val=1
+    "within a": "܅",  # savings=12, train=1, val=1
+    "a target": "܆",  # savings=12, train=1, val=1
+    "fails to": "܇",  # savings=12, train=1, val=1
+    "dose of": "܈",  # savings=10, train=1, val=1
+    "isn't a": "܉",  # savings=10, train=1, val=1
+    "now and": "܊",  # savings=10, train=1, val=1
+    "to take": "܋",  # savings=10, train=1, val=1
+    "to four": "܌",  # savings=10, train=1, val=1
+    "up here": "܍",  # savings=10, train=1, val=1
+    "our top": "ݍ",  # savings=10, train=1, val=1
+    "four to": "ݎ",  # savings=10, train=1, val=1
+    "size of": "ݏ",  # savings=10, train=1, val=1
+    "and she": "ݐ",  # savings=10, train=1, val=1
+    "the day": "ݑ",  # savings=10, train=1, val=1
+    "by a": "ݒ",  # savings=10, train=3, val=2
+    "on a": "ݓ",  # savings=10, train=4, val=1
+    "see why": "ݔ",  # savings=10, train=1, val=1
+    "in read": "ݕ",  # savings=10, train=1, val=1
+    "cost is": "ݖ",  # savings=10, train=1, val=1
+    "can see": "ݗ",  # savings=10, train=1, val=1
+    "be used": "ݘ",  # savings=10, train=1, val=1
+    "a clear": "ݙ",  # savings=10, train=1, val=1
+    "an hour": "ݚ",  # savings=10, train=1, val=1
+    "not a": "ݛ",  # savings=9, train=2, val=1
+    "a ten": "ݜ",  # savings=9, train=2, val=1
+    "add a": "ݝ",  # savings=9, train=2, val=1
+    "set of": "ݞ",  # savings=8, train=1, val=1
+    "is now": "ݟ",  # savings=8, train=1, val=1
+    "by two": "ݠ",  # savings=8, train=1, val=1
+    "in two": "ݡ",  # savings=8, train=1, val=1
+    "i am": "ݢ",  # savings=8, train=3, val=1
+    "and an": "ݣ",  # savings=8, train=1, val=1
+    "on any": "ݤ",  # savings=8, train=1, val=1
+    "on its": "ݥ",  # savings=8, train=1, val=1
+    "i want": "ݦ",  # savings=8, train=1, val=1
+    "i just": "ݧ",  # savings=8, train=1, val=1
+    "uses a": "ݨ",  # savings=8, train=1, val=1
+    "a four": "ݩ",  # savings=8, train=1, val=1
 }
 
 # ═══════════════════════════════════════════════════════════
