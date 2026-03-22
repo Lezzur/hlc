@@ -519,6 +519,15 @@ SYMBOL_MAP = {
     "minute": "読",
     "making": "書",
     "better": "歌",
+    # CJK — exp 40: remaining high-value word symbols
+    "behind": "行",
+    "around": "来",
+    "answer": "往",
+    "allows": "帰",
+    "algorithm": "転",
+    "breathing": "回",
+    "security": "進",
+    "requests": "退",
 }
 
 # ═══════════════════════════════════════════════════════════
