@@ -1204,106 +1204,106 @@ SYMBOL_MAP = {
 
 PHRASE_CODEBOOK = {
     # Conversational
-    "how are you": "α",
+    "three hundred": 'α',    # was 'how are you', train_only, count=6, savings=66
     "thank you": "β",
-    "you're welcome": "γ",
-    "nice to meet you": "δ",
-    "good morning": "ε",
-    "good night": "ζ",
-    "i don't know": "η",
-    "i don't think": "θ",
+    "million dollars": 'γ',    # was 'you're welcome', train_only, count=5, savings=65
+    "totaling approximately": 'δ',    # was 'nice to meet you', train_only, count=3, savings=60
+    "hundred thousand": 'ε',    # was 'good morning', train_only, count=4, savings=56
+    "including but not limited to": 'ζ',    # was 'good night', train_only, count=2, savings=52
+    "negative zero point": 'η',    # was 'i don't know', train_only, count=3, savings=51
+    "than the": 'θ',    # was 'i don't think', train_only, count=8, savings=48
     "let me know": "ι",
-    "as soon as possible": "κ",
-    "by the way": "λ",
-    "in my opinion": "μ",
-    "to be honest": "ν",
-    "on the other hand": "ξ",
-    "at the same time": "ο",
-    "for example": "π",
+    "exceeding one million rows": 'κ',    # was 'as soon as possible', train_only, count=2, savings=48
+    "the enterprise": 'λ',    # was 'by the way', train_only, count=4, savings=48
+    "requests per minute with a": 'μ',    # was 'in my opinion', train_only, count=2, savings=48
+    "including but not limited": 'ν',    # was 'to be honest', train_only, count=2, savings=46
+    "hundred thousand dollars": 'ξ',    # was 'on the other hand', train_only, count=2, savings=44
+    "requests per minute with": 'ο',    # was 'at the same time', train_only, count=2, savings=44
+    "material adverse change": 'π',    # was 'for example', train_only, count=2, savings=42
     "such as": "τ",
     "due to": "υ",
-    "in terms of": "φ",
-    "in addition to": "χ",
-    "as a result": "ψ",
-    "in fact": "ω",
-    "of course": "Α",
+    "for at least four hours": 'φ',    # was 'in terms of', train_only, count=2, savings=42
+    "at three in the": 'χ',    # was 'in addition to', train_only, count=2, savings=26
+    "per minute with a burst": 'ψ',    # was 'as a result', train_only, count=2, savings=42
+    "a combination of": 'ω',    # was 'in fact', train_only, count=3, savings=42
+    "officials attribute the": 'Α',    # was 'of course', train_only, count=2, savings=42
     "at least": "Β",
-    "so far": "Γ",
-    "right now": "Δ",
-    "a lot of": "Ε",
+    "three hundred thousand": 'Γ',    # was 'so far', train_only, count=2, savings=40
+    "one million rows": 'Δ',    # was 'right now', train_only, count=2, savings=28
+    "the difference between": 'Ε',    # was 'a lot of', train_only, count=2, savings=40
     "kind of": "Ζ",
-    "sort of": "Η",
-    "more or less": "Θ",
+    "two to three weeks and": 'Η',    # was 'sort of', train_only, count=2, savings=40
+    "requests per": 'Θ',    # was 'more or less', train_only, count=4, savings=40
     "up to": "Ι",
-    "out of": "Κ",
+    "thirty thousand": 'Κ',    # was 'out of', train_only, count=2, savings=26
     # Technical / LLM
-    "it is important to note that": "Λ",
-    "it should be noted that": "Μ",
-    "in this case": "Ν",
-    "for instance": "Ξ",
-    "as mentioned above": "Ο",
+    "one hundred and twenty": 'Λ',    # was 'it is important to note that', train_only, count=2, savings=40
+    "to access your account": 'Μ',    # was 'it should be noted that', train_only, count=2, savings=40
+    "will include": 'Ν',    # was 'in this case', train_only, count=4, savings=40
+    "associated with": 'Ξ',    # was 'for instance', train_only, count=3, savings=39
+    "patients should": 'Ο',    # was 'as mentioned above', train_only, count=3, savings=39
     "based on": "Π",
-    "in the context of": "Ρ",
+    "pressure on the": 'Ρ',    # was 'in the context of', train_only, count=3, savings=39
     "according to": "Σ",
-    "in particular": "Τ",
-    "in other words": "Υ",
-    "having said that": "Φ",
-    "the fact that": "Χ",
-    "in addition": "Ψ",
-    "as well": "Ω",
-    "there is": "Б",
-    "would be": "Г",
-    "could be": "Д",
+    "scheduled maintenance": 'Τ',    # was 'in particular', train_only, count=2, savings=38
+    "exceeding one million": 'Υ',    # was 'in other words', train_only, count=2, savings=38
+    "after controlling for": 'Φ',    # was 'having said that', train_only, count=2, savings=38
+    "data protection": 'Χ',    # was 'the fact that', train_only, count=2, savings=26
+    "eighteen percent": 'Ψ',    # was 'in addition', train_only, count=2, savings=28
+    "changed the": 'Ω',    # was 'as well', train_only, count=3, savings=27
+    "thousand requests per": 'Б',    # was 'there is', train_only, count=2, savings=38
+    "the majority of": 'Г',    # was 'would be', train_only, count=2, savings=26
+    "has resulted in": 'Д',    # was 'could be', train_only, count=2, savings=26
     "should be": "Е",
     "have been": "З",
     "will be": "И",
-    "able to": "К",
+    "about three": 'К',    # was 'able to', train_only, count=3, savings=27
     "want to": "М",
     "have to": "Н",
     "used to": "О",
-    "try to": "П",
-    "seem to": "Р",
+    "this jurisdiction": 'П',    # was 'try to', train_only, count=2, savings=30
+    "social media": 'Р',    # was 'seem to', train_only, count=3, savings=30
     # Agent / AI specific
-    "context window": "С",
-    "token cost": "Т",
-    "language model": "У",
-    "large language model": "Ф",
-    "machine learning": "Х",
-    "natural language": "Ц",
+    "environment variables": 'С',    # was 'context window', train_only, count=2, savings=38
+    "if you": 'Т',    # was 'token cost', train_only, count=9, savings=36
+    "the certificate": 'У',    # was 'language model', train_only, count=2, savings=26
+    "compared to": 'Ф',    # was 'large language model', train_only, count=4, savings=36
+    "clinical trial": 'Х',    # was 'machine learning', train_only, count=2, savings=24
+    "would eliminate this": 'Ц',    # was 'natural language', train_only, count=2, savings=36
     # Common in professional writing
-    "in order to": "Щ",
-    "with respect to": "Ъ",
-    "with regard to": "Ы",
-    "take into account": "Ь",
-    "keep in mind": "Э",
-    "as a whole": "Я",
-    "at this point": "Ѐ",
-    "for the most part": "Ё",
-    "that being said": "Ђ",
-    "I would like to": "Ѓ",
-    "please let me know": "Є",
-    "I have reviewed": "Ѕ",
-    "looking forward to": "І",
+    "indicates that": 'Щ',    # was 'in order to', train_only, count=3, savings=36
+    "during peak": 'Ъ',    # was 'with respect to', train_only, count=4, savings=36
+    "frustration with the": 'Ы',    # was 'with regard to', train_only, count=2, savings=36
+    "let me know if": 'Ь',    # was 'take into account', train_only, count=3, savings=36
+    "the most significant": 'Э',    # was 'keep in mind', train_only, count=2, savings=36
+    "twenty percent": 'Я',    # was 'as a whole', train_only, count=3, savings=36
+    "hundred requests per": 'Ѐ',    # was 'at this point', train_only, count=2, savings=36
+    "is recommended": 'Ё',    # was 'for the most part', train_only, count=3, savings=36
+    "combination of": 'Ђ',    # was 'that being said', train_only, count=3, savings=36
+    "point three": 'Ѓ',    # was 'I would like to', train_only, count=4, savings=36
+    "approximately ninety": 'Є',    # was 'please let me know', train_only, count=2, savings=36
+    "should include": 'Ѕ',    # was 'I have reviewed', train_only, count=3, savings=36
+    "thirty percent": 'І',    # was 'looking forward to', train_only, count=3, savings=36
     # Phrases likely to appear in test corpus — AGENT SHOULD EXPAND THIS
-    "it appears that": "Ї",
-    "I would appreciate": "Ј",
-    "if you could": "Љ",
+    "will include a": 'Ї',    # was 'it appears that', train_only, count=3, savings=36
+    "in this jurisdiction": 'Ј',    # was 'I would appreciate', train_only, count=2, savings=36
+    "through a": 'Љ',    # was 'if you could', train_only, count=5, savings=35
     "we should also": "Њ",
-    "let me look into": "Ћ",
-    "don't hesitate to": "Ќ",
-    "anything else": "Ў",
-    "right away": "Џ",
-    "on our end": "Ґ",
-    "to your satisfaction": "Ғ",
-    "is there anything": "Ҕ",
-    "cost reduction": "Җ",
-    "as well as": "Ҙ",
+    "include a": 'Ћ',    # was 'let me look into', train_only, count=5, savings=35
+    "you're experiencing": 'Ќ',    # was 'don't hesitate to', train_only, count=2, savings=34
+    "at least four hours": 'Ў',    # was 'anything else', train_only, count=2, savings=34
+    "within the next two": 'Џ',    # was 'right away', train_only, count=2, savings=34
+    "requests per minute": 'Ґ',    # was 'on our end', train_only, count=2, savings=34
+    "minute with a burst": 'Ғ',    # was 'to your satisfaction', train_only, count=2, savings=34
+    "access your account": 'Ҕ',    # was 'is there anything', train_only, count=2, savings=34
+    "regular expressions": 'Җ',    # was 'cost reduction', train_only, count=2, savings=34
+    "assistance has been": 'Ҙ',    # was 'as well as', train_only, count=2, savings=34
     "set up": "Қ",
     "make sure": "Ҝ",
-    "figure out": "Ҟ",
-    "talk about": "Ҡ",
+    "using the": 'Ҟ',    # was 'figure out', train_only, count=4, savings=28
+    "the introduction of": 'Ҡ',    # was 'talk about', train_only, count=2, savings=34
     "think about": "Ң",
-    "it can": "Ҥ",
+    "and recovery": 'Ҥ',    # was 'it can', train_only, count=3, savings=30
     # High-frequency article phrases (exp 1)
     "and the": "Ҧ",
     "to the": "ҧ",
@@ -1314,110 +1314,110 @@ PHRASE_CODEBOOK = {
     "for the": "Ҭ",
     "on the": "ҭ",
     "through the": "Ү",
-    "i wanted to": "ү",
+    "and will include": 'ү',    # was 'i wanted to', train_only, count=2, savings=28
     # More high-impact phrases (exp 2)
     "by the": "Ұ",
     "the new": "ұ",
     "from the": "Ҳ",
     "about the": "ҳ",
-    "the model": "Ҵ",
+    "least four hours": 'Ҵ',    # was 'the model', train_only, count=2, savings=28
     "the current": "ҵ",
     "for your": "Ҷ",
     "on your": "ҷ",
-    "there are a few": "Ҹ",
-    "and would like to": "ҹ",
-    "by the end of": "Һ",
+    "a fourteen-day": 'Ҹ',    # was 'there are a few', train_only, count=2, savings=24
+    "through the lens of": 'ҹ',    # was 'and would like to', train_only, count=2, savings=34
+    "the chain would": 'Һ',    # was 'by the end of', train_only, count=2, savings=26
     # More unused high-value phrases (exp 5)
-    "would like to": "ҽ",
+    "his grandfather": 'ҽ',    # was 'would like to', train_only, count=2, savings=26
     "the next": "Ҿ",
     "has been": "ҿ",
     "thank you for": "Ā",    # fixed: was colliding with "at this point" on Ѐ
-    "there are": "ѐ",
+    "by approximately": 'ѐ',    # was 'there are', train_only, count=2, savings=28
     "the first": "Ă",        # fixed: was colliding with "I would like to" on Ѓ
     "need to": "ѓ",
-    "wanted to": "Ą",        # fixed: was colliding with "I have reviewed" on Ѕ
-    "you for your": "ѕ",
+    "with something": 'Ą',    # was 'wanted to', train_only, count=2, savings=24
+    "a different": 'ѕ',    # was 'you for your', train_only, count=3, savings=27
     "let me": "Ć",            # fixed: was colliding with "it appears that" on Ї
     # Long phrases (exp 7)
     "by the end of this": "ї",
     "within the next two weeks": "Ĉ",  # fixed: was colliding with "I would appreciate" on Ј
     # More unused phrases (exp 21)
     "at the": "ј",
-    "like to": "Ċ",        # fixed: was colliding with "if you could" on Љ
+    "recovery of": 'Ċ',    # was 'like to', train_only, count=3, savings=27
     "with a": "љ",
     "all the": "Č",        # fixed: was colliding with "we should also" on Њ
-    "going to": "њ",
+    "of intellectual": 'њ',    # was 'going to', train_only, count=2, savings=26
     "the system": "Ď",    # fixed: was colliding with "let me look into" on Ћ
     "me know": "ћ",
     "we need": "Đ",        # fixed: was colliding with "don't hesitate to" on Ќ
-    "lot of": "ќ",
+    "argument about what": 'ќ',    # was 'lot of', train_only, count=2, savings=34
     # Additional 3-word phrases (exp 28)
-    "of the input": "Ē",  # fixed: was colliding with "anything else" on Ў
-    "you through the": "ў",
-    "want to make": "Ĕ",  # fixed: was colliding with "right away" on Џ
-    "schedule a call": "џ",
+    "officials attribute": 'Ē',    # was 'of the input', train_only, count=2, savings=34
+    "everything she": 'ў',    # was 'you through the', train_only, count=2, savings=24
+    "period with": 'Ĕ',    # was 'want to make', train_only, count=3, savings=27
+    "for the first": 'џ',    # was 'schedule a call', train_only, count=3, savings=33
     # More phrases (exp 36)
-    "to our team": "Ė",    # fixed: was colliding with "on our end" on Ґ
-    "about the project": "ґ",
-    "help you with": "Ę",  # fixed: was colliding with "to your satisfaction" on Ғ
+    "the remaining": 'Ė',    # was 'to our team', train_only, count=3, savings=33
+    "a combination": 'ґ',    # was 'about the project', train_only, count=3, savings=33
+    "negative zero": 'Ę',    # was 'help you with', train_only, count=3, savings=33
     "in the next": "ғ",
     # Corpus-derived phrases (exp 2) — Katakana codes (collision-free)
     "thank you for your": "ƴ",
-    "i appreciate you": "Ƶ",
+    "the scheduled": 'Ƶ',    # was 'i appreciate you', train_only, count=3, savings=33
     "within the next": "ƶ",
-    "the end of this": "Ʒ",
-    "and would like": "Ƹ",
-    "to discuss the": "ƹ",
+    "should receive": 'Ʒ',    # was 'the end of this', train_only, count=2, savings=24
+    "minutes a day": 'Ƹ',    # was 'and would like', train_only, count=3, savings=33
+    "following the": 'ƹ',    # was 'to discuss the', train_only, count=3, savings=33
     "to inform you that": "ƺ",
     "by the end of this week": "ƻ",
     # High-value corpus phrases (exp 38) — Latin Extended A
-    "the processing engine": "Ě",
+    "attribute the": 'Ě',    # was 'the processing engine', train_only, count=3, savings=33
     "thinking about": "Ĝ",
-    "processing engine": "Ğ",
+    "patients should be": 'Ğ',    # was 'processing engine', train_only, count=2, savings=32
     "i've been": "Ġ",
     "the project": "Ģ",
     "the problem": "Ĥ",
     "your account": "Ħ",
-    "the application": "Ĩ",
+    "three thousand": 'Ĩ',    # was 'the application', train_only, count=2, savings=24
     # More corpus phrases (exp 39) — Latin Extended A
-    "the ingestion pipeline": "Ī",
-    "the computational cost": "Ĭ",
-    "new onboarding process": "Į",
+    "indicates that the": 'Ī',    # was 'the ingestion pipeline', train_only, count=2, savings=32
+    "the second": 'Ĭ',    # was 'the computational cost', train_only, count=4, savings=32
+    "the question isn't": 'Į',    # was 'new onboarding process', train_only, count=2, savings=32
     "i've been thinking": "İ",
-    "your account history": "Ĳ",
-    "to make sure": "Ĵ",
+    "million dollars in": 'Ĳ',    # was 'your account history', train_only, count=2, savings=32
+    "pressure on": 'Ĵ',    # was 'to make sure', train_only, count=3, savings=27
     "i can": "Ķ",
     "and i": "Ĺ",
     # More high-value bigram phrases (exp 46) — Latin Extended A
-    "would like": "Ļ",
-    "your attention": "Ľ",
-    "appreciate you": "Ŀ",
+    "employees should": 'Ļ',    # was 'would like', train_only, count=2, savings=28
+    "difference between": 'Ľ',    # was 'your attention', train_only, count=2, savings=32
+    "within twenty-four": 'Ŀ',    # was 'appreciate you', train_only, count=2, savings=32
     "is that": "Ł",
     "within the": "Ń",
-    "to discuss": "Ņ",
-    "your identity": "Ň",
+    "data from": 'Ņ',    # was 'to discuss', train_only, count=4, savings=28
+    "to three weeks and": 'Ň',    # was 'your identity', train_only, count=2, savings=32
     "the upcoming": "Ŋ",
     # More phrases (exp 48) — Latin Extended A
-    "however there": "Ō",
-    "the approach": "Ŏ",
-    "five minutes": "Ő",
+    "but not limited to": 'Ō',    # was 'however there', train_only, count=2, savings=32
+    "zero point": 'Ŏ',    # was 'the approach', train_only, count=4, savings=32
+    "hundred and twenty": 'Ő',    # was 'five minutes', train_only, count=2, savings=32
     "we should": "Œ",
     "i have": "Ŕ",
-    "the approach you're": "Ŗ",
+    "in the chain would": 'Ŗ',    # was 'the approach you're', train_only, count=2, savings=32
     # More phrases (exp 49) — Latin Extended A
     "we need to": "Ř",
-    "the new onboarding": "Ś",
-    "the most important": "Ŝ",
-    "the model to": "Ş",
-    "the storage layer": "Š",
-    "resolve the issue": "Ţ",
-    "however there are": "Ť",
-    "for the upcoming": "Ŧ",
+    "his father": 'Ś',    # was 'the new onboarding', train_only, count=4, savings=32
+    "project management": 'Ŝ',    # was 'the most important', train_only, count=2, savings=32
+    "verified emissions": 'Ş',    # was 'the model to', train_only, count=2, savings=32
+    "if you think about": 'Š',    # was 'the storage layer', train_only, count=2, savings=32
+    "the center of the": 'Ţ',    # was 'resolve the issue', train_only, count=2, savings=30
+    "during peak hours": 'Ť',    # was 'however there are', train_only, count=2, savings=30
+    "not limited to": 'Ŧ',    # was 'for the upcoming', train_only, count=2, savings=24
     # More phrases (exp 50) — Latin Extended A
-    "i wanted": "Ũ",
-    "the processing": "Ū",
-    "schedule a": "Ŭ",
-    "i appreciate": "Ů",
+    "hundred megabytes": 'Ũ',    # was 'i wanted', train_only, count=2, savings=30
+    "starting in the": 'Ū',    # was 'the processing', train_only, count=2, savings=26
+    "the question": 'Ŭ',    # was 'schedule a', train_only, count=3, savings=30
+    "compared to the": 'Ů',    # was 'i appreciate', train_only, count=2, savings=26
     # exp 4: high-value corpus phrases
     "because the": "ā",
     "rather than": "ă",
@@ -1563,20 +1563,20 @@ PHRASE_CODEBOOK = {
     "at the cost of slightly": "Ȉ",  # savings=42, train=1, val=1
     "approximately one point": "ȸ",  # savings=42, train=1, val=1
     "the distinction between": "ɝ",  # savings=42, train=1, val=1
-    "thirty seven": "ɵ",  # savings=40, train=3, val=1
+    "you have": 'ɵ',    # was 'thirty seven', train_only, count=5, savings=30
     "eighteen months": "ɺ",  # savings=39, train=2, val=1
     "hundred percent": "ɽ",  # savings=39, train=2, val=1
     "the permissions model": "ʄ",  # savings=38, train=1, val=1
     "every thirty seconds": "ʕ",  # savings=36, train=1, val=1
     "at the cost of": "ʘ",  # savings=36, train=2, val=1
     "than trying to": "ʥ",  # savings=36, train=2, val=1
-    "forty seven": "ρ",  # savings=36, train=2, val=2
+    "we have": 'ρ',    # was 'forty seven', train_only, count=6, savings=30
     "the cost of slightly": "σ",  # savings=36, train=1, val=1
     "dietary restrictions": "ϯ",  # savings=36, train=1, val=1
     "eight hours": "ϰ",  # savings=36, train=2, val=2
     "the engineering team": "ϱ",  # savings=36, train=1, val=1
     "thirty seconds": "ϲ",  # savings=36, train=1, val=2
-    "twenty four": "ϳ",  # savings=36, train=3, val=1
+    "one thousand": 'ϳ',    # was 'twenty four', train_only, count=3, savings=30
     "to think about": "ϴ",  # savings=36, train=2, val=1
     "to twenty": "ϵ",  # savings=35, train=4, val=1
     "in the jurisdiction": "϶",  # savings=34, train=1, val=1
@@ -1588,16 +1588,16 @@ PHRASE_CODEBOOK = {
     "seven percent": "ϼ",  # savings=33, train=2, val=1
     "sixty percent": "Ͻ",  # savings=33, train=2, val=1
     "five years": "Ͼ",  # savings=32, train=3, val=1
-    "ninety one percent": "Ͽ",  # savings=32, train=1, val=1
+    "i understand": 'Ͽ',    # was 'ninety one percent', train_only, count=3, savings=30
     "has been requested": "Л",  # savings=32, train=1, val=1
     "physical activity": "ѹ",  # savings=30, train=1, val=1
-    "forty eight hours": "ҕ",  # savings=30, train=1, val=1
+    "for at least four": 'ҕ',    # was 'forty eight hours', train_only, count=2, savings=30
     "approved the": "ҙ",  # savings=30, train=2, val=1
     "side effects": "ҝ",  # savings=30, train=2, val=1
     "treating everyone": "ԅ",  # savings=30, train=1, val=1
     "hundred and fifty": "Ԉ",  # savings=30, train=1, val=1
     "permissions model": "ԉ",  # savings=30, train=1, val=1
-    "in read only mode": "Ԋ",  # savings=30, train=1, val=1
+    "after controlling": 'Ԋ',    # was 'in read only mode', train_only, count=2, savings=30
     "opportunities and": "ԋ",  # savings=30, train=1, val=1
     "before initiating": "Ԍ",  # savings=30, train=1, val=1
     "industry analysts": "ԍ",  # savings=30, train=1, val=1
@@ -1607,7 +1607,7 @@ PHRASE_CODEBOOK = {
     "upcoming product": "ԑ",  # savings=28, train=1, val=1
     "depending on the": "Ԓ",  # savings=28, train=1, val=1
     "milligrams daily": "ԓ",  # savings=28, train=1, val=1
-    "level and": "Ԕ",  # savings=28, train=3, val=1
+    "and it's": 'Ԕ',    # was 'level and', train_only, count=4, savings=24
     "has been updated": "ԕ",  # savings=28, train=1, val=1
     "from a": "Ԗ",  # savings=28, train=4, val=3
     "last year": "ԗ",  # savings=28, train=3, val=1
@@ -1618,7 +1618,7 @@ PHRASE_CODEBOOK = {
     "support the": "Ԝ",  # savings=27, train=1, val=2
     "than trying": "ԝ",  # savings=27, train=2, val=1
     "ninety days": "Ԟ",  # savings=27, train=2, val=1
-    "engineering and": "ԟ",  # savings=26, train=1, val=1
+    "using an": 'ԟ',    # was 'engineering and', train_only, count=4, savings=24
     "will be used to": "Ԡ",  # savings=26, train=1, val=1
     "doesn't produce": "ԡ",  # savings=26, train=1, val=1
     "the distinction": "Ԣ",  # savings=26, train=1, val=1
@@ -1627,8 +1627,8 @@ PHRASE_CODEBOOK = {
     "in the meantime": "ԥ",  # savings=26, train=1, val=1
     "its own": "Ԧ",  # savings=25, train=3, val=2
     "twelve percent": "ԧ",  # savings=24, train=1, val=1
-    "read only mode": "Ԩ",  # savings=24, train=1, val=1
-    "ninety one": "ԩ",  # savings=24, train=2, val=1
+    "the next two": 'Ԩ',    # was 'read only mode', train_only, count=3, savings=30
+    "switching to": 'ԩ',    # was 'ninety one', train_only, count=3, savings=30
     "one point four": "Ԫ",  # savings=24, train=1, val=1
     "mobile app": "ԫ",  # savings=24, train=1, val=2
     "been requested": "Ԭ",  # savings=24, train=1, val=1
@@ -1669,48 +1669,48 @@ PHRASE_CODEBOOK = {
     "been updated": "٦",  # savings=20, train=1, val=1
     "and felt the": "٧",  # savings=20, train=1, val=1
     "the meantime": "٨",  # savings=20, train=1, val=1
-    "duration and": "٩",  # savings=20, train=1, val=1
+    "would eliminate": '٩',    # was 'duration and', train_only, count=2, savings=26
     "will be used": "٪",  # savings=20, train=1, val=1
     "to the total": "٫",  # savings=20, train=1, val=1
     "about twenty": "٬",  # savings=20, train=1, val=1
     "available on": "٭",  # savings=20, train=1, val=1
     "right answer": "ٮ",  # savings=20, train=1, val=1
     "reaching for": "ٯ",  # savings=20, train=1, val=1
-    "in read only": "ٱ",  # savings=20, train=1, val=1
+    "should receive an": 'ٱ',    # was 'in read only', train_only, count=2, savings=30
     "system with": "ٲ",  # savings=18, train=1, val=1
-    "time and": "ٳ",  # savings=18, train=2, val=1
+    "the screw": 'ٳ',    # was 'time and', train_only, count=4, savings=28
     "to minimize": "ٴ",  # savings=18, train=1, val=1
-    "outcomes it": "ٵ",  # savings=18, train=1, val=1
-    "updated the": "ٶ",  # savings=18, train=1, val=1
-    "year the": "ٷ",  # savings=18, train=2, val=1
-    "week and": "ٸ",  # savings=18, train=2, val=1
+    "thousand requests": 'ٵ',    # was 'outcomes it', train_only, count=2, savings=30
+    "to invite you to": 'ٶ',    # was 'updated the', train_only, count=2, savings=28
+    "per minute with a": 'ٷ',    # was 'year the', train_only, count=2, savings=30
+    "material adverse": 'ٸ',    # was 'week and', train_only, count=2, savings=28
     "admin panel": "ٹ",  # savings=18, train=1, val=1
-    "reports and": "ٺ",  # savings=18, train=1, val=1
-    "third party": "ٻ",  # savings=18, train=1, val=1
+    "the introduction": 'ٺ',    # was 'reports and', train_only, count=2, savings=28
+    "the software": 'ٻ',    # was 'third party', train_only, count=3, savings=30
     "the vaccine": "ټ",  # savings=18, train=1, val=1
     "parking lot": "ٽ",  # savings=18, train=1, val=1
     "thirty days": "پ",  # savings=18, train=1, val=1
     "the patient": "ٿ",  # savings=18, train=1, val=1
     "of slightly": "ڀ",  # savings=18, train=1, val=1
-    "built in": "ځ",  # savings=18, train=1, val=2
+    "including but not": 'ځ',    # was 'built in', train_only, count=2, savings=30
     "caused by a": "ڂ",  # savings=18, train=1, val=1
-    "seconds and": "ڃ",  # savings=18, train=1, val=1
+    "through the lens": 'ڃ',    # was 'seconds and', train_only, count=2, savings=28
     "but i think": "ڄ",  # savings=18, train=1, val=1
     "four to six": "څ",  # savings=18, train=1, val=1
     "and regular": "چ",  # savings=18, train=1, val=1
     "the dataset": "ڇ",  # savings=18, train=1, val=1
     "and version": "ڈ",  # savings=18, train=1, val=1
-    "updates the": "ډ",  # savings=18, train=1, val=1
-    "forty eight": "ڊ",  # savings=18, train=1, val=1
+    "the regional": 'ډ',    # was 'updates the', train_only, count=3, savings=30
+    "you need": 'ڊ',    # was 'forty eight', train_only, count=5, savings=30
     "of forty": "ڋ",  # savings=18, train=1, val=2
     "the parking": "ڌ",  # savings=18, train=1, val=1
-    "thirty one": "ڍ",  # savings=16, train=1, val=1
+    "up to two percent": 'ڍ',    # was 'thirty one', train_only, count=2, savings=30
     "rates have": "ڎ",  # savings=16, train=1, val=1
     "in our": "ڏ",  # savings=16, train=3, val=1
     "may be": "ڐ",  # savings=16, train=3, val=1
     "this month": "ڑ",  # savings=16, train=1, val=1
     "found that": "ڒ",  # savings=16, train=1, val=1
-    "number and": "ړ",  # savings=16, train=1, val=1
+    "most significant": 'ړ',    # was 'number and', train_only, count=2, savings=28
     "of our top": "ڔ",  # savings=16, train=1, val=1
     "be used to": "ڕ",  # savings=16, train=1, val=1
     "to fifteen": "ږ",  # savings=16, train=1, val=1
@@ -1747,99 +1747,99 @@ PHRASE_CODEBOOK = {
     "for all": "ڵ",  # savings=15, train=2, val=1
     "in this": "ڶ",  # savings=15, train=2, val=1
     "because i": "ڷ",  # savings=14, train=1, val=1
-    "long term": "ڸ",  # savings=14, train=1, val=1
-    "read only": "ڹ",  # savings=14, train=1, val=1
-    "given the": "ں",  # savings=14, train=1, val=1
-    "i can see": "ڻ",  # savings=14, train=1, val=1
-    "at ninety": "ڼ",  # savings=14, train=1, val=1
-    "with less": "ڽ",  # savings=14, train=1, val=1
-    "i believe": "ھ",  # savings=14, train=1, val=1
+    "tests run against": 'ڸ',    # was 'long term', train_only, count=2, savings=30
+    "the most commonly": 'ڹ',    # was 'read only', train_only, count=2, savings=30
+    "the configured": 'ں',    # was 'given the', train_only, count=2, savings=24
+    "the conference": 'ڻ',    # was 'i can see', train_only, count=2, savings=24
+    "has been moved": 'ڼ',    # was 'at ninety', train_only, count=2, savings=24
+    "to two percent": 'ڽ',    # was 'with less', train_only, count=2, savings=24
+    "to access your": 'ھ',    # was 'i believe', train_only, count=2, savings=24
     "against a": "ڿ",  # savings=14, train=1, val=1
-    "only mode": "ۀ",  # savings=14, train=1, val=1
-    "i want to": "ہ",  # savings=14, train=1, val=1
-    "caused by": "ۂ",  # savings=14, train=1, val=1
-    "costs and": "ۃ",  # savings=14, train=1, val=1
-    "for three": "ۄ",  # savings=14, train=1, val=1
-    "a fifteen": "ۅ",  # savings=14, train=1, val=1
-    "two years": "ۆ",  # savings=14, train=1, val=1
-    "a passive": "ۇ",  # savings=14, train=1, val=1
-    "and fifty": "ۈ",  # savings=14, train=1, val=1
-    "months of": "ۉ",  # savings=14, train=1, val=1
-    "answer is": "ۊ",  # savings=14, train=1, val=1
-    "might not": "ۋ",  # savings=14, train=1, val=1
-    "driven by": "ی",  # savings=14, train=1, val=1
-    "it's been": "ۍ",  # savings=14, train=1, val=1
-    "a version": "ێ",  # savings=14, train=1, val=1
-    "that your": "ۏ",  # savings=14, train=1, val=1
-    "hours per": "ې",  # savings=14, train=1, val=1
-    "the space": "ۑ",  # savings=14, train=1, val=1
-    "that most": "ے",  # savings=14, train=1, val=1
-    "the glass": "ۓ",  # savings=14, train=1, val=1
-    "twelve to": "۔",  # savings=14, train=1, val=1
-    "even when": "ە",  # savings=14, train=1, val=1
-    "each week": "۞",  # savings=14, train=1, val=1
-    "you want": "ۥ",  # savings=12, train=1, val=1
-    "had been": "ۦ",  # savings=12, train=1, val=1
-    "you said": "۩",  # savings=12, train=1, val=1
-    "of those": "ۮ",  # savings=12, train=1, val=1
-    "and is": "ۯ",  # savings=12, train=2, val=1
-    "tired of": "۰",  # savings=12, train=1, val=1
-    "days the": "۱",  # savings=12, train=1, val=1
+    "materials like": 'ۀ',    # was 'only mode', train_only, count=2, savings=24
+    "are subject to": 'ہ',    # was 'i want to', train_only, count=2, savings=24
+    "injection site": 'ۂ',    # was 'caused by', train_only, count=2, savings=24
+    "thousand teams": 'ۃ',    # was 'costs and', train_only, count=2, savings=24
+    "over three": 'ۄ',    # was 'for three', train_only, count=3, savings=24
+    "improvement in": 'ۅ',    # was 'a fifteen', train_only, count=2, savings=24
+    "to establish a": 'ۆ',    # was 'two years', train_only, count=2, savings=24
+    "the end of": 'ۇ',    # was 'a passive', train_only, count=3, savings=24
+    "you'll need to": 'ۈ',    # was 'and fifty', train_only, count=2, savings=24
+    "the leadership": 'ۉ',    # was 'months of', train_only, count=2, savings=24
+    "so you can": 'ۊ',    # was 'answer is', train_only, count=3, savings=24
+    "completing the": 'ۋ',    # was 'might not', train_only, count=2, savings=24
+    "every five": 'ی',    # was 'driven by', train_only, count=3, savings=24
+    "the source": 'ۍ',    # was 'it's been', train_only, count=3, savings=24
+    "thought it was": 'ێ',    # was 'a version', train_only, count=2, savings=24
+    "which override": 'ۏ',    # was 'that your', train_only, count=2, savings=24
+    "it was": 'ې',    # was 'hours per', train_only, count=7, savings=28
+    "assistance has": 'ۑ',    # was 'the space', train_only, count=2, savings=24
+    "the header": 'ے',    # was 'that most', train_only, count=3, savings=24
+    "you care about": 'ۓ',    # was 'the glass', train_only, count=2, savings=24
+    "argument about": '۔',    # was 'twelve to', train_only, count=2, savings=24
+    "to engage with": 'ە',    # was 'even when', train_only, count=2, savings=24
+    "the historical": '۞',    # was 'each week', train_only, count=2, savings=24
+    "seventy percent": 'ۥ',    # was 'you want', train_only, count=2, savings=26
+    "and recovery of": 'ۦ',    # was 'had been', train_only, count=2, savings=26
+    "the final three": '۩',    # was 'you said', train_only, count=2, savings=26
+    "introduction of": 'ۮ',    # was 'of those', train_only, count=2, savings=26
+    "you think about": 'ۯ',    # was 'and is', train_only, count=2, savings=26
+    "i have attached": '۰',    # was 'tired of', train_only, count=2, savings=26
+    "network with": '۱',    # was 'days the', train_only, count=3, savings=30
     "just the": "۲",  # savings=12, train=1, val=1
-    "risen to": "۳",  # savings=12, train=1, val=1
-    "a full": "۴",  # savings=12, train=2, val=1
-    "felt the": "۵",  # savings=12, train=1, val=1
-    "so the": "۶",  # savings=12, train=2, val=1
-    "an email": "۷",  # savings=12, train=1, val=1
-    "plans to": "۸",  # savings=12, train=1, val=1
+    "the old": '۳',    # was 'risen to', train_only, count=5, savings=25
+    "does not": '۴',    # was 'a full', train_only, count=4, savings=24
+    "adverse change": '۵',    # was 'felt the', train_only, count=2, savings=24
+    "the target": '۶',    # was 'so the', train_only, count=3, savings=24
+    "eliminate this": '۷',    # was 'an email', train_only, count=2, savings=24
+    "proposals from": '۸',    # was 'plans to', train_only, count=2, savings=24
     "but i": "۹",  # savings=12, train=3, val=1
-    "you when": "ۺ",  # savings=12, train=1, val=1
-    "sure the": "ۻ",  # savings=12, train=1, val=1
-    "and felt": "ۼ",  # savings=12, train=1, val=1
-    "signs of": "۽",  # savings=12, train=1, val=1
-    "of their": "۾",  # savings=12, train=1, val=1
-    "a set of": "ۿ",  # savings=12, train=1, val=1
-    "data the": "܀",  # savings=12, train=1, val=1
+    "frustration with": 'ۺ',    # was 'you when', train_only, count=2, savings=28
+    "to produce": 'ۻ',    # was 'sure the', train_only, count=3, savings=24
+    "increasing the": 'ۼ',    # was 'and felt', train_only, count=2, savings=24
+    "question isn't": '۽',    # was 'signs of', train_only, count=2, savings=24
+    "instead of": '۾',    # was 'of their', train_only, count=3, savings=24
+    "back and forth": 'ۿ',    # was 'a set of', train_only, count=2, savings=24
+    "fifteen to twenty": '܀',    # was 'data the', train_only, count=2, savings=30
     "to add": "܁",  # savings=12, train=2, val=1
-    "a few": "܂",  # savings=12, train=3, val=1
-    "at two": "܃",  # savings=12, train=2, val=1
-    "to reach": "܄",  # savings=12, train=1, val=1
-    "within a": "܅",  # savings=12, train=1, val=1
-    "a target": "܆",  # savings=12, train=1, val=1
-    "fails to": "܇",  # savings=12, train=1, val=1
-    "dose of": "܈",  # savings=10, train=1, val=1
-    "isn't a": "܉",  # savings=10, train=1, val=1
-    "now and": "܊",  # savings=10, train=1, val=1
-    "to take": "܋",  # savings=10, train=1, val=1
-    "to four": "܌",  # savings=10, train=1, val=1
-    "up here": "܍",  # savings=10, train=1, val=1
-    "our top": "ݍ",  # savings=10, train=1, val=1
-    "four to": "ݎ",  # savings=10, train=1, val=1
-    "size of": "ݏ",  # savings=10, train=1, val=1
-    "and she": "ݐ",  # savings=10, train=1, val=1
-    "the day": "ݑ",  # savings=10, train=1, val=1
+    "the memory": '܂',    # was 'a few', train_only, count=3, savings=24
+    "with a maximum": '܃',    # was 'at two', train_only, count=2, savings=24
+    "start by": '܄',    # was 'to reach', train_only, count=4, savings=24
+    "four hours": '܅',    # was 'within a', train_only, count=3, savings=24
+    "to one hundred": '܆',    # was 'a target', train_only, count=2, savings=24
+    "me know if": '܇',    # was 'fails to', train_only, count=3, savings=24
+    "analysis of the": '܈',    # was 'dose of', train_only, count=2, savings=26
+    "aligns with the": '܉',    # was 'isn't a', train_only, count=2, savings=26
+    "higher than the": '܊',    # was 'now and', train_only, count=2, savings=26
+    "of one thousand": '܋',    # was 'to take', train_only, count=2, savings=26
+    "requests per hour": '܌',    # was 'to four', train_only, count=2, savings=30
+    "three levels of": '܍',    # was 'up here', train_only, count=2, savings=26
+    "you're making a": 'ݍ',    # was 'our top', train_only, count=2, savings=26
+    "controlling for": 'ݎ',    # was 'four to', train_only, count=2, savings=26
+    "our analysis of": 'ݏ',    # was 'size of', train_only, count=2, savings=26
+    "presenting with": 'ݐ',    # was 'and she', train_only, count=2, savings=26
+    "related to your": 'ݑ',    # was 'the day', train_only, count=2, savings=26
     "by a": "ݒ",  # savings=10, train=3, val=2
     "on a": "ݓ",  # savings=10, train=4, val=1
-    "see why": "ݔ",  # savings=10, train=1, val=1
-    "in read": "ݕ",  # savings=10, train=1, val=1
-    "cost is": "ݖ",  # savings=10, train=1, val=1
-    "can see": "ݗ",  # savings=10, train=1, val=1
-    "be used": "ݘ",  # savings=10, train=1, val=1
-    "a clear": "ݙ",  # savings=10, train=1, val=1
-    "an hour": "ݚ",  # savings=10, train=1, val=1
+    "three weeks and": 'ݔ',    # was 'see why', train_only, count=2, savings=26
+    "percent against": 'ݕ',    # was 'in read', train_only, count=2, savings=26
+    "tier allows one": 'ݖ',    # was 'cost is', train_only, count=2, savings=26
+    "per minute with": 'ݗ',    # was 'can see', train_only, count=2, savings=26
+    "to your account": 'ݘ',    # was 'be used', train_only, count=2, savings=26
+    "under the terms": 'ݙ',    # was 'a clear', train_only, count=2, savings=26
+    "but not limited": 'ݚ',    # was 'an hour', train_only, count=2, savings=26
     "not a": "ݛ",  # savings=9, train=2, val=1
-    "a ten": "ݜ",  # savings=9, train=2, val=1
-    "add a": "ݝ",  # savings=9, train=2, val=1
-    "set of": "ݞ",  # savings=8, train=1, val=1
-    "is now": "ݟ",  # savings=8, train=1, val=1
-    "by two": "ݠ",  # savings=8, train=1, val=1
+    "instructions for": 'ݜ',    # was 'a ten', train_only, count=2, savings=28
+    "between the": 'ݝ',    # was 'add a', train_only, count=3, savings=27
+    "hundred requests": 'ݞ',    # was 'set of', train_only, count=2, savings=28
+    "alleges that the": 'ݟ',    # was 'is now', train_only, count=2, savings=28
+    "full-text search": 'ݠ',    # was 'by two', train_only, count=2, savings=28
     "in two": "ݡ",  # savings=8, train=1, val=1
-    "i am": "ݢ",  # savings=8, train=3, val=1
+    "zero point three": 'ݢ',    # was 'i am', train_only, count=2, savings=28
     "and an": "ݣ",  # savings=8, train=1, val=1
-    "on any": "ݤ",  # savings=8, train=1, val=1
-    "on its": "ݥ",  # savings=8, train=1, val=1
-    "i want": "ݦ",  # savings=8, train=1, val=1
-    "i just": "ݧ",  # savings=8, train=1, val=1
+    "should include a": 'ݤ',    # was 'on any', train_only, count=2, savings=28
+    "your integration": 'ݥ',    # was 'on its', train_only, count=2, savings=28
+    "the difference": 'ݦ',    # was 'i want', train_only, count=2, savings=24
+    "the board": 'ݧ',    # was 'i just', train_only, count=4, savings=28
     "uses a": "ݨ",  # savings=8, train=1, val=1
     "a four": "ݩ",  # savings=8, train=1, val=1
 }
