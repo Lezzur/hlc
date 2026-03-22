@@ -17,13 +17,14 @@ DO NOT put evaluation logic here. That stays in evaluate.py (read-only).
 # ═══════════════════════════════════════════════════════════
 
 SYMBOL_MAP = {
+    # ASCII symbols (high-frequency words)
     "and": "+",
     "the": "^",
     "is": "$",
-    "be": "$",
+    "be": "ㅟ",    # fixed: was colliding with "is" on "$"
     "that": "~",
     "for": "@",
-    "at": "@",
+    "at": "ㄬ",    # fixed: was colliding with "for" on "@"
     "what": "#",
     "with": "&",
     "this": "!",
@@ -74,6 +75,7 @@ SYMBOL_MAP = {
     "part": "X",
     "need": "Y",
     "feel": "Z",
+    # Hangul Jamo — group 1 (unique, collision-free)
     "give": "ㄱ",
     "tell": "ㄴ",
     "come": "ㄷ",
@@ -92,6 +94,7 @@ SYMBOL_MAP = {
     "look": "ㅌ",
     "system": "ㅍ",
     "model": "ㅎ",
+    # Hangul Jamo — group 2
     "day": "ㅏ",
     "right": "ㅑ",
     "high": "ㅒ",
@@ -105,7 +108,6 @@ SYMBOL_MAP = {
     "week": "ㅚ",
     "thought": "ㅝ",
     "find": "ㅞ",
-    "work": "ㅟ",
     "talk": "ㅢ",
     "hold": "ㅣ",
     "move": "ㅤ",
@@ -136,6 +138,7 @@ SYMBOL_MAP = {
     "support": "ㅽ",
     "handle": "ㅾ",
     "manage": "ㅿ",
+    # Hangul Jamo — group 3
     "monitor": "㄀",
     "control": "㄁",
     "benefit": "㄂",
@@ -156,7 +159,7 @@ SYMBOL_MAP = {
     "concern": "ㄑ",
     "develop": "ㄒ",
     "maintain": "ㄓ",
-    "achieve": "ㄔ",
+    "impact": "ㄔ",    # fixed: freed from achieve-dedup
     "deliver": "ㄕ",
     "response": "ㄖ",
     "feature": "ㄗ",
@@ -168,7 +171,7 @@ SYMBOL_MAP = {
     "account": "ㄝ",
     "network": "ㄞ",
     "request": "ㄟ",
-    "service": "ㄠ",
+    "stream": "ㄠ",    # fixed: freed from service-dedup
     "option": "ㄡ",
     "status": "ㄢ",
     "result": "ㄣ",
@@ -180,37 +183,29 @@ SYMBOL_MAP = {
     "health": "ㄩ",
     "safety": "ㄪ",
     "policy": "ㄫ",
-    "system": "ㄬ",
-    "control": "ㄭ",
+    "center": "ㄭ",    # fixed: freed from control-dedup
     "effort": "ㄮ",
     "energy": "ㄯ",
     "action": "㄰",
-    "change": "ㄱ",
     "growth": "ㄲ",
     "vision": "ㄳ",
-    "impact": "ㄴ",
-    "effort": "ㄵ",
-    "result": "ㄶ",
-    "stream": "ㄷ",
-    "center": "ㄸ",
-    "member": "ㄹ",
+    "member": "ㄵ",    # fixed: freed from effort-dedup
+    "learn": "ㄶ",    # fixed: freed from result-dedup
     "record": "ㄺ",
     "break": "ㄻ",
     "force": "ㄼ",
     "cause": "ㄽ",
     "share": "ㄾ",
-    "reach": "ㄿ",
+    "order": "ㄿ",    # fixed: freed from reach-dedup
     "trade": "ㅀ",
-    "learn": "ㅁ",
-    "sound": "ㅂ",
     "bring": "ㅃ",
-    "order": "ㅄ",
-    "color": "ㅅ",
-    "cover": "ㅆ",
-    "close": "ㅇ",
-    "level": "ㅈ",
-    "stage": "ㅉ",
-    "total": "ㅊ",
+    # Katakana — for remaining collision words (new unique symbols)
+    "color": "ア",
+    "cover": "イ",
+    "close": "ウ",
+    "level": "エ",
+    "stage": "オ",
+    "total": "カ",
 }
 
 # ═══════════════════════════════════════════════════════════
@@ -359,35 +354,35 @@ PHRASE_CODEBOOK = {
     "would like to": "ҽ",
     "the next": "Ҿ",
     "has been": "ҿ",
-    "thank you for": "Ѐ",
+    "thank you for": "Ā",    # fixed: was colliding with "at this point" on Ѐ
     "there are": "ѐ",
-    "the first": "Ѓ",
+    "the first": "Ă",        # fixed: was colliding with "I would like to" on Ѓ
     "need to": "ѓ",
-    "wanted to": "Ѕ",
+    "wanted to": "Ą",        # fixed: was colliding with "I have reviewed" on Ѕ
     "you for your": "ѕ",
-    "let me": "Ї",
+    "let me": "Ć",            # fixed: was colliding with "it appears that" on Ї
     # Long phrases (exp 7)
     "by the end of this": "ї",
-    "within the next two weeks": "Ј",
+    "within the next two weeks": "Ĉ",  # fixed: was colliding with "I would appreciate" on Ј
     # More unused phrases (exp 21)
     "at the": "ј",
-    "like to": "Љ",
+    "like to": "Ċ",        # fixed: was colliding with "if you could" on Љ
     "with a": "љ",
-    "all the": "Њ",
+    "all the": "Č",        # fixed: was colliding with "we should also" on Њ
     "going to": "њ",
-    "the system": "Ћ",
+    "the system": "Ď",    # fixed: was colliding with "let me look into" on Ћ
     "me know": "ћ",
-    "we need": "Ќ",
+    "we need": "Đ",        # fixed: was colliding with "don't hesitate to" on Ќ
     "lot of": "ќ",
     # Additional 3-word phrases (exp 28)
-    "of the input": "Ў",
+    "of the input": "Ē",  # fixed: was colliding with "anything else" on Ў
     "you through the": "ў",
-    "want to make": "Џ",
+    "want to make": "Ĕ",  # fixed: was colliding with "right away" on Џ
     "schedule a call": "џ",
     # More phrases (exp 36)
-    "to our team": "Ґ",
+    "to our team": "Ė",    # fixed: was colliding with "on our end" on Ґ
     "about the project": "ґ",
-    "help you with": "Ғ",
+    "help you with": "Ę",  # fixed: was colliding with "to your satisfaction" on Ғ
     "in the next": "ғ",
 }
 
