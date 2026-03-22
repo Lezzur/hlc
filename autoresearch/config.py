@@ -492,6 +492,15 @@ SYMBOL_MAP = {
     "those": "武",
     "thank": "龍",
     "items": "鳳",
+    # CJK — exp 35: more high-value words
+    "compressions": "侍",
+    "two": "忍",
+    "input": "将",
+    "hours": "明",
+    "green": "暗",
+    "going": "辺",
+    "cache": "角",
+    "being": "頭",
 }
 
 # ═══════════════════════════════════════════════════════════
