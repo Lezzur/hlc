@@ -177,6 +177,16 @@ SYMBOL_MAP = {
     "reason": "ㄦ",
     "notice": "ㄧ",
     "review": "ㄨ",
+    "health": "ㄩ",
+    "safety": "ㄪ",
+    "policy": "ㄫ",
+    "system": "ㄬ",
+    "control": "ㄭ",
+    "effort": "ㄮ",
+    "energy": "ㄯ",
+    "action": "㄰",
+    "change": "ㄱ",
+    "growth": "ㄲ",
 }
 
 # ═══════════════════════════════════════════════════════════
