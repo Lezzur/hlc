@@ -555,6 +555,15 @@ SYMBOL_MAP = {
     "document": "低",
     "decision": "多",
     "deadline": "少",
+    # CJK — exp 44: more 8-letter words
+    "datasets": "勝",
+    "contains": "負",
+    "consists": "善",
+    "coherent": "悪",
+    "choosing": "美",
+    "capacity": "醜",
+    "business": "賞",
+    "behavior": "罰",
 }
 
 # ═══════════════════════════════════════════════════════════
