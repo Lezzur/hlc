@@ -465,6 +465,15 @@ SYMBOL_MAP = {
     "reviewing": "誠",
     "resources": "義",
     "reporting": "礼",
+    # CJK — exp 32: more 9-letter words
+    "reference": "仁",
+    "questions": "信",
+    "quarterly": "忠",
+    "published": "孝",
+    "processed": "廉",
+    "necessary": "恥",
+    "magnitude": "正",
+    "instances": "清",
 }
 
 # ═══════════════════════════════════════════════════════════
