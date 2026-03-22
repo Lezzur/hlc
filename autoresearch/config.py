@@ -537,6 +537,15 @@ SYMBOL_MAP = {
     "slightly": "左",
     "shipment": "内",
     "sequence": "外",
+    # CJK — exp 42: more 8-letter words
+    "rollback": "速",
+    "reviewed": "急",
+    "relevant": "止",
+    "received": "動",
+    "question": "静",
+    "prepared": "強",
+    "positive": "弱",
+    "navigate": "重",
 }
 
 # ═══════════════════════════════════════════════════════════
