@@ -240,6 +240,15 @@ SYMBOL_MAP = {
     "between": "レ",
     "include": "ロ",
     "without": "ワ",
+    # Hiragana — exp 7: more long high-value words
+    "configuration": "あ",
+    "completely": "い",
+    "appreciate": "う",
+    "architecture": "え",
+    "specific": "お",
+    "analysis": "か",
+    "available": "き",
+    "improvement": "く",
 }
 
 # ═══════════════════════════════════════════════════════════
