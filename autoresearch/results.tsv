@@ -2,3 +2,4 @@ experiment	description	score	train	val	gap	status
 0	baseline: trimmed to 900 syms, 311 phrases	59.2602	59.16	59.36	0.20	baseline
 2	reprioritize SYMBOL_MAP by freq*savings (59.26->65.33)	65.3269	65.21	65.45	0.24	improvement
 3	add 50 general English bigram phrases (65.33->65.50)	65.5041	65.37	65.64	0.27	improvement
+4	swap 376 low-value symbols for high-freq corpus words (65.50->67.01)	67.0112	67.09	66.93	0.15	improvement
