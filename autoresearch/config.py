@@ -375,6 +375,15 @@ SYMBOL_MAP = {
     "budget": "船",
     "supports": "門",
     "resource": "家",
+    # CJK — exp 22: 8-letter high-value words
+    "practice": "道",
+    "password": "橋",
+    "original": "市",
+    "indexing": "村",
+    "identity": "里",
+    "followed": "野",
+    "feedback": "原",
+    "features": "谷",
 }
 
 # ═══════════════════════════════════════════════════════════
