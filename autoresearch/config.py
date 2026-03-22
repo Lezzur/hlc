@@ -150,6 +150,14 @@ SYMBOL_MAP = {
     "generate": "ㄋ",
     "position": "ㄌ",
     "purpose": "ㄍ",
+    "conduct": "ㄎ",
+    "relate": "ㄏ",
+    "depend": "ㄐ",
+    "concern": "ㄑ",
+    "develop": "ㄒ",
+    "maintain": "ㄓ",
+    "achieve": "ㄔ",
+    "deliver": "ㄕ",
 }
 
 # ═══════════════════════════════════════════════════════════
