@@ -46,7 +46,7 @@ SYMBOL_MAP = {
     "time": "3",
     "like": "4",
     "any": "5",
-    "into": "6",
+    "into": "В",
     "down": "Ϲ",
     "about": "8",
     "but": "9",
@@ -64,7 +64,7 @@ SYMBOL_MAP = {
     "work": "M",
     "make": "N",
     "know": "O",
-    "see": "P",
+    "see": "Ж",
     "good": "Ͻ",
     "way": "R",
     "just": "S",
@@ -641,6 +641,9 @@ SYMBOL_MAP = {
     "or": "*",
     "so": "U",
     "up": "G",
+    # Byte-optimized session — exp 8: more ASCII swaps
+    "if": "6",
+    "me": "P",
 }
 
 # ═══════════════════════════════════════════════════════════
