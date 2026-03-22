@@ -4,3 +4,4 @@ experiment	description	score	train	val	gap	status
 3	add 50 general English bigram phrases (65.33->65.50)	65.5041	65.37	65.64	0.27	improvement
 4	swap 376 low-value symbols for high-freq corpus words (65.50->67.01)	67.0112	67.09	66.93	0.15	improvement
 5	final 29 symbol swaps (67.01->67.04)	67.0432	67.08	67.00	0.08	improvement
+6	add 387 corpus-mined phrases to fill 600 cap (67.04->68.36)	68.3557	68.49	68.23	0.26	improvement
