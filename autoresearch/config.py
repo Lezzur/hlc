@@ -706,6 +706,15 @@ PHRASE_CODEBOOK = {
     "to discuss the": "シ",
     "to inform you that": "ス",
     "by the end of this week": "セ",
+    # High-value corpus phrases (exp 38) — Latin Extended A
+    "the processing engine": "Ě",
+    "thinking about": "Ĝ",
+    "processing engine": "Ğ",
+    "i've been": "Ġ",
+    "the project": "Ģ",
+    "the problem": "Ĥ",
+    "your account": "Ħ",
+    "the application": "Ĩ",
 }
 
 # ═══════════════════════════════════════════════════════════
