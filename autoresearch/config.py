@@ -411,6 +411,15 @@ SYMBOL_MAP = {
     "address": "津",
     "where": "港",
     "weeks": "湾",
+    # CJK — exp 26: contractions + very long words
+    "i'm": "錦",
+    "let": "緑",
+    "how": "紅",
+    "i'd": "藍",
+    "had": "黒",
+    "particularly": "白",
+    "implementing": "灰",
+    "dependencies": "朱",
 }
 
 # ═══════════════════════════════════════════════════════════
