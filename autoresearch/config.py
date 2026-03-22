@@ -483,6 +483,15 @@ SYMBOL_MAP = {
     "effective": "雅",
     "discussed": "淡",
     "direction": "泰",
+    # CJK — exp 34: remaining 9-letter + 5-letter high-count words
+    "configure": "敬",
+    "conducted": "安",
+    "challenge": "知",
+    "carefully": "学",
+    "until": "文",
+    "those": "武",
+    "thank": "龍",
+    "items": "鳳",
 }
 
 # ═══════════════════════════════════════════════════════════
