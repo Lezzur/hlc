@@ -778,6 +778,15 @@ PHRASE_CODEBOOK = {
     "to make sure": "Ĵ",
     "i can": "Ķ",
     "and i": "Ĺ",
+    # More high-value bigram phrases (exp 46) — Latin Extended A
+    "would like": "Ļ",
+    "your attention": "Ľ",
+    "appreciate you": "Ŀ",
+    "is that": "Ł",
+    "within the": "Ń",
+    "to discuss": "Ņ",
+    "your identity": "Ň",
+    "the upcoming": "Ŋ",
 }
 
 # ═══════════════════════════════════════════════════════════
