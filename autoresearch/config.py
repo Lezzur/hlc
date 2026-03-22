@@ -546,6 +546,15 @@ SYMBOL_MAP = {
     "prepared": "強",
     "positive": "弱",
     "navigate": "重",
+    # CJK — exp 43: more 8-letter words
+    "multiple": "長",
+    "modeling": "短",
+    "metadata": "広",
+    "location": "狭",
+    "findings": "高",
+    "document": "低",
+    "decision": "多",
+    "deadline": "少",
 }
 
 # ═══════════════════════════════════════════════════════════
