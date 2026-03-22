@@ -122,6 +122,14 @@ SYMBOL_MAP = {
     "build": "ㅯ",
     "change": "ㅰ",
     "happen": "ㅱ",
+    "create": "ㅲ",
+    "remove": "ㅳ",
+    "apply": "ㅴ",
+    "define": "ㅵ",
+    "expand": "ㅶ",
+    "reduce": "ㅷ",
+    "enhance": "ㅸ",
+    "display": "ㅹ",
 }
 
 # ═══════════════════════════════════════════════════════════
