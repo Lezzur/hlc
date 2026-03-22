@@ -187,6 +187,14 @@ SYMBOL_MAP = {
     "action": "㄰",
     "change": "ㄱ",
     "growth": "ㄲ",
+    "vision": "ㄳ",
+    "impact": "ㄴ",
+    "effort": "ㄵ",
+    "result": "ㄶ",
+    "stream": "ㄷ",
+    "center": "ㄸ",
+    "member": "ㄹ",
+    "record": "ㄺ",
 }
 
 # ═══════════════════════════════════════════════════════════
