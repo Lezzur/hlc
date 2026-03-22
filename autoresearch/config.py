@@ -366,6 +366,15 @@ SYMBOL_MAP = {
     "stack": "糸",
     "error": "米",
     "within": "肉",
+    # CJK — exp 21: more high-freq words
+    "second": "魚",
+    "really": "鳥",
+    "models": "犬",
+    "having": "馬",
+    "engine": "車",
+    "budget": "船",
+    "supports": "門",
+    "resource": "家",
 }
 
 # ═══════════════════════════════════════════════════════════
