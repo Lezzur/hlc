@@ -1,0 +1,16 @@
+experiment	description	score	ratio	recon	phrases	status
+baseline	Initial config (Greek/Cyrillic phrases, 12 symbols)	56.0839	27.3	99.3	112	baseline
+1	add 10 high-frequency article phrases	56.7909	28.5	99.3	246	improved
+2	add 11 more 2-4 word phrases	57.1895	29.1	99.3	305	improved
+3	add 5 high-frequency word symbols	57.6955	30.0	99.3	305	improved
+4	add 2 more word symbols (conservative)	57.8237	30.2	99.3	305	improved
+5	add 10 unused high-value phrases	57.8507	30.4	99.1	340	improved
+6	add have and been symbols	57.9686	30.6	99.1	340	improved
+7	add 2 long phrases	57.9903	30.7	99.0	344	improved
+8	add has and more symbols	58.0596	30.8	99.0	344	improved
+9	add 4 word symbols (all, new, time, like)	58.2670	31.1	99.0	344	improved
+10	add 4 more word symbols (any, into, down, about)	58.4143	31.4	99.0	344	improved
+11	add 4 more word symbols (but, out, first, next)	58.5312	31.6	98.9	344	improved
+12	add 4 more word symbols (your, their, there, data)	58.8865	32.2	98.9	344	improved
+13	add which and other symbols	58.9437	32.3	98.9	344	improved
+14	add them and well symbols	58.9783	32.4	98.9	344	improved
