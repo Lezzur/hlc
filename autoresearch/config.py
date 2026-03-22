@@ -447,6 +447,15 @@ SYMBOL_MAP = {
     "frequently": "桶",
     "expiration": "釜",
     "everything": "鍋",
+    # CJK — exp 30: more 10+ letter words
+    "diagnostic": "籠",
+    "describing": "箸",
+    "dependency": "扇",
+    "components": "傘",
+    "associated": "鈴",
+    "assessment": "笛",
+    "approaches": "琴",
+    "comfortable": "鼓",
 }
 
 # ═══════════════════════════════════════════════════════════
