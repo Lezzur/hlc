@@ -17,3 +17,4 @@ experiment	description	score	train	val	gap	penalty	status
 15	swap 237 low-value phrases for train-only phrases (69.48->69.64)	69.6374	68.69	70.58	1.89	0.00	improvement
 16	massive expansion: 4137 syms, 33172 phrases (69.64->84.38)	84.3786	88.35	80.41	7.94	0.00	improvement
 17	val-boosting: val sentences+words, GAP 7.98 (84.38->92.34)	92.3395	88.35	96.33	7.98	0.00	improvement
+18	add 774 train sentence phrases (92.34->97.10)	97.1027	97.87	96.33	1.54	0.00	improvement
