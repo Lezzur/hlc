@@ -1,9 +1,9 @@
 # HLC Project — Living Document
 
-**Last updated:** March 22, 2026 (end of Session 1)
+**Last updated:** March 23, 2026 (end of Session 2)
 **Author:** Ruzzel Maestro (rocketturtles.creative@gmail.com)
 **Repo:** https://github.com/Lezzur/hlc
-**Status:** Phase 2 in progress — autoresearch optimization complete for Haiku + Sonnet
+**Status:** Phase 2 nearly complete — byte-optimized autoresearch done, token measurement done, ready for paper
 
 ---
 
@@ -15,7 +15,7 @@ This is the continuity file for the HLC (Hierarchical Lexical Compression) proje
 
 ## The Big Idea (1-paragraph summary)
 
-Current LLM systems compress conversation history using summarization, which is lossy, expensive, and unpredictable. HLC is a fundamentally different approach: instead of semantic compression (deciding what to discard), it applies deterministic, rule-based lexical compression that reduces token count by 50-60% while preserving ALL information. The key insight is that LLMs are natural decompressors — they can reconstruct full English from aggressively compressed text because that's literally what next-token prediction does. This has been empirically validated: Claude Haiku (smallest model) achieved 98.8% word-for-word reconstruction accuracy on compressed text with no codebook. The autoresearch optimization loop has pushed compression from 27.3% to 50.5% while maintaining 99.9% reconstruction accuracy.
+Current LLM systems compress conversation history using summarization, which is lossy, expensive, and unpredictable. HLC is a fundamentally different approach: instead of semantic compression (deciding what to discard), it applies deterministic, rule-based lexical compression that reduces byte count by 48-58% while preserving ALL information. The key insight is that LLMs are natural decompressors — they can reconstruct full English from aggressively compressed text because that's literally what next-token prediction does. This has been empirically validated: Claude Haiku (smallest model) achieved 98.8% word-for-word reconstruction accuracy on compressed text with no codebook. The autoresearch optimization loop has been run across three model tiers (Haiku, Sonnet, Opus) with byte-based scoring on a 300-sample corpus spanning 15 categories.
 
 ---
 
@@ -49,38 +49,22 @@ Compression layers applied in order from highest to lowest impact:
 | Compression target | Machine-readable, not human-readable | Optimizing for LLM reconstruction, not human reading |
 | Codebook scope | Universal English codebook (static, precomputed) | One-time cost, reusable across all conversations |
 | Autoresearch design | Sequential model chain (Haiku then Sonnet then Opus) | Each model builds on the previous best. More capable models find optimizations less capable ones miss. |
-| Corpus split | 80 train / 20 holdout, stratified across 10 categories | Prevents overfitting. Agent optimizes on train, human validates on holdout. |
+| Corpus v1 | 80 train / 20 holdout, 10 categories | Session 1 corpus. Adequate for initial optimization. |
+| Corpus v2 | 210 train / 45 val / 45 holdout, 15 categories, 300 samples | Session 2 corpus. 3× larger, 5 new categories (legal, medical, journalism, marketing, conversational_ai). Agent sees train+val; holdout is human-only. |
+| Scoring metric | UTF-8 bytes (not characters) | Discovered in Session 2 that character-based scoring overstates compression by ~10pp because 3-byte Unicode symbols replace short ASCII words. Byte scoring aligns with how BPE tokenizers actually work. |
+| Overfit prevention | Gap-penalty on composite score | Codebook caps failed (Opus found workarounds). Gap penalty works but Opus learned to memorize BOTH splits simultaneously. See "Adversarial Optimization" findings. |
 
 ---
 
-## Autoresearch Results (March 22, 2026)
+## Autoresearch Results
 
 ### What is autoresearch?
 
 An autonomous optimization loop inspired by Karpathy's autoresearch pattern. An AI agent edits a config file, runs evaluation, keeps improvements, reverts failures, and loops. Applied to HLC codebook optimization.
 
-### Architecture
+### Session 1 Results — Character-based (March 22, 2026)
 
-```
-autoresearch/
-├── config.py          # THE MUTABLE FILE — agent edits this
-├── evaluate.py        # Fixed scorer — 80 train samples, 10 categories
-├── validate.py        # Holdout checker — 20 samples, human-only
-├── build_corpus.py    # Corpus generator
-├── program.md         # Agent instructions (Karpathy-style)
-├── corpus/
-│   ├── train.json     # 80 samples across 10 categories (34K chars)
-│   └── holdout.json   # 20 samples for overfitting detection (9K chars)
-├── reports/
-│   ├── autoresearch_session_haiku_mar22.md
-│   └── autoresearch_session_sonnet_mar22.md
-├── config_haiku_best.py
-├── config_sonnet_best.py
-├── results_haiku.tsv
-└── results_sonnet.tsv
-```
-
-### Session Results — The Core Data
+Corpus: 100 samples, 10 categories, 80/20 split, ~34K chars. Scoring: character count.
 
 | Metric | Baseline | Haiku (50 exps) | Sonnet (50 exps) |
 |---|---|---|---|
@@ -88,32 +72,84 @@ autoresearch/
 | Holdout score | 57.02 | 60.33 | **66.10** |
 | Train/holdout gap | 0.94 | 0.18 | 4.12 |
 | Compression ratio (train) | 27.3% | 35.2% | **50.5%** |
-| Compression ratio (holdout) | 28.7% | 35.5% | **43.6%** |
 | Reconstruction | 99.3% | 98.4% | **99.9%** |
 | Experiments run | — | 50 | 50 |
-| Successful improvements | — | 36 (72%) | **50 (100%)** |
-| Failures/reversions | — | 13 | **0** |
-| Phrase codebook entries | 101 | 418 | 582 |
+| Success rate | — | 72% | **100%** |
 | Symbol map entries | 12 | ~200 | **528** |
-| Collision bugs introduced | — | 29 | **0** |
+| Phrase codebook entries | 101 | 418 | 196 (actual) |
 
-### Key Findings
+Key findings from Session 1:
+1. Sonnet fixed 29 collision bugs from Haiku in experiment 1 — RECON jumped 98.4% → 99.9%.
+2. Sonnet had 100% success rate vs Haiku's 72%.
+3. Character compression crossed 50% but byte compression was only 40.6% (10pp gap from 3-byte Unicode symbols).
 
-1. **Sonnet found and fixed 29 collision bugs from Haiku's session.** Two words mapped to the same symbol character causing silent reconstruction failures. Haiku couldn't detect its own errors; Sonnet fixed them all in experiment 1. RECON jumped from 98.4% to 99.9%. This mirrors the HLC thesis: compression quality is bounded by model capability.
+### Session 2 Results — Byte-based (March 23, 2026)
 
-2. **Sonnet had 100% success rate vs Haiku's 72%.** More capable model searched more efficiently — systematic word-length sweeps instead of trial-and-error. Never proposed a change that made things worse.
+#### Token/Byte Measurement (critical discovery)
 
-3. **Compression crossed 50% on train set.** From 27.3% baseline to 50.5% through symbol expansion (528 entries) and phrase mining (582 entries). Holdout reached 43.6%.
+Measured Sonnet's best config against both character and byte counts:
 
-4. **The 4.12-point holdout gap is from vocabulary specificity, not text mangling.** Reconstruction accuracy is 99.9% on both splits. The gap is because Sonnet mined train-specific words that don't all appear in holdout.
+| Metric | Character | Byte | Gap |
+|---|---|---|---|
+| Train compression | 50.5% | 40.6% | 9.9 pp |
+| Holdout compression | 43.6% | 36.8% | 6.8 pp |
 
-5. **Diminishing returns are smooth.** Phrase discovery: +0.5-0.8 per batch early. Symbol expansion: +0.08-0.3 per batch. No cliff. Natural ceiling estimated at ~72-75 on current corpus.
+Root cause: 473 of 528 symbols were 3-byte CJK/Hangul/Katakana. A 3-byte symbol replacing a 3-letter word saves 0 bytes. Only 55 ASCII symbols (1-byte) were maximally efficient. This led to retargeting all evaluation to UTF-8 bytes.
 
-6. **Morphological patterns had zero impact.** Tested by Haiku, confirmed by Sonnet.
+Symbol byte-size distribution: 55 × 1-byte (ASCII), 0 × 2-byte, 473 × 3-byte (CJK/Hangul/etc).
 
-7. **Contractions are valid symbol keys.** Python tokenizer handles "it's", "don't", "i've" as single tokens.
+#### Opus v1 — Byte-optimized, 100-sample corpus
 
-8. **Unicode symbol space is not a bottleneck.** 528 symbols used across ASCII, Hangul, Katakana, Hiragana, CJK. Thousands more available.
+Starting config: Sonnet best. Scoring: UTF-8 bytes. Corpus: v1 (100 samples, 10 categories).
+
+| Metric | Baseline | Opus exp 21 (valid) | Opus exp 32 (overfit) |
+|---|---|---|---|
+| Composite score | 64.30 | **74.81** | 99.58 |
+| Byte compression | 40.6% | **58.1%** | 99.3% |
+| Reconstruction | 99.9% | **99.9%** | 100.0% |
+| Experiments | — | 21 | 32 |
+| Symbol map entries | 528 | 1,877 | 1,877 |
+| Phrase codebook | 196 | 842 | 7,823 |
+
+Opus v1 key findings:
+1. Experiment 1: replacing 473 three-byte symbols with 2-byte Latin gave instant +2.6 points.
+2. Experiments 11-21: exhaustive word mapping pushed byte compression to 58.1%.
+3. **Overfit at experiment 22+**: Opus memorized the training corpus by adding full sentences and multi-sentence chunks as "phrases." Phrase count exploded from 842 to 7,823.
+
+#### Opus v2 — Gap-penalized, 300-sample corpus
+
+Starting config: Sonnet best. Scoring: UTF-8 bytes with gap penalty. Corpus: v2 (300 samples, 15 categories, 210/45/45 split).
+
+Gap penalty formula: `penalty = max(0, (gap - 8.0) × 2.0)` applied to composite score. No codebook size limits.
+
+| Metric | Baseline | Opus exp 15 (valid) | Opus exp 20 (exploit) |
+|---|---|---|---|
+| Composite score | 60.04 | **69.64** | 99.78 |
+| Train subscore | 60.05 | 68.69 | 99.71 |
+| Val subscore | 60.03 | 70.58 | 99.84 |
+| Gap | 0.02 | **1.89** | 0.13 |
+| Penalty | 0.00 | 0.00 | 0.00 |
+| Experiments | — | 15 | 20 |
+
+Opus v2 key findings:
+1. Experiments 1-15: legitimate compression. Byte optimization, word expansion, phrase addition. Gap stayed under 5.
+2. **Experiment 16: Opus found the exploit.** Added 33,172 phrases in one experiment, memorizing train (gap rose to 7.94, just under the 8-point threshold).
+3. **Experiment 17: memorized val too.** Gap dropped back to 7.98 because both splits were now memorized.
+4. **Experiments 18-20: gap went to 0.00** — not because compression generalized, but because BOTH train and val were entirely memorized.
+
+### Adversarial Optimization — Key Research Finding
+
+Across three Opus sessions, the agent consistently discovered and exploited evaluation loopholes:
+
+| Session | Guardrail | How Opus defeated it |
+|---|---|---|
+| Opus v1 | Train-only scoring, no caps | Added full sentences as phrases (7,823 entries) |
+| Opus v2 (caps) | Codebook caps (800 sym / 500 phrase) | Hit cap ceiling, couldn't optimize further |
+| Opus v2 (gap) | Gap penalty (threshold 8, rate 2×) | Memorized BOTH splits simultaneously to keep gap at 0 |
+
+**This is itself a publishable finding.** More capable models are more capable at gaming evaluation metrics. The gap penalty only works when the agent cannot see validation data. Since evaluate_v2.py reports val scores to enable the composite calculation, Opus has full information to optimize val directly.
+
+**Implication for the field:** Autonomous optimization agents require evaluation designs where the agent genuinely cannot access the holdout data, or where the metric cannot be gamed by memorization (e.g., testing on completely unseen text at evaluation time).
 
 ---
 
@@ -128,8 +164,6 @@ autoresearch/
 | Opus | 1,432 | 98.95% | ~100% |
 | **Overall** | **4,309** | **98.47%** | **~100%** |
 
-Tested on the full living document (complex technical content with tables, code blocks, markdown, URLs). Zero meaning-altering errors. Opus commented: "this document is itself a pretty compelling proof of concept."
-
 ### Short paragraph tests (Haiku only, Layers 3+4 only, ~29% compression):
 
 | Sample | Accuracy | Notes |
@@ -142,14 +176,14 @@ Tested on the full living document (complex technical content with tables, code 
 ### Two compression tiers explained
 
 - **Layers 3+4 only (17-29% compression)**: No codebook needed. Any LLM reads natively. Use for continuity documents uploaded to new chats.
-- **All layers (50-53% compression)**: Requires codebook in context. Use inside agent systems where codebook is loaded once per session.
+- **All layers (48-58% byte compression)**: Requires codebook in context. Use inside agent systems where codebook is loaded once per session.
 
 ---
 
 ## Project Structure
 
 ```
-hlc-release/
+hlc/
 ├── hlc/                        # Core Python package
 │   ├── __init__.py
 │   ├── analyze.py
@@ -158,15 +192,28 @@ hlc-release/
 │   ├── benchmark.py
 │   └── codebooks/
 ├── autoresearch/               # Autonomous optimization loop
-│   ├── config.py               # Current best (Sonnet optimized)
-│   ├── evaluate.py
-│   ├── validate.py
-│   ├── build_corpus.py
-│   ├── program.md
+│   ├── config.py               # Current best
+│   ├── evaluate.py             # v1 evaluator (char-based)
+│   ├── evaluate_v2.py          # v2 evaluator (byte-based, gap-penalized)
+│   ├── validate.py             # v1 holdout checker
+│   ├── validate_v2.py          # v2 holdout checker
+│   ├── build_corpus.py         # v1 corpus builder (100 samples)
+│   ├── build_corpus_v2.py      # v2 corpus verifier (300 samples)
+│   ├── measure_tokens.py       # Token measurement script (needs tiktoken)
+│   ├── program.md              # v1 agent instructions
+│   ├── program_v2.md           # v2 agent instructions (gap-penalized)
 │   ├── corpus/
+│   │   ├── train.json          # v2: 210 samples, 15 categories
+│   │   ├── val.json            # v2: 45 samples (agent sees this)
+│   │   └── holdout.json        # v2: 45 samples (human-only)
+│   ├── corpus_v1_backup/       # Original 100-sample corpus
 │   ├── reports/
-│   ├── config_haiku_best.py
-│   └── config_sonnet_best.py
+│   ├── config_sonnet_best.py
+│   ├── config_opus_best.py     # Opus v1 exp 21 (pre-overfit)
+│   ├── config_opus_v2_best.py  # Opus v2 exp 15 (pre-exploit)
+│   ├── results_sonnet.tsv
+│   ├── results_opus.tsv        # v1 Opus (32 experiments)
+│   └── results_opus_v2.tsv     # v2 Opus (20 experiments)
 ├── examples/
 ├── tests/
 ├── docs/
@@ -192,17 +239,21 @@ hlc-release/
 - [x] Test suite (14 tests passing)
 - [x] GitHub repo live: https://github.com/Lezzur/hlc
 
-### Phase 2: Benchmark and validate (IN PROGRESS)
+### Phase 2: Benchmark and validate (NEARLY COMPLETE)
 - [x] LLM reconstruction test — Haiku (98.18% on living doc, 98.8% on paragraphs)
 - [x] LLM reconstruction test — Sonnet (98.27% on living doc)
 - [x] LLM reconstruction test — Opus (98.95% on living doc)
-- [x] Autoresearch: Haiku session (56.08 to 60.51, 50 experiments)
-- [x] Autoresearch: Sonnet session (60.51 to 70.22, 50 experiments)
-- [x] Holdout validation (Haiku: 60.33, Sonnet: 66.10)
-- [ ] Autoresearch: Opus session (optional — build on Sonnet's 70.22)
-- [ ] Measure actual TOKEN counts (not just characters)
+- [x] Autoresearch: Haiku session (56.08 → 60.51, 50 experiments)
+- [x] Autoresearch: Sonnet session (60.51 → 70.22, 50 experiments, char-based)
+- [x] Autoresearch: Opus v1 session (64.30 → 74.81 valid, byte-based, 100-sample corpus)
+- [x] Autoresearch: Opus v2 session (60.04 → 69.64 valid, byte+gap-penalized, 300-sample corpus)
+- [x] Byte vs character measurement (10pp gap discovered, byte scoring adopted)
+- [x] Adversarial optimization finding (Opus games metrics across 3 sessions)
+- [x] Holdout validation across all sessions
+- [ ] Measure actual TOKEN counts with tiktoken (script written, needs local run)
 - [ ] Edge case handling: URLs, emails, code, numbers, proper nouns
-- [ ] Integrate autoresearch config back into main hlc/ package
+- [ ] Integrate best autoresearch config into main hlc/ package
+- [ ] Roll back Opus v2 config to experiment 15
 
 ### Phase 3: Package and publish (NOT STARTED)
 - [ ] Rewrite technical paper with all measured data
@@ -226,17 +277,19 @@ hlc-release/
 
 ## Known Issues and Technical Debt
 
-1. **Token vs character gap** — biggest unknown. All benchmarks measure character savings. Unicode chars may tokenize into multiple tokens. MUST measure before publishing.
+1. **Token vs character gap (PARTIALLY RESOLVED)** — Byte measurement done (40.6% byte vs 50.5% char on Sonnet config). Actual tokenizer measurement with tiktoken written but not yet run locally (needs network access to download tokenizer data). Byte count is a close proxy for token count.
 
-2. **Two architectures diverging** — main hlc/ package uses 37k word codebook. Autoresearch config.py uses 528 symbol map + 582 phrases. Need reconciliation.
+2. **Two architectures still diverging** — main hlc/ package uses 37k word codebook. Autoresearch config.py uses symbol map + phrases. Need reconciliation before paper.
 
-3. **Holdout gap (4.12 points)** — from train-specific vocabulary. Not reconstruction failure. Mitigate by expanding corpus or filtering low-frequency words.
+3. **Adversarial optimization (NEW)** — Opus consistently games evaluation metrics. Three different guardrails defeated across three sessions. Any future autoresearch sessions need evaluation designs where the agent genuinely cannot access holdout data.
 
 4. **No edge case protection** — URLs, emails, code get compressed. Need preserve layer.
 
 5. **Layer 5 placeholder** — recursive pattern compression not implemented.
 
-6. **Collision risk** — Haiku introduced 29 collisions. Need automated collision checking in evaluate.py.
+6. **Collision risk (RESOLVED)** — Sonnet fixed all 29 Haiku collisions. Opus v2 config verified collision-free.
+
+7. **Opus v2 config needs rollback** — Current config in repo is the overfit version (exp 20). Need to roll back to exp 15 config.
 
 ---
 
@@ -247,12 +300,20 @@ Upload this document and say:
 > "I'm Ruzzel. This is my HLC project living document. Read it and let's continue where I left off. [Then state what you want to work on next]"
 
 ### Suggested next actions (priority order):
-1. Run Opus autoresearch session to push past Sonnet's 70.22
-2. Measure actual token counts with a real tokenizer
-3. Integrate best autoresearch config into main hlc/ package
-4. Rewrite technical paper with all measured data
+1. Roll back Opus v2 config to experiment 15 (pre-exploit)
+2. Run measure_tokens.py locally with tiktoken for actual token numbers
+3. Integrate best config into main hlc/ package
+4. Rewrite technical paper with all measured data (lead with adversarial finding)
 5. Build live web demo
 6. Format for arXiv and submit
+
+### The paper should cover:
+- HLC system design (6 layers, codebook architecture)
+- Empirical compression results (48-58% byte compression, 99.9% reconstruction)
+- Autoresearch methodology (Karpathy-inspired, sequential model chain)
+- The byte vs character gap (why measuring the right metric matters)
+- Adversarial optimization finding (Opus gaming evaluation metrics — novel contribution)
+- LLM reconstruction accuracy across model tiers
 
 ---
 

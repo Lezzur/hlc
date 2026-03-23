@@ -1,0 +1,242 @@
+#    Word                       Train    Val  Total Bytes  Savings
+-----------------------------------------------------------------
+1    approximately                 13      5     18    13      198
+2    dollars                       18      4     22     7      110
+3    fifteen                       13      7     20     7      100
+4    thirty                        18      7     25     6      100
+5    requires                      13      2     15     8       90
+6    automatically                  7      1      8    13       88
+7    against                       13      3     16     7       80
+8    actually                       9      4     13     8       78
+9    whether                       13      2     15     7       75
+10   under                         20      4     24     5       72
+11   engineering                    5      3      8    11       72
+12   organization                   6      1      7    12       70
+13   includes                       8      3     11     8       66
+14   twelve                        14      2     16     6       64
+15   permissions                    3      4      7    11       63
+16   morning                       11      1     12     7       60
+17   existing                       8      2     10     8       60
+18   intellectual                   5      1      6    12       60
+19   ninety                        13      2     15     6       60
+20   forty                         14      5     19     5       57
+21   seven                         13      6     19     5       57
+22   agreement                      7      1      8     9       56
+23   version                        5      6     11     7       55
+24   eighteen                       7      2      9     8       54
+25   months                        11      2     13     6       52
+26   treatment                      5      2      7     9       49
+27   implement                      6      1      7     9       49
+28   migration                      3      4      7     9       49
+29   sixty                         13      3     16     5       48
+30   platform                       7      1      8     8       48
+31   fourteen                       6      2      8     8       48
+32   doesn't                        7      2      9     7       45
+33   arbitration                    2      3      5    11       45
+34   individuals                    4      1      5    11       45
+35   correlation                    4      1      5    11       45
+36   quarter                        7      2      9     7       45
+37   international                  2      2      4    13       44
+38   delivery                       5      2      7     8       42
+39   standard                       6      1      7     8       42
+40   requested                      4      2      6     9       42
+41   property                       6      1      7     8       42
+42   milligrams                     4      1      5    10       40
+43   seconds                        3      5      8     7       40
+44   product                        7      1      8     7       40
+45   days                          16      4     20     4       40
+46   consistent                     3      2      5    10       40
+47   compliance                     4      1      5    10       40
+48   jurisdiction                   3      1      4    12       40
+49   fifty                         10      3     13     5       39
+50   eight                         11      2     13     5       39
+51   personal                       4      2      6     8       36
+52   water                         11      1     12     5       36
+53   trying                         7      2      9     6       36
+54   events                         6      3      9     6       36
+55   complete                       4      2      6     8       36
+56   obligations                    3      1      4    11       36
+57   recovery                       4      2      6     8       36
+58   expected                       5      1      6     8       36
+59   suggests                       4      2      6     8       36
+60   separate                       5      1      6     8       36
+61   annual                         7      2      9     6       36
+62   outcomes                       5      1      6     8       36
+63   residential                    3      1      4    11       36
+64   failure                        6      1      7     7       35
+65   revenue                        5      2      7     7       35
+66   analytics                      3      2      5     9       35
+67   produce                        6      1      7     7       35
+68   variables                      4      1      5     9       35
+69   exceeding                      4      1      5     9       35
+70   least                         10      1     11     5       33
+71   third                          7      4     11     5       33
+72   conditions                     3      1      4    10       32
+73   effect                         5      3      8     6       32
+74   department                     3      1      4    10       32
+75   facilities                     3      1      4    10       32
+76   real                          14      2     16     4       32
+77   same                          13      3     16     4       32
+78   people                         4      4      8     6       32
+79   higher                         7      1      8     6       32
+80   regardless                     3      1      4    10       32
+81   compared                       4      1      5     8       30
+82   effects                        5      1      6     7       30
+83   symptoms                       4      1      5     8       30
+84   prevent                        5      1      6     7       30
+85   reported                       3      2      5     8       30
+86   costs                          6      4     10     5       30
+87   contract                       3      2      5     8       30
+88   alternatives                   2      1      3    12       30
+89   subject                        5      1      6     7       30
+90   needs                          8      2     10     5       30
+91   duration                       3      2      5     8       30
+92   compensation                   2      1      3    12       30
+93   notification                   2      1      3    12       30
+94   limited                        4      2      6     7       30
+95   critical                       4      1      5     8       30
+96   consistently                   2      1      3    12       30
+97   modification                   2      1      3    12       30
+98   several                        5      1      6     7       30
+99   milliseconds                   2      1      3    12       30
+100  kitchen                        5      1      6     7       30
+101  industry                       4      1      5     8       30
+102  relationship                   2      1      3    12       30
+103  instructions                   2      1      3    12       30
+104  event                          6      4     10     5       30
+105  megabytes                      3      1      4     9       28
+106  single                         5      2      7     6       28
+107  target                         6      1      7     6       28
+108  lifestyle                      2      2      4     9       28
+109  both                          11      3     14     4       28
+110  typically                      3      1      4     9       28
+111  season                         6      1      7     6       28
+112  structure                      3      1      4     9       28
+113  eighty                         6      1      7     6       28
+114  below                          7      2      9     5       27
+115  consecutive                    2      1      3    11       27
+116  discrepancy                    2      1      3    11       27
+117  preferences                    2      1      3    11       27
+118  state                          8      1      9     5       27
+119  isn't                          6      3      9     5       27
+120  replacement                    1      2      3    11       27
+121  competitive                    2      1      3    11       27
+122  appropriate                    2      1      3    11       27
+123  distributed                    2      1      3    11       27
+124  full                           9      4     13     4       26
+125  straightforward                1      1      2    15       26
+126  must                          11      2     13     4       26
+127  latency                        4      1      5     7       25
+128  patient                        4      1      5     7       25
+129  history                        2      3      5     7       25
+130  they're                        3      2      5     7       25
+131  pricing                        4      1      5     7       25
+132  there's                        3      2      5     7       25
+133  completing                     2      1      3    10       24
+134  approved                       3      1      4     8       24
+135  elevated                       3      1      4     8       24
+136  physical                       2      2      4     8       24
+137  memory                         5      1      6     6       24
+138  exceeded                       2      2      4     8       24
+139  reaching                       2      2      4     8       24
+140  conference                     2      1      3    10       24
+141  reasonable                     2      1      3    10       24
+142  previous                       3      1      4     8       24
+143  continuous                     2      1      3    10       24
+144  resolved                       2      2      4     8       24
+145  server                         5      1      6     6       24
+146  yourself                       3      1      4     8       24
+147  identifier                     2      1      3    10       24
+148  provided                       3      1      4     8       24
+149  initiating                     2      1      3    10       24
+150  collection                     2      1      3    10       24
+151  attorney                       3      1      4     8       24
+152  small                          6      2      8     5       24
+153  observed                       2      2      4     8       24
+154  nobody                         4      2      6     6       24
+155  jurisdictions                  1      1      2    13       22
+156  opportunities                  1      1      2    13       22
+157  manufacturing                  1      1      2    13       22
+158  depending                      2      1      3     9       21
+159  audit                          6      1      7     5       21
+160  retention                      1      2      3     9       21
+161  party                          5      2      7     5       21
+162  gigabytes                      1      2      3     9       21
+163  consumers                      2      1      3     9       21
+164  sometimes                      2      1      3     9       21
+165  documents                      2      1      3     9       21
+166  committee                      2      1      3     9       21
+167  rates                          5      2      7     5       21
+168  estimated                      2      1      3     9       21
+169  daily                          4      3      7     5       21
+170  announced                      2      1      3     9       21
+171  portfolio                      2      1      3     9       21
+172  happening                      2      1      3     9       21
+173  measuring                      2      1      3     9       21
+174  component                      2      1      3     9       21
+175  ten                           18      3     21     3       21
+176  practices                      2      1      3     9       21
+177  itself                         3      2      5     6       20
+178  aggregations                   1      1      2    12       20
+179  hierarchical                   1      1      2    12       20
+180  inconsistent                   1      1      2    12       20
+181  parking                        3      1      4     7       20
+182  nothing                        3      1      4     7       20
+183  measurements                   1      1      2    12       20
+184  surface                        3      1      4     7       20
+185  severe                         3      2      5     6       20
+186  tested                         4      1      5     6       20
+187  weekly                         4      1      5     6       20
+188  professional                   1      1      2    12       20
+189  reading                        3      1      4     7       20
+190  conversation                   1      1      2    12       20
+191  receive                        3      1      4     7       20
+192  default                        3      1      4     7       20
+193  related                        3      1      4     7       20
+194  administered                   1      1      2    12       20
+195  temperatures                   1      1      2    12       20
+196  gently                         2      3      5     6       20
+197  reveals                        2      2      4     7       20
+198  institutions                   1      1      2    12       20
+199  dietary                        2      2      4     7       20
+200  restrictions                   1      1      2    12       20
+
+Total candidate words (in both train & val, not in SYMBOL_MAP, savings > 0): 532
+
+
+Total unused safe 2-byte Unicode chars (U+0080-U+07FF, no control/combining): 888
+
+UNUSED_2BYTE_CHARS = " ¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿāăąćĉċčďđēĕėęěĝğġģĥħĩīĭįıĳĵķĸĺļľŀłńņňŉŋōŏőœŕŗřśŝşšţťŧũūŭůŰűŲųŴŵŶŷŸŹźŻżŽžſʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˁ˂˃˄˅ˆˇˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˘˙˚˛˜˝˞˟ˠˡˢˣˤ˥˦˧˨˩˪˫ˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉΊΌΎΏΐΪΫάέήίΰρςσϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿԈԉԊԋԌԍԎԏԐԑԒԓԔԕԖԗԘԙԚԛԜԝԞԟԠԡԢԣԤԥԦԧԨԩԪԫԬԭԮԯԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖՙ՚՛՜՝՞՟ՠաբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցւփքօֆևֈ։֊֍֎֏־׀׃׆אבגדהוזחטיךכלםמןנסעףפץצקרשתׯ"
+
+Length of string: 500
+Codepoint range of first 500: U+00A0 to U+05EF
+Codepoint range of all unused: U+00A0 to U+07FF
+
+Total used chars from SYMBOL_MAP + PHRASE_CODEBOOK: 724
+
+Codepoints of first 500 unused 2-byte chars:
+U+00A0 U+00A1 U+00A2 U+00A3 U+00A4 U+00A5 U+00A6 U+00A7 U+00A8 U+00A9 U+00AA U+00AB U+00AC U+00AE U+00AF U+00B0 U+00B1 U+00B2 U+00B3 U+00B4 
+U+00B5 U+00B6 U+00B7 U+00B8 U+00B9 U+00BA U+00BB U+00BC U+00BD U+00BE U+00BF U+00C0 U+00C1 U+00C2 U+00C3 U+00C4 U+00C5 U+00C6 U+00C7 U+00C8 
+U+00C9 U+00CA U+00CB U+00CC U+00CD U+00CE U+00CF U+00D0 U+00D1 U+00D2 U+00D3 U+00D4 U+00D5 U+00D6 U+00D7 U+00D8 U+00D9 U+00DA U+00DB U+00DC 
+U+00DD U+00DE U+00DF U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+00E6 U+00E7 U+00E8 U+00E9 U+00EA U+00EB U+00EC U+00ED U+00EE U+00EF U+00F0 
+U+00F1 U+00F2 U+00F3 U+00F4 U+00F5 U+00F6 U+00F7 U+00F8 U+00F9 U+00FA U+00FB U+00FC U+00FD U+00FE U+00FF U+0101 U+0103 U+0105 U+0107 U+0109 
+U+010B U+010D U+010F U+0111 U+0113 U+0115 U+0117 U+0119 U+011B U+011D U+011F U+0121 U+0123 U+0125 U+0127 U+0129 U+012B U+012D U+012F U+0131 
+U+0133 U+0135 U+0137 U+0138 U+013A U+013C U+013E U+0140 U+0142 U+0144 U+0146 U+0148 U+0149 U+014B U+014D U+014F U+0151 U+0153 U+0155 U+0157 
+U+0159 U+015B U+015D U+015F U+0161 U+0163 U+0165 U+0167 U+0169 U+016B U+016D U+016F U+0170 U+0171 U+0172 U+0173 U+0174 U+0175 U+0176 U+0177 
+U+0178 U+0179 U+017A U+017B U+017C U+017D U+017E U+017F U+02B0 U+02B1 U+02B2 U+02B3 U+02B4 U+02B5 U+02B6 U+02B7 U+02B8 U+02B9 U+02BA U+02BB 
+U+02BC U+02BD U+02BE U+02BF U+02C0 U+02C1 U+02C2 U+02C3 U+02C4 U+02C5 U+02C6 U+02C7 U+02C8 U+02C9 U+02CA U+02CB U+02CC U+02CD U+02CE U+02CF 
+U+02D0 U+02D1 U+02D2 U+02D3 U+02D4 U+02D5 U+02D6 U+02D7 U+02D8 U+02D9 U+02DA U+02DB U+02DC U+02DD U+02DE U+02DF U+02E0 U+02E1 U+02E2 U+02E3 
+U+02E4 U+02E5 U+02E6 U+02E7 U+02E8 U+02E9 U+02EA U+02EB U+02EC U+02ED U+02EE U+02EF U+02F0 U+02F1 U+02F2 U+02F3 U+02F4 U+02F5 U+02F6 U+02F7 
+U+02F8 U+02F9 U+02FA U+02FB U+02FC U+02FD U+02FE U+02FF U+0370 U+0371 U+0372 U+0373 U+0374 U+0375 U+0376 U+0377 U+037A U+037B U+037C U+037D 
+U+037E U+037F U+0384 U+0385 U+0386 U+0387 U+0388 U+0389 U+038A U+038C U+038E U+038F U+0390 U+03AA U+03AB U+03AC U+03AD U+03AE U+03AF U+03B0 
+U+03C1 U+03C2 U+03C3 U+03CA U+03CB U+03CC U+03CD U+03CE U+03CF U+03D0 U+03D1 U+03D2 U+03D3 U+03D4 U+03D5 U+03D6 U+03D7 U+03D8 U+03D9 U+03DA 
+U+03DB U+03DC U+03DD U+03DE U+03DF U+03E0 U+03E1 U+03E2 U+03E3 U+03E4 U+03E5 U+03E6 U+03E7 U+03E8 U+03E9 U+03EA U+03EB U+03EC U+03ED U+03EE 
+U+03EF U+03F0 U+03F1 U+03F2 U+03F3 U+03F4 U+03F5 U+03F6 U+03F7 U+03F8 U+03F9 U+03FA U+03FB U+03FC U+03FD U+03FE U+03FF U+0508 U+0509 U+050A 
+U+050B U+050C U+050D U+050E U+050F U+0510 U+0511 U+0512 U+0513 U+0514 U+0515 U+0516 U+0517 U+0518 U+0519 U+051A U+051B U+051C U+051D U+051E 
+U+051F U+0520 U+0521 U+0522 U+0523 U+0524 U+0525 U+0526 U+0527 U+0528 U+0529 U+052A U+052B U+052C U+052D U+052E U+052F U+0531 U+0532 U+0533 
+U+0534 U+0535 U+0536 U+0537 U+0538 U+0539 U+053A U+053B U+053C U+053D U+053E U+053F U+0540 U+0541 U+0542 U+0543 U+0544 U+0545 U+0546 U+0547 
+U+0548 U+0549 U+054A U+054B U+054C U+054D U+054E U+054F U+0550 U+0551 U+0552 U+0553 U+0554 U+0555 U+0556 U+0559 U+055A U+055B U+055C U+055D 
+U+055E U+055F U+0560 U+0561 U+0562 U+0563 U+0564 U+0565 U+0566 U+0567 U+0568 U+0569 U+056A U+056B U+056C U+056D U+056E U+056F U+0570 U+0571 
+U+0572 U+0573 U+0574 U+0575 U+0576 U+0577 U+0578 U+0579 U+057A U+057B U+057C U+057D U+057E U+057F U+0580 U+0581 U+0582 U+0583 U+0584 U+0585 
+U+0586 U+0587 U+0588 U+0589 U+058A U+058D U+058E U+058F U+05BE U+05C0 U+05C3 U+05C6 U+05D0 U+05D1 U+05D2 U+05D3 U+05D4 U+05D5 U+05D6 U+05D7 
+U+05D8 U+05D9 U+05DA U+05DB U+05DC U+05DD U+05DE U+05DF U+05E0 U+05E1 U+05E2 U+05E3 U+05E4 U+05E5 U+05E6 U+05E7 U+05E8 U+05E9 U+05EA U+05EF 

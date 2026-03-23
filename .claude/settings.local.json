@@ -9,7 +9,16 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(printf:*)",
-      "Bash(PYTHONIOENCODING=utf-8 python:*)"
+      "Bash(PYTHONIOENCODING=utf-8 python:*)",
+      "Bash(ls:*)",
+      "Bash(tasklist:*)",
+      "Bash(findstr:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(node:*)",
+      "Bash(timeout:*)",
+      "Bash(npm run build:*)",
+      "Bash(pip install:*)"
     ]
   }
 }
