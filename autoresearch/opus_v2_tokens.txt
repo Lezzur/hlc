@@ -1,0 +1,208 @@
+======================================================================
+HLC TOKEN MEASUREMENT REPORT
+Config: config_opus_v2_best.py
+SYMBOL_MAP: 1120 | PHRASE_CODEBOOK: 617
+Corpus: train(210), val(45), holdout(45)
+======================================================================
+
+-- SYMBOL TOKENIZATION AUDIT --
+
+  cl100k_base:
+    Efficient: 112/1120 (10%)
+    Neutral:   405  |  Wasteful: 603
+    Wasteful (top 10):
+      'into' (1t) -> 'ՠ' (2t) = -1
+      'there' (1t) -> 'Ӄ' (2t) = -1
+      'other' (1t) -> 'ǈ' (2t) = -1
+      'them' (1t) -> 'Ѥ' (2t) = -1
+      'well' (1t) -> 'ƾ' (2t) = -1
+      'work' (1t) -> 'ǎ' (2t) = -1
+      'know' (1t) -> 'ѧ' (2t) = -1
+      'good' (1t) -> 'Ȭ' (2t) = -1
+      'way' (1t) -> 'ǁ' (2t) = -1
+      'want' (1t) -> 'һ' (2t) = -1
+    Token cost distribution: {1: 247, 2: 873}
+
+  o200k_base:
+    Efficient: 142/1120 (13%)
+    Neutral:   477  |  Wasteful: 501
+    Wasteful (top 10):
+      'into' (1t) -> 'ՠ' (2t) = -1
+      'there' (1t) -> 'Ӄ' (2t) = -1
+      'other' (1t) -> 'ǈ' (2t) = -1
+      'them' (1t) -> 'Ѥ' (2t) = -1
+      'well' (1t) -> 'ƾ' (2t) = -1
+      'know' (1t) -> 'ѧ' (2t) = -1
+      'good' (1t) -> 'Ȭ' (2t) = -1
+      'way' (1t) -> 'ǁ' (2t) = -1
+      'year' (1t) -> 'ǖ' (2t) = -1
+      'zero' (1t) -> 'ʩ' (2t) = -1
+    Token cost distribution: {1: 402, 2: 718}
+
+-- CORPUS: CHARS vs BYTES vs TOKENS --
+
+  cl100k_base:
+
+    [TRAIN] (210 samples)
+      Char compression:  53.4%
+      Byte compression:  47.9%
+      TOKEN compression: -70.5%
+      Tokens: 14,531 -> 24,780 (saved -10,249)
+      Gaps: char->byte 5.5pp | byte->token 118.4pp
+
+      Category            Char%  Byte%  Token%  B->T
+      ────────────────── ────── ────── ─────── ─────
+      academic            54.7%  49.8%  -86.8% 136.6
+      ai_conversation     51.8%  46.1%  -73.8% 120.0
+      business            59.7%  53.7%  -76.7% 130.4
+      casual              44.0%  38.7%  -61.3% 100.0
+      conversational_ai   53.6%  48.0%  -66.0% 114.0
+      creative            45.8%  41.2%  -66.6% 107.9
+      documentation       57.3%  51.2%  -77.9% 129.2
+      email               59.0%  52.5%  -63.8% 116.4
+      instructional       45.6%  40.7%  -62.9% 103.6
+      journalism          53.0%  48.1%  -83.7% 131.8
+      legal               55.1%  49.4%  -77.4% 126.8
+      marketing           52.3%  46.5%  -74.5% 120.9
+      medical             54.7%  49.2%  -63.1% 112.3
+      support             61.0%  54.6%  -59.0% 113.6
+      technical           52.1%  46.7%  -71.5% 118.2
+
+    [VAL] (45 samples)
+      Char compression:  57.7%
+      Byte compression:  51.0%
+      TOKEN compression: -69.3%
+      Tokens: 3,080 -> 5,215 (saved -2,135)
+      Gaps: char->byte 6.6pp | byte->token 120.3pp
+
+      Category            Char%  Byte%  Token%  B->T
+      ────────────────── ────── ────── ─────── ─────
+      academic            53.6%  48.2%  -79.2% 127.4
+      ai_conversation     52.8%  46.6%  -77.6% 124.3
+      business            63.0%  56.3%  -71.0% 127.4
+      casual              48.0%  40.7%  -65.7% 106.5
+      conversational_ai   57.2%  50.8%  -62.4% 113.3
+      creative            51.7%  45.5%  -73.2% 118.7
+      documentation       61.4%  53.3%  -74.2% 127.5
+      email               66.0%  58.4%  -69.8% 128.2
+      instructional       52.6%  46.2%  -59.9% 106.2
+      journalism          58.3%  52.6%  -79.7% 132.4
+      legal               61.7%  54.7%  -71.7% 126.4
+      marketing           58.8%  52.3%  -62.9% 115.2
+      medical             55.1%  49.2%  -73.5% 122.6
+      support             66.1%  58.1%  -60.6% 118.6
+      technical           56.4%  49.8%  -65.7% 115.5
+
+    [HOLDOUT] (45 samples)
+      Char compression:  48.7%
+      Byte compression:  43.7%
+      TOKEN compression: -79.1%
+      Tokens: 3,097 -> 5,548 (saved -2,451)
+      Gaps: char->byte 5.0pp | byte->token 122.9pp
+
+      Category            Char%  Byte%  Token%  B->T
+      ────────────────── ────── ────── ─────── ─────
+      academic            42.1%  39.7%  -99.9% 139.7
+      ai_conversation     50.3%  45.3%  -78.9% 124.2
+      business            55.9%  50.0%  -72.3% 122.3
+      casual              45.1%  39.5%  -63.7% 103.2
+      conversational_ai   50.3%  45.0%  -79.2% 124.2
+      creative            44.2%  39.5%  -79.7% 119.2
+      documentation       55.3%  48.6%  -83.3% 131.9
+      email               50.1%  44.1%  -81.6% 125.7
+      instructional       39.0%  35.5%  -68.5% 104.0
+      journalism          46.8%  42.7%  -94.6% 137.3
+      legal               52.3%  46.5%  -91.2% 137.7
+      marketing           48.0%  43.4%  -78.6% 122.0
+      medical             45.4%  40.9%  -78.1% 119.0
+      support             52.5%  47.2%  -68.0% 115.3
+      technical           53.5%  47.8%  -79.0% 126.8
+
+  o200k_base:
+
+    [TRAIN] (210 samples)
+      Char compression:  53.4%
+      Byte compression:  47.9%
+      TOKEN compression: -58.3%
+      Tokens: 14,343 -> 22,699 (saved -8,356)
+      Gaps: char->byte 5.5pp | byte->token 106.2pp
+
+      Category            Char%  Byte%  Token%  B->T
+      ────────────────── ────── ────── ─────── ─────
+      academic            54.7%  49.8%  -73.7% 123.6
+      ai_conversation     51.8%  46.1%  -60.9% 107.0
+      business            59.7%  53.7%  -61.6% 115.3
+      casual              44.0%  38.7%  -51.2% 89.9
+      conversational_ai   53.6%  48.0%  -59.7% 107.7
+      creative            45.8%  41.2%  -56.7% 97.9
+      documentation       57.3%  51.2%  -61.7% 112.9
+      email               59.0%  52.5%  -47.6% 100.1
+      instructional       45.6%  40.7%  -51.9% 92.6
+      journalism          53.0%  48.1%  -69.3% 117.4
+      legal               55.1%  49.4%  -62.4% 111.8
+      marketing           52.3%  46.5%  -63.1% 109.6
+      medical             54.7%  49.2%  -53.5% 102.7
+      support             61.0%  54.6%  -42.8% 97.4
+      technical           52.1%  46.7%  -63.0% 109.7
+
+    [VAL] (45 samples)
+      Char compression:  57.7%
+      Byte compression:  51.0%
+      TOKEN compression: -52.0%
+      Tokens: 3,047 -> 4,631 (saved -1,584)
+      Gaps: char->byte 6.6pp | byte->token 103.0pp
+
+      Category            Char%  Byte%  Token%  B->T
+      ────────────────── ────── ────── ─────── ─────
+      academic            53.6%  48.2%  -65.0% 113.3
+      ai_conversation     52.8%  46.6%  -60.5% 107.1
+      business            63.0%  56.3%  -54.2% 110.6
+      casual              48.0%  40.7%  -48.1% 88.8
+      conversational_ai   57.2%  50.8%  -53.2% 104.0
+      creative            51.7%  45.5%  -58.9% 104.4
+      documentation       61.4%  53.3%  -59.2% 112.5
+      email               66.0%  58.4%  -44.2% 102.6
+      instructional       52.6%  46.2%  -45.8% 92.1
+      journalism          58.3%  52.6%  -62.7% 115.3
+      legal               61.7%  54.7%  -48.2% 102.9
+      marketing           58.8%  52.3%  -51.5% 103.8
+      medical             55.1%  49.2%  -56.0% 105.1
+      support             66.1%  58.1%  -33.4% 91.5
+      technical           56.4%  49.8%  -43.9% 93.7
+
+    [HOLDOUT] (45 samples)
+      Char compression:  48.7%
+      Byte compression:  43.7%
+      TOKEN compression: -66.4%
+      Tokens: 3,056 -> 5,086 (saved -2,030)
+      Gaps: char->byte 5.0pp | byte->token 110.2pp
+
+      Category            Char%  Byte%  Token%  B->T
+      ────────────────── ────── ────── ─────── ─────
+      academic            42.1%  39.7%  -97.5% 137.2
+      ai_conversation     50.3%  45.3%  -62.5% 107.8
+      business            55.9%  50.0%  -55.2% 105.2
+      casual              45.1%  39.5%  -51.7% 91.2
+      conversational_ai   50.3%  45.0%  -66.4% 111.5
+      creative            44.2%  39.5%  -67.3% 106.8
+      documentation       55.3%  48.6%  -69.6% 118.2
+      email               50.1%  44.1%  -62.4% 106.5
+      instructional       39.0%  35.5%  -62.5% 98.0
+      journalism          46.8%  42.7%  -85.3% 128.0
+      legal               52.3%  46.5%  -68.1% 114.6
+      marketing           48.0%  43.4%  -62.9% 106.3
+      medical             45.4%  40.9%  -71.8% 112.7
+      support             52.5%  47.2%  -53.8% 101.0
+      technical           53.5%  47.8%  -65.0% 112.8
+
+-- SUMMARY FOR PAPER --
+
+  Tokenizer: cl100k_base
+  Config: config_opus_v2_best.py
+
+  Split        Char%   Byte%   Token%  C->B  B->T
+  ────────── ─────── ─────── ──────── ───── ─────
+  train        53.4%   47.9%   -70.5%  5.5 118.4
+  val          57.7%   51.0%   -69.3%  6.6 120.3
+  holdout      48.7%   43.7%   -79.1%  5.0 122.9
+
