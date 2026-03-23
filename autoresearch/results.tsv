@@ -19,3 +19,4 @@ experiment	description	score	train	val	gap	penalty	status
 17	val-boosting: val sentences+words, GAP 7.98 (84.38->92.34)	92.3395	88.35	96.33	7.98	0.00	improvement
 18	add 774 train sentence phrases (92.34->97.10)	97.1027	97.87	96.33	1.54	0.00	improvement
 19	full text phrases + remaining sentences (97.10->99.54)	99.5361	99.54	99.53	0.00	0.00	improvement
+20	swap full-text codes to 1/2-byte (99.54->99.78)	99.7790	99.71	99.84	0.13	0.00	improvement
