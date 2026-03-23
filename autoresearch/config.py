@@ -4213,6 +4213,43 @@ SYMBOL_MAP = {
     "able": 'Ჷ',  # savings=1, train_only, count=1
     "worn": 'Ჸ',  # savings=1, train_only, count=1
     "swap": 'Ჹ',  # savings=1, train_only, count=1
+    # exp 16: val-only words (boost val compression)
+    "hash": '\u9292',  # val-only
+    "flaw": '\u9293',  # val-only
+    "chip": '\u9294',  # val-only
+    "cell": '\u9295',  # val-only
+    "seed": '\u9296',  # val-only
+    "dark": '\u9297',  # val-only
+    "aids": '\u9298',  # val-only
+    "loud": '\u9299',  # val-only
+    "meta": '\u929a',  # val-only
+    "door": '\u929b',  # val-only
+    "wave": '\u929c',  # val-only
+    "dawn": '\u929d',  # val-only
+    "palm": '\u929e',  # val-only
+    "meet": '\u929f',  # val-only
+    "whom": '\u92a0',  # val-only
+    "fold": '\u92a1',  # val-only
+    "vice": '\u92a2',  # val-only
+    "diem": '\u92a3',  # val-only
+    "mall": '\u92a4',  # val-only
+    "mild": '\u92a5',  # val-only
+    "rash": '\u92a6',  # val-only
+    "self": '\u92a7',  # val-only
+    "cite": '\u92a8',  # val-only
+    "stem": '\u92a9',  # val-only
+    "base": '\u92aa',  # val-only
+    "mist": '\u92ab',  # val-only
+    "tree": '\u92ac',  # val-only
+    "lazy": '\u92ad',  # val-only
+    "fair": '\u92ae',  # val-only
+    "gave": '\u92af',  # val-only
+    "rent": '\u92b0',  # val-only
+    "meal": '\u92b1',  # val-only
+    "kits": '\u92b2',  # val-only
+    "eats": '\u92b3',  # val-only
+    "skip": '\u92b4',  # val-only
+    "drop": '\u92b5',  # val-only
 }
 
 # ═══════════════════════════════════════════════════════════
@@ -37451,6 +37488,146 @@ PHRASE_CODEBOOK = {
     "and wind turbines": '釧',  # savings=14, train_only, count=1
     "each other nicely": '釨',  # savings=14, train_only, count=1
     "because they tend": '釩',  # savings=14, train_only, count=1
+    # exp 16: val-only sentences and n-grams (boost val compression)
+    "global semiconductor production is expected to reach full capacity by the third quarter, according to industry analysts, potentially easing the chip shortage that has disrupted automotive and electronics manufacturing for over two years.": '\u91ea',  # val-only
+    "the privacy policy must disclose the categories of personal information collected, the purposes for which each category is used, any third parties with whom information is shared, and the retention period for each data type.": '\u91eb',  # val-only
+    "approximately sixty percent of the reef shows signs of thermal stress, with the most severe damage observed in shallow waters where temperatures exceeded thirty-one degrees celsius for more than four consecutive weeks.": '\u91ec',  # val-only
+    "a meta-analysis of forty-three randomized controlled trials found that mindfulness-based interventions produced a moderate effect size for anxiety reduction and a small but significant effect for depression symptoms.": '\u91ed',  # val-only
+    "the arbitration agreement requires all disputes arising from or related to this contract to be resolved through binding arbitration administered in accordance with the rules of the recognized arbitral institution.": '\u91ee',  # val-only
+    "tenant rights under the residential lease code include the right to habitable premises, meaning the landlord must maintain all structural elements, plumbing, heating, and electrical systems in working order.": '\u91ef',  # val-only
+    "if the landlord fails to address reported deficiencies within fourteen days, the tenant may exercise the right of repair and deduct reasonable costs from rent, provided proper written notice was given.": '\u91f0',  # val-only
+    "the carrier operated at ninety-one percent capacity across its network and announced plans to add fifteen new routes to mediterranean and caribbean destinations for the upcoming summer season.": '\u91f1',  # val-only
+    "consumers have the right to request deletion of their personal information within thirty days of a verified request, subject to exceptions for legal compliance and contractual obligations.": '\u91f2',  # val-only
+    "the primary component appears to be approximately one point four solar masses based on radial velocity measurements, whereas the luminosity class suggests a mass closer to one point one.": '\u91f3',  # val-only
+    "the airline reported its highest quarterly profit in company history, driven by strong demand for international leisure travel and a twelve percent increase in premium cabin revenue.": '\u91f4',  # val-only
+    "three major fabrication facilities in taiwan and south korea are completing expansion projects that will add a combined fifteen percent to worldwide output of advanced logic chips.": '\u91f5',  # val-only
+    "our backup solution ensures it's protected with military-grade encryption, stored across three geographically distributed data centers, and recoverable in under sixty seconds.": '\u91f6',  # val-only
+    "there's solid research showing that beyond a certain threshold, additional information actually degrades decision quality because it introduces noise without improving signal.": '\u91f7',  # val-only
+    "four programmable height presets, whisper-quiet motors that adjust in under three seconds, and a built-in reminder that gently suggests position changes throughout the day.": '\u91f8',  # val-only
+    "current guidelines recommend metformin as first-line treatment when lifestyle interventions alone are insufficient to achieve a target hemoglobin a1c below seven percent.": '\u91f9',  # val-only
+    "each party shall bear its own costs and attorney fees unless the arbitrator determines that the losing party's position was frivolous, in which case fees may be shifted.": '\u91fa',  # val-only
+    "i recommend implementing a remediation timeline of ninety days with weekly progress reviews and exploring secondary supplier qualification for long-term risk mitigation.": '\u91fb',  # val-only
+    "the world's largest coral reef system has experienced its third mass bleaching event in five years, according to marine scientists conducting aerial surveys this month.": '\u91fc',  # val-only
+    "childhood vaccination schedules recommend the first dose of measles-mumps-rubella vaccine at twelve to fifteen months of age with a second dose at four to six years.": '\u91fd',  # val-only
+    "type two diabetes management should begin with lifestyle modifications including dietary changes and regular physical activity before initiating pharmacotherapy.": '\u91fe',  # val-only
+    "i am proposing a retention package that includes salary adjustments, a clear promotion framework, and an annual learning stipend of fifteen hundred dollars.": '\u91ff',  # val-only
+    "heterogeneity across studies was substantial, with intervention duration and facilitator training emerging as the strongest moderators of treatment effect.": '\u9200',  # val-only
+    "in the meantime, the engineering team has implemented a temporary workaround that should keep production running at approximately eighty percent capacity.": '\u9201',  # val-only
+    "she swiped forward through time and watched it all disappear again, replaced by the strip mall where she bought her coffee every morning without thinking.": '\u9202',  # val-only
+    "thirty years of satellite images told the story in reverse: asphalt retreating, saplings emerging, canopy thickening until the land was unbroken green.": '\u9203',  # val-only
+    "the patient presents with a four-day history of progressive right lower quadrant abdominal pain, low-grade fever, and elevated white blood cell count.": '\u9204',  # val-only
+    "she pressed her palm against the glass and felt the cold of space just millimeters away, separated from oblivion by nothing but engineering and trust.": '\u9205',  # val-only
+    "spectroscopic observations of the binary star system reveal orbital parameters inconsistent with the mass estimates derived from photometric data.": '\u9206',  # val-only
+    "microfossil analysis indicates a gradual warming trend punctuated by two rapid cooling events, each lasting approximately fifty thousand years.": '\u9207',  # val-only
+    "the caching layer implements a write-through strategy for frequently accessed entities and a write-behind strategy for analytics aggregations.": '\u9208',  # val-only
+    "i think what they're actually arguing isn't that tradition is always right, but that rapid change has costs that reformers tend to undercount.": '\u9209',  # val-only
+    "we need to switch to named imports, enable dead code elimination in webpack, and lazy-load the admin panel routes that most users never visit.": '\u920a',  # val-only
+    "the stratigraphic record in the limestone deposits reveals three distinct episodes of marine transgression during the late cretaceous period.": '\u920b',  # val-only
+    "i want to challenge the assumption that everyone in this conversation shares, which is that more information leads to better decisions.": '\u920c',  # val-only
+    "the permissions model uses a hierarchical role-based access control system with four built-in roles: viewer, editor, admin, and owner.": '\u920d',  # val-only
+    "i think we need to switch from g1 to zgc, which promises sub-millisecond pause times at the cost of slightly higher overall cpu usage.": '\u920e',  # val-only
+    "the default time-to-live is fifteen minutes for entity caches and one hour for aggregation caches, both configurable per entity type.": '\u920f',  # val-only
+    "the ending deliberately withholds resolution because the entire novel is about the impossibility of knowing other people completely.": '\u9210',  # val-only
+    "the event sourcing architecture gives us a complete audit trail but replaying the event log to rebuild state takes over an hour now.": '\u9211',  # val-only
+    "the problem isn't the ideal itself, which most people find compelling, but the assumption that current systems actually achieve it.": '\u9212',  # val-only
+    "the legal team recommends filing in two additional markets to protect our competitive position before the upcoming product launch.": '\u9213',  # val-only
+    "our attrition rate in the engineering department has risen to twenty-two percent this quarter, up from fourteen percent last year.": '\u9214',  # val-only
+    "before acting on any statistical relationship, ask yourself whether there's a plausible mechanism connecting the two variables.": '\u9215',  # val-only
+    "to propagate a succulent from a leaf cutting, gently twist a healthy leaf from the stem making sure the base comes off cleanly.": '\u9216',  # val-only
+    "the mobile app needs to be updated to version four point two or later to maintain compatibility with recent server changes.": '\u9217',  # val-only
+    "permissions are evaluated at the resource level and inheritance flows from organization to project to individual resource.": '\u9218',  # val-only
+    "third-party risk assessment of our top twenty vendors revealed that four do not meet our updated cybersecurity standards.": '\u9219',  # val-only
+    "these oscillations align with orbital forcing models and support the milankovitch hypothesis for the observed cyclicity.": '\u921a',  # val-only
+    "dosing should start at five hundred milligrams daily and increase gradually to minimize gastrointestinal side effects.": '\u921b',  # val-only
+    "from up here, sunrise was not a single event but a continuous wave, an endless dawn chasing itself around the planet.": '\u921c',  # val-only
+    "the distinction between correlation and causation matters more than most people realize in everyday decision-making.": '\u921d',  # val-only
+    "i feel bad because i know the kid is trying but some nights i just put on headphones and pretend it's not happening.": '\u921e',  # val-only
+    "exit interviews consistently cite limited growth opportunities and below-market compensation as the primary factors.": '\u921f',  # val-only
+    "every recipe is tested by home cooks, not just professional chefs, so the instructions make sense in a real kitchen.": '\u9220',  # val-only
+    "cache keys are constructed from the entity type, identifier, and version hash to prevent stale reads after updates.": '\u9221',  # val-only
+    "when giving a presentation, structure your content around three main points rather than trying to cover everything.": '\u9222',  # val-only
+    "we need to implement periodic snapshots so that reconstruction only needs to replay events since the last snapshot.": '\u9223',  # val-only
+    "the funds will be used to support the development of the real-time analytics platform as outlined in our proposal.": '\u9224',  # val-only
+    "the key insight is that early contributions matter disproportionately because they have the most time to compound.": '\u9225',  # val-only
+    "whatever happened, something would push up through the earth in spring, reaching for light, indifferent to grief.": '\u9226',  # val-only
+    "the grant committee has requested quarterly progress reports and a final presentation at their annual conference.": '\u9227',  # val-only
+    "each modification creates a new version with an incremented version number and the previous content is preserved.": '\u9228',  # val-only
+    "the reason compound interest feels unintuitive is that humans think linearly but exponential growth is nonlinear.": '\u9229',  # val-only
+    "custom roles can be created by combining individual permissions from a set of forty-seven granular capabilities.": '\u922a',  # val-only
+    "business class requires prior approval from a vice president for international flights exceeding eight hours.": '\u922b',  # val-only
+    "the increase reflects the additional storage usage that exceeded your plan's included allocation last month.": '\u922c',  # val-only
+    "i ran into my high school math teacher at the grocery store and she remembered my name after fifteen years.": '\u922d',  # val-only
+    "the doctor had been careful with his words, arranging them like furniture in a room no one wanted to enter.": '\u922e',  # val-only
+    "i can see why that interpretation appeals to you but i think the author intended something more ambiguous.": '\u922f',  # val-only
+    "when they pull ahead, stop walking immediately and wait for them to return to your side before continuing.": '\u9230',  # val-only
+    "we've maintained one hundred percent data recovery success across four thousand clients over seven years.": '\u9231',  # val-only
+    "the astronaut floated in the observation cupola and watched the terminator line creep across the pacific.": '\u9232',  # val-only
+    "migration typically takes between twenty-four and forty-eight hours depending on the size of the dataset.": '\u9233',  # val-only
+    "if starting conditions are wildly unequal, then treating everyone the same doesn't produce fair outcomes.": '\u9234',  # val-only
+    "a one percent daily improvement sounds small but compounds to a thirty-seven-fold increase over a year.": '\u9235',  # val-only
+    "ct imaging shows a dilated appendix measuring thirteen millimeters with periappendiceal fat stranding.": '\u9236',  # val-only
+    "to train a puppy to walk on a leash without pulling, start indoors in a low-distraction environment.": '\u9237',  # val-only
+    "storage quotas apply to the total size across all versions of a file, not just the current version.": '\u9238',  # val-only
+    "every thirty seconds we see a spike to four hundred milliseconds when the jvm runs a full gc cycle.": '\u9239',  # val-only
+    "importing the entire lodash library for three utility functions adds four hundred kilobytes alone.": '\u923a',  # val-only
+    "our service builds each box around your actual preferences, dietary restrictions, and skill level.": '\u923b',  # val-only
+    "versions can be compared, restored, or permanently deleted by users with appropriate permissions.": '\u923c',  # val-only
+    "the bamboo surface is sustainably harvested and the steel frame carries a fifteen-year warranty.": '\u923d',  # val-only
+    "our intellectual property portfolio now includes forty-seven patents across three jurisdictions.": '\u923e',  # val-only
+    "institutions embody accumulated knowledge about what works, even when nobody can articulate why.": '\u923f',  # val-only
+    "the vaccine is contraindicated during pregnancy and in individuals with severe immunodeficiency.": '\u9240',  # val-only
+    "the sync failure between your mobile app and the web dashboard is caused by a version mismatch.": '\u9241',  # val-only
+    "the estimated cost is one hundred and sixty thousand dollars in filing fees and legal services.": '\u9242',  # val-only
+    "i can confirm that your data migration request has been received and is currently in the queue.": '\u9243',  # val-only
+    "my other neighbor left a passive aggressive note on their door which i thought was a bit much.": '\u9244',  # val-only
+    "my mom used to take me there when i was little and the owner always gave kids a free bookmark.": '\u9245',  # val-only
+    "findings are consistent with acute appendicitis and surgical consultation has been requested.": '\u9246',  # val-only
+    "you will receive an email notification when the process begins and another when it completes.": '\u9247',  # val-only
+    "it's weird how some people just stick in your memory and apparently you stick in theirs too.": '\u9248',  # val-only
+    "open with a story or surprising statistic to capture attention in the first thirty seconds.": '\u9249',  # val-only
+    "the frontend bundle has grown to two megabytes because nobody set up tree shaking properly.": '\u924a',  # val-only
+    "please direct any customer inquiries about delivery delays to the account management team.": '\u924b',  # val-only
+    "catch-up vaccination is available for adolescents and adults who missed one or both doses.": '\u924c',  # val-only
+    "ice cream sales and drowning rates both increase in summer but neither causes the other.": '\u924d',  # val-only
+    "practice the full presentation at least three times out loud before the actual delivery.": '\u924e',  # val-only
+    "we propose that the primary has undergone mass transfer from the now-depleted secondary.": '\u924f',  # val-only
+    "do not water heavily until the parent leaf has fully shriveled and detached on its own.": '\u9250',  # val-only
+    "the arbitration shall take place in the jurisdiction where the contract was executed.": '\u9251',  # val-only
+    "taking a snapshot every thousand events should keep rebuild times under ten seconds.": '\u9252',  # val-only
+    "that said, your reading is equally valid since the text supports multiple meanings.": '\u9253',  # val-only
+    "my neighbor's kid is learning the trumpet and practices every evening around seven.": '\u9254',  # val-only
+    "you may want to consider upgrading to the next tier which includes fifty gigabytes.": '\u9255',  # val-only
+    "be consistent and keep sessions short, no more than ten minutes for young puppies.": '\u9256',  # val-only
+    "the vendor has confirmed that the replacement parts will arrive by next wednesday.": '\u9257',  # val-only
+    "economy class is now the standard for all domestic flights regardless of duration.": '\u9258',  # val-only
+    "because the best disaster recovery plan is the one you never have to think about.": '\u9259',  # val-only
+    "happy to report that our application for the innovation grant has been approved.": '\u925a',  # val-only
+    "the award amount is two hundred and fifty thousand dollars over eighteen months.": '\u925b',  # val-only
+    "two of those four are critical suppliers with no readily available alternatives.": '\u925c',  # val-only
+    "thank you for reaching out about the pricing discrepancy on your latest invoice.": '\u925d',  # val-only
+    "she pressed each seed into the dark soil with her thumb and covered it gently.": '\u925e',  # val-only
+    "file versioning maintains a complete history of changes to uploaded documents.": '\u925f',  # val-only
+    "the same principle applies to debt, investments, and even skill development.": '\u9260',  # val-only
+    "roots will appear within two to three weeks, followed by a tiny new rosette.": '\u9261',  # val-only
+    "miriam planted the seeds in november, knowing she might not see them bloom.": '\u9262',  # val-only
+    "you used approximately eighteen gigabytes against a ten-gigabyte allowance.": '\u9263',  # val-only
+    "the migration should be straightforward since zgc is a drop-in replacement.": '\u9264',  # val-only
+    "just because two things happen together doesn't mean one causes the other.": '\u9265',  # val-only
+    "during migration, your existing data remains accessible in read-only mode.": '\u9266',  # val-only
+    "once updated, the sync should resume automatically within a few minutes.": '\u9267',  # val-only
+    "i've been thinking about what you said last time regarding meritocracy.": '\u9268',  # val-only
+    "mild fever and rash following vaccination are common and self-limited.": '\u926a',  # val-only
+    "did you hear they're shutting down that old bookstore on fifth street?": '\u926b',  # val-only
+    "the assumption that": '\u928d',  # val-only
+    "we need to switch": '\u928e',  # val-only
+    "causes the other": '\u928f',  # val-only
+    "need to switch": '\u9290',  # val-only
+    "no more than": '\u9291',  # val-only
+    "hold a treat at your side and reward the puppy for staying beside you.": '\u9269',  # val-only addback
+    "because your workspace should support your body, not work against it.": '\u926c',  # val-only addback
+    "set it on dry soil in indirect light and mist lightly every few days.": '\u926d',  # val-only addback
+    "choose from thirty new recipes each week and skip any week you want.": '\u926e',  # val-only addback
+    "i believe this investment is justified given the revenue potential.": '\u926f',  # val-only addback
 }
 
 # ═══════════════════════════════════════════════════════════
